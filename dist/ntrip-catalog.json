@@ -1,0 +1,270 @@
+{
+    "$schema": "https://ntrip-catalog.org/schemas/v0.1/ntrip-catalog.schema.json",
+    "release": 0,
+    "entries": [
+        {
+            "name": "FPRN",
+            "description": "Florida Primary Reference Network",
+            "urls": [
+                "http://40.121.5.206:10000",
+                "http://ntrip.myfloridagps.com:10000"
+            ],
+            "reference": {
+                "url": "https://www.fdot.gov/Geospatial/fprnfaq.shtm",
+                "comments": ""
+            },
+            "last_update": "2024-12-09",
+            "streams": [
+                {
+                    "filter": {
+                        "lat_lon_bboxes": [
+                            [
+                                167.65,
+                                14.92,
+                                -63.88,
+                                74.71
+                            ]
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:6319",
+                            "name": "NAD83(2011)"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "IGN ES",
+            "description": "Servicio de Posicionamiento en Tiempo Real",
+            "urls": [
+                "http://192.148.213.42:2101",
+                "http://ergnss-tr.ign.es:2101"
+            ],
+            "reference": {
+                "url": "https://www.ign.es/web/gds-gnss-tiempo-real",
+                "comments": ""
+            },
+            "last_update": "2024-12-09",
+            "streams": [
+                {
+                    "filter": {
+                        "mountpoints": [
+                            "CERCANA3",
+                            "CERCANA3M",
+                            "FKP3",
+                            "FKP3M",
+                            "MAC3",
+                            "MAC3M",
+                            "VRS3",
+                            "VRS3M"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:7931",
+                            "name": "ETRF2000",
+                            "epoch": "deleteme",
+                            "rover_bbox": [
+                                -16.1,
+                                33.26,
+                                38.01,
+                                84.73
+                            ],
+                            "description": "Peninsula and Balearic Islands"
+                        },
+                        {
+                            "id": "EPSG:4080",
+                            "name": "REGCAN95",
+                            "rover_bbox": [
+                                -21.93,
+                                24.6,
+                                -11.75,
+                                32.76
+                            ],
+                            "description": "Canary Islands"
+                        }
+                    ],
+                    "description": "Network mountpoins",
+                    "notes": "TBD"
+                }
+            ]
+        },
+        {
+            "name": "IGN ES single base stations",
+            "description": "Servicio de Posicionamiento en Tiempo Real - Estaciones",
+            "urls": [
+                "http://192.148.213.42:2102",
+                "http://ergnss-tr.ign.es:2102"
+            ],
+            "reference": {
+                "url": "https://www.ign.es/web/gds-gnss-tiempo-real",
+                "comments": ""
+            },
+            "last_update": "2024-12-09",
+            "streams": [
+                {
+                    "filter": {
+                        "lat_lon_bboxes": [
+                            [
+                                -16.1,
+                                33.26,
+                                38.01,
+                                84.73
+                            ]
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:7931",
+                            "name": "ETRF2000",
+                            "description": "Peninsula and Balearic Islands"
+                        }
+                    ],
+                    "description": "Single base stations",
+                    "notes": "TBD"
+                },
+                {
+                    "filter": {
+                        "lat_lon_bboxes": [
+                            [
+                                -21.93,
+                                24.6,
+                                -11.75,
+                                32.76
+                            ]
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:4080",
+                            "name": "REGCAN95",
+                            "description": "Canary Islands"
+                        }
+                    ],
+                    "description": "Single base stations",
+                    "notes": "TBD"
+                }
+            ]
+        },
+        {
+            "name": "Topnet Live Europe",
+            "description": "",
+            "urls": [
+                "http://88.86.116.1:2101",
+                "http://rtk.topnetlive.com:2101",
+                "http://topnetlive.no:2101"
+            ],
+            "reference": {
+                "url": "TBD",
+                "comments": "TBD"
+            },
+            "last_update": "2024-12-09",
+            "streams": [
+                {
+                    "filter": {
+                        "mountpoints": [
+                            "NET_MSM5"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:7923",
+                            "name": "ETRF93",
+                            "epoch": 1993.0,
+                            "rover_countries": [
+                                "CHE"
+                            ],
+                            "description": "Switzerland"
+                        },
+                        {
+                            "id": "EPSG:10283",
+                            "name": "ETRS89/DREF91/2016",
+                            "epoch": 2016.0,
+                            "rover_countries": [
+                                "DEU"
+                            ],
+                            "description": "Germany"
+                        },
+                        {
+                            "id": "EPSG:4937",
+                            "name": "ETRS89",
+                            "description": "Default ETRS89 in Europe"
+                        }
+                    ],
+                    "description": "",
+                    "notes": "TBD"
+                }
+            ]
+        },
+        {
+            "name": "TrigNet",
+            "description": "South African National Geospatial Information (NGI) Network",
+            "urls": [
+                "http://196.15.132.2:2101"
+            ],
+            "reference": {
+                "url": "ftp://ftp.trignet.co.za/TrigNet Presentations/TRIGNET Presentation 2024.pptx",
+                "comments": "http://www.trignet.co.za/"
+            },
+            "last_update": "2024-12-09",
+            "streams": [
+                {
+                    "filter": {
+                        "countries": [
+                            "ZAF"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:7912",
+                            "name": "ITRF2014",
+                            "epoch": 2018.18,
+                            "description": "TODO"
+                        }
+                    ],
+                    "description": "TODO",
+                    "notes": "TBD"
+                }
+            ]
+        },
+        {
+            "name": "vrsnow.de",
+            "description": "unknown",
+            "urls": [
+                "http://155.63.90.165:2101",
+                "http://vrsnow.de:2101",
+                "http://www.vrsnow.de:2101",
+                "http://155.63.90.165:2102",
+                "http://vrsnow.de:2102",
+                "http://www.vrsnow.de:2102",
+                "http://155.63.90.165:2103",
+                "http://vrsnow.de:2103",
+                "http://www.vrsnow.de:2103"
+            ],
+            "reference": {
+                "url": "https://geospatial.trimble.com/en/resources/blog/coordinate-system-enhancements-for-centerpoint-rtx-corrections",
+                "comments": "CRS described in the STR string"
+            },
+            "last_update": "2024-12-09",
+            "streams": [
+                {
+                    "filter": {
+                        "countries": [
+                            "DEU"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:10283",
+                            "name": "ETRS89/DREF91/2016",
+                            "description": "German realization of ETRS89"
+                        }
+                    ],
+                    "notes": "CRS described in the STR string {\"REF\":{\"NAME\":\"ETRS89-DREF91(R16)\",\"ID\":\"TRIMBLE:184\",\"EPOCH\":2016.0}}"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Topnet Live Europe",
+        "description": "",
+        "urls": [
+            "http://88.86.116.1:2101",
+            "http://rtk.topnetlive.com:2101",
+            "http://topnetlive.no:2101"
+        ],
+        "reference": {
+            "url": "TBD",
+            "comments": "TBD"
+        },
+        "last_update": "2024-12-09",
+        "streams": [
+            {
+                "filter": {
+                    "mountpoints": [
+                        "NET_MSM5"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:7923",
+                        "name": "ETRF93",
+                        "epoch": 1993.0,
+                        "rover_countries": [
+                            "CHE"
+                        ],
+                        "description": "Switzerland"
+                    },
+                    {
+                        "id": "EPSG:10283",
+                        "name": "ETRS89/DREF91/2016",
+                        "epoch": 2016.0,
+                        "rover_countries": [
+                            "DEU"
+                        ],
+                        "description": "Germany"
+                    },
+                    {
+                        "id": "EPSG:4937",
+                        "name": "ETRS89",
+                        "description": "Default ETRS89 in Europe"
+                    }
+                ],
+                "description": "",
+                "notes": "TBD"
+            }
+        ]
+    }
+]

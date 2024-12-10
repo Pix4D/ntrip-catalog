@@ -1,0 +1,33 @@
+[
+    {
+        "name": "TrigNet",
+        "description": "South African National Geospatial Information (NGI) Network",
+        "urls": [
+            "http://196.15.132.2:2101"
+        ],
+        "reference": {
+            "url": "ftp://ftp.trignet.co.za/TrigNet Presentations/TRIGNET Presentation 2024.pptx",
+            "comments": "http://www.trignet.co.za/"
+        },
+        "last_update": "2024-12-09",
+        "streams": [
+            {
+                "filter": {
+                    "countries": [
+                        "ZAF"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:7912",
+                        "name": "ITRF2014",
+                        "epoch": 2018.18,
+                        "description": "TODO"
+                    }
+                ],
+                "description": "TODO",
+                "notes": "TBD"
+            }
+        ]
+    }
+]
