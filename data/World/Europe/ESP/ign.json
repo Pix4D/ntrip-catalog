@@ -29,7 +29,6 @@
                     {
                         "id": "EPSG:7931",
                         "name": "ETRF2000",
-                        "epoch": "deleteme",
                         "rover_bbox": [
                             -16.1,
                             33.26,

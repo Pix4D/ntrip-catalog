@@ -4,10 +4,13 @@ Catalog of NTRIP providers with CRS information
 ## What is NTRIP-catalog
 NTRIP-catalog is an open source and open data repository with the CRS information from multiple NTRIP service providers. The data is stored as JSON files, that can be easily parsed by any software.
 
-## What is the problem with CRS in NTRIP protocol?
+## What is the problem with coordinate reference systems in the NTRIP and RTCM protocols?
 NTRIP RTCM messages do not include any clarification about the CRS that applies to the corrected coordinates. That can be a significant problem, because the difference between using one CRS or another can be big depending on the scenario. Definitelly much bigger than the accuracy claimed by RTK devices, that is around 2 cm. In Europe the difference between ETRS89 and ITRF2014 is about 80 cm, and growing.
 
-Some services document the CRS in their web pages or PDF instructions. Other do not document at all asumming it is well known data. However that is not the case many times (many final users do not know the details of different CRSs). Different countries offer NTRIP services using a local CRS (like ETRFxx in Europe), while others use ITRFxx. Asking the user to provide that information is a source of error that we want to remove. In some countries the official CRS (usually an old one from the 19th or 20th century) is not a modern CRS used by the NTRIP base stations.
+When final applications have to ask the user to provide a CRS to label coordinates it is a constant source of error that we aim to remove.
+Some NTRIP service providers document the CRS used in their mount points in their web pages or user manuals, while others do not document it at all assuming it is well known data, despite there exist hundreds of CRS definitions and for some of them, multiple realizations.
+In the end, many users do not know what is the CRS that the have to use because either the information is not clearly disclosed by the provided or they are not competent enough to figure it out.
+To increase the confusion, in some countries the official CRS (usually an old one from the 19th or 20th century) is not the CRS used by the NTRIP base stations, which increases the likelihood of users making a mistake.
 
 Knowing the proper CRS for the measurements ensures the best transformation to the needed reference system, like a projected one, without adding an error that would ruin the RTK accuracy.
 
@@ -15,7 +18,8 @@ Knowing the proper CRS for the measurements ensures the best transformation to t
 This data is distributed as CC0. This is just a collection of the data that NTRIP providers should be already explaining in their web pages. We try to make it easy to use and contribute.
 
 ## EPSG
-Most of the applications support the data from the [EPSG](https://epsg.org/) database. For that reason EPSG data is prefered in this catalog. If you do not find your expected CRS in EPSG, ask your geodesy regional agency to register it via https://epsg.org/dataset-change-requests.html. It is easy and free of charge. (You can still register your NTRIP data without it)
+Many applications rely on the data provided by the [EPSG](https://epsg.org/) database. For that reason EPSG data is preferred in this catalog.
+If you do not find the CRS you need in EPSG, ask your geodetic regional authority to register it via https://epsg.org/dataset-change-requests.html. It is easy and free of charge. (You can still register your NTRIP data without it)
 
 As a helper you can use https://spatialreference.org/, maintained by the [PROJ](https://proj.org/) open source library.
 
@@ -42,7 +46,9 @@ In case there is an entry for your service, but no proper data is found, please 
 Any contribution should be properly documented, filling the `reference` section in the json file. The best is that the NTRIP providers do submit their data. If you find the proper documentation published by the NTRIP provider confirming the CRS used, and do not expect the provider to do it, you can contribute it as well.
 
 ## How to contribute
-So far just create a PR in this GitHub project. In case you do not know how to do it, or you do not feel confortable with json, you can open an Issue providing all the data.
+Just create a PR in this GitHub project. In case you do not know how to do it, or you do not feel confortable with JSON, you can open an Issue providing all the data.
+All contributions must be properly documented, filling the `reference` section in the JSON file.
+This database is intended to become a trusted source of information, so submissions that cannot be backed by an authoritative reference will not be considered.
 See the file in the `data` directory to see what can be done.
 
 ## JSON syntax details
