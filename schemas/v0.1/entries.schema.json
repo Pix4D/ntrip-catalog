@@ -19,7 +19,7 @@
             },
             "urls": {
                 "type": "array",
-                "description": "List of all the possible URLs that will match this entry. See that the URL should be only once in the whole catalog.",
+                "description": "List of all the possible URLs that will match this entry. The URL should appear only once in the whole catalog.",
                 "minItems": 1,
                 "items": {
                     "type": "string",
@@ -136,7 +136,7 @@
                         },
                         "description": {
                             "type": "string",
-                            "description": "Descrive the stream with a filter and crss."
+                            "description": "Describe the stream with a filter and crss."
                         },
                         "notes": {
                             "type": "string",
@@ -166,7 +166,7 @@
             "items": {
                 "type": "number"
             },
-            "description": "West, South, East, North. In degrees."
+            "description": "Bounding box, in degrees, with the order: West, South, East, North."
         },
         "mountpoints_def": {
             "type": "object",
