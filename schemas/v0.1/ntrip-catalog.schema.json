@@ -1,0 +1,16 @@
+{
+    "$id": "ntrip-catalog.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1",
+    "title": "NTRIP-catalog",
+    "description": "Schema for NTRIP-catalog (v0.1)",
+    "$comment": "This document is subject to the CC0 license.",
+    "properties": {
+        "release": {
+            "type": "integer"
+        },
+        "entries": {
+            "$ref": "entries.schema.json"
+        }
+    }
+}
