@@ -8,7 +8,7 @@
         ],
         "reference": {
             "url": "https://www.ign.es/web/gds-gnss-tiempo-real",
-            "comments": ""
+            "comments": "Data provided directly by IGN"
         },
         "last_update": "2024-12-09",
         "streams": [
@@ -63,7 +63,7 @@
         ],
         "reference": {
             "url": "https://www.ign.es/web/gds-gnss-tiempo-real",
-            "comments": ""
+            "comments": "Data provided directly by IGN"
         },
         "last_update": "2024-12-09",
         "streams": [

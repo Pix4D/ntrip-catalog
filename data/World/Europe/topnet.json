@@ -1,7 +1,7 @@
 [
     {
         "name": "Topnet Live Europe",
-        "description": "",
+        "description": "Topcon NTRIP service in Europe",
         "urls": [
             "http://88.86.116.1:2101",
             "http://rtk.topnetlive.com:2101",

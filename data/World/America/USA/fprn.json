@@ -7,8 +7,7 @@
             "http://ntrip.myfloridagps.com:10000"
         ],
         "reference": {
-            "url": "https://www.fdot.gov/Geospatial/fprnfaq.shtm",
-            "comments": ""
+            "url": "https://www.fdot.gov/Geospatial/fprnfaq.shtm"
         },
         "last_update": "2024-12-09",
         "streams": [
