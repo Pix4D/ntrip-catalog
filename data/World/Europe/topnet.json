@@ -8,26 +8,72 @@
             "http://topnetlive.no:2101"
         ],
         "reference": {
-            "url": "TBD",
-            "comments": "TBD"
+            "url": "https://global.topcon.com/",
+            "comments": "Data provided directly by Topcon"
         },
-        "last_update": "2024-12-09",
+        "last_update": "2025-01-09",
         "streams": [
             {
                 "filter": {
                     "mountpoints": [
+                        "RTK_RTCM3",
+                        "RTK_MSM5",
+                        "NET_RTCM3",
                         "NET_MSM5"
                     ]
                 },
                 "crss": [
                     {
-                        "id": "EPSG:7923",
-                        "name": "ETRF93",
-                        "epoch": 1993.0,
+                        "id": "EPSG:7931",
+                        "name": "ETRF2000",
+                        "epoch": 2002.56,
                         "rover_countries": [
-                            "CHE"
+                            "AUT"
                         ],
-                        "description": "Switzerland"
+                        "description": "Austria"
+                    },
+                    {
+                        "id": "EPSG:7931",
+                        "name": "ETRF2000",
+                        "epoch": 1989,
+                        "rover_countries": [
+                            "BEL"
+                        ],
+                        "description": "Belgium"
+                    },
+                    {
+                        "id": "EPSG:7931",
+                        "name": "ETRF2000",
+                        "epoch": 2005,
+                        "rover_countries": [
+                            "BEL"
+                        ],
+                        "description": "Bulgaria"
+                    },
+                    {
+                        "id": "EPSG:7931",
+                        "name": "ETRF2000",
+                        "rover_countries": [
+                            "CZE"
+                        ],
+                        "description": "Czech Republic"
+                    },
+                    {
+                        "id": "EPSG:4937",
+                        "name": "ETRS89",
+                        "epoch": 1997,
+                        "rover_countries": [
+                            "FIN"
+                        ],
+                        "description": "Finland"
+                    },
+                    {
+                        "id": "EPSG:9781",
+                        "name": "RGF93 v2b",
+                        "rover_countries": [
+                            "FRA"
+                        ],
+                        "description": "France"
                     },
                     {
                         "id": "EPSG:10283",
@@ -39,13 +85,133 @@
                         "description": "Germany"
                     },
                     {
+                        "id": "EPSG:8399",
+                        "name": "ETRF2005",
+                        "epoch": 2007.5,
+                        "rover_countries": [
+                            "GRC"
+                        ],
+                        "description": "Greece"
+                    },
+                    {
+                        "id": "EPSG:7931",
+                        "name": "ETRF2000",
+                        "epoch": 2009.756,
+                        "rover_countries": [
+                            "IRL"
+                        ],
+                        "description": "Ireland"
+                    },
+                    {
+                        "id": "EPSG:7931",
+                        "name": "ETRF2000",
+                        "epoch": 2008,
+                        "rover_countries": [
+                            "ITA"
+                        ],
+                        "description": "Italy"
+                    },
+                    {
+                        "id": "EPSG:7929",
+                        "name": "ETRF97",
+                        "epoch": 2001.25,
+                        "rover_countries": [
+                            "UNK",
+                            "XXK",
+                            "XKX"
+                        ],
+                        "description": "Kosovo"
+                    },
+                    {
+                        "id": "EPSG:7931",
+                        "name": "ETRF2000",
+                        "epoch": 2020.82,
+                        "rover_countries": [
+                            "LUX"
+                        ],
+                        "description": "Luxembourg"
+                    },
+                    {
+                        "id": "EPSG:7931",
+                        "name": "ETRF2000",
+                        "epoch": 2010.5,
+                        "rover_countries": [
+                            "NLD"
+                        ],
+                        "description": "Netherlands"
+                    },
+                    {
+                        "id": "EPSG:4937",
+                        "name": "ETRS89",
+                        "epoch": 2000,
+                        "rover_countries": [
+                            "NOR"
+                        ],
+                        "description": "Norway"
+                    },
+                    {
+                        "id": "EPSG:7931",
+                        "name": "ETRF2000",
+                        "epoch": 2011,
+                        "rover_countries": [
+                            "POL"
+                        ],
+                        "description": "Poland"
+                    },
+                    {
+                        "id": "EPSG:7931",
+                        "name": "ETRF2000",
+                        "epoch": 2017,
+                        "rover_countries": [
+                            "PRT",
+                            "ESP"
+                        ],
+                        "description": "Portugal, Spain"
+                    },
+                    {
+                        "id": "EPSG:4937",
+                        "name": "ETRS89",
+                        "epoch": 1999,
+                        "rover_countries": [
+                            "SWE"
+                        ],
+                        "description": "Sweden"
+                    },
+                    {
+                        "id": "EPSG:7923",
+                        "name": "ETRF93",
+                        "epoch": 1993,
+                        "rover_countries": [
+                            "CHE"
+                        ],
+                        "description": "Switzerland"
+                    },
+                    {
+                        "id": "EPSG:7907",
+                        "name": "ITRF96",
+                        "epoch": 2005,
+                        "rover_countries": [
+                            "TUR"
+                        ],
+                        "description": "Turkey"
+                    },
+                    {
+                        "id": "EPSG:7929",
+                        "name": "ETRF97",
+                        "epoch": 2009.756,
+                        "rover_countries": [
+                            "GBR"
+                        ],
+                        "description": "United Kingdom"
+                    },
+                    {
                         "id": "EPSG:4937",
                         "name": "ETRS89",
                         "description": "Default ETRS89 in Europe"
                     }
                 ],
-                "description": "",
-                "notes": "TBD"
+                "description": "CRS for the Networks in Europe",
+                "notes": "In Europe Topcon uses different realizations of ETRS89, depending on the country."
             }
         ]
     }
