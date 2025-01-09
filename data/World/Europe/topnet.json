@@ -211,7 +211,7 @@
                     }
                 ],
                 "description": "CRS for the Networks in Europe",
-                "notes": "In Europe Topcon uses different realizations of ETRS89, depending on the country."
+                "comments": "In Europe Topcon uses different realizations of ETRS89, depending on the country."
             }
         ]
     }

@@ -86,7 +86,7 @@
                         }
                     ],
                     "description": "Network mountpoins",
-                    "notes": "TBD"
+                    "comments": "Canary Islands are not in the European tectonic plate"
                 }
             ]
         },
@@ -121,8 +121,7 @@
                             "description": "Peninsula and Balearic Islands"
                         }
                     ],
-                    "description": "Single base stations",
-                    "notes": "TBD"
+                    "description": "Single base stations"
                 },
                 {
                     "filter": {
@@ -143,7 +142,7 @@
                         }
                     ],
                     "description": "Single base stations",
-                    "notes": "TBD"
+                    "comments": "Canary Islands are not in the European tectonic plate"
                 }
             ]
         },
@@ -359,7 +358,7 @@
                         }
                     ],
                     "description": "CRS for the Networks in Europe",
-                    "notes": "In Europe Topcon uses different realizations of ETRS89, depending on the country."
+                    "comments": "In Europe Topcon uses different realizations of ETRS89, depending on the country."
                 }
             ]
         },
@@ -390,7 +389,7 @@
                         }
                     ],
                     "description": "TODO",
-                    "notes": "TBD"
+                    "comments": "TBD"
                 }
             ]
         },
@@ -427,7 +426,7 @@
                             "description": "German realization of ETRS89"
                         }
                     ],
-                    "notes": "CRS described in the STR string {\"REF\":{\"NAME\":\"ETRS89-DREF91(R16)\",\"ID\":\"TRIMBLE:184\",\"EPOCH\":2016.0}}"
+                    "comments": "CRS described in the STR string {\"REF\":{\"NAME\":\"ETRS89-DREF91(R16)\",\"ID\":\"TRIMBLE:184\",\"EPOCH\":2016.0}}"
                 }
             ]
         }

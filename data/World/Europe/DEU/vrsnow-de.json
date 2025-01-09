@@ -32,7 +32,7 @@
                         "description": "German realization of ETRS89"
                     }
                 ],
-                "notes": "CRS described in the STR string {\"REF\":{\"NAME\":\"ETRS89-DREF91(R16)\",\"ID\":\"TRIMBLE:184\",\"EPOCH\":2016.0}}"
+                "comments": "CRS described in the STR string {\"REF\":{\"NAME\":\"ETRS89-DREF91(R16)\",\"ID\":\"TRIMBLE:184\",\"EPOCH\":2016.0}}"
             }
         ]
     }

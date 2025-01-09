@@ -50,7 +50,7 @@
                     }
                 ],
                 "description": "Network mountpoins",
-                "notes": "TBD"
+                "comments": "Canary Islands are not in the European tectonic plate"
             }
         ]
     },
@@ -85,8 +85,7 @@
                         "description": "Peninsula and Balearic Islands"
                     }
                 ],
-                "description": "Single base stations",
-                "notes": "TBD"
+                "description": "Single base stations"
             },
             {
                 "filter": {
@@ -107,7 +106,7 @@
                     }
                 ],
                 "description": "Single base stations",
-                "notes": "TBD"
+                "comments": "Canary Islands are not in the European tectonic plate"
             }
         ]
     }

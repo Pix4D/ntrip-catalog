@@ -138,7 +138,7 @@
                             "type": "string",
                             "description": "Describe the stream with a filter and crss."
                         },
-                        "notes": {
+                        "comments": {
                             "type": "string",
                             "description": "Additional notes explaining why some things are done that way."
                         }
