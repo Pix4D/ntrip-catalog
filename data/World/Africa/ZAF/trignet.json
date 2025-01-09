@@ -21,12 +21,10 @@
                     {
                         "id": "EPSG:7912",
                         "name": "ITRF2014",
-                        "epoch": 2018.18,
-                        "description": "TODO"
+                        "epoch": 2018.18
                     }
                 ],
-                "description": "TODO",
-                "comments": "TBD"
+                "comments": "Hartebeesthoek94 is the official datum in South Africa, but not what provides this service. The ITRF CRS may be updated to a newer version in the future."
             }
         ]
     }
