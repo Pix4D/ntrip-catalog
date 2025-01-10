@@ -392,6 +392,35 @@
             ]
         },
         {
+            "name": "nzgd2000.vrsnow.co.nz",
+            "description": "Trimble VRS Now NZGD2000",
+            "urls": [
+                "http://54.66.207.234:2101",
+                "http://nzgd2000.vrsnow.co.nz:2101"
+            ],
+            "reference": {
+                "url": "https://geospatial.trimble.com/en/resources/blog/coordinate-system-enhancements-for-centerpoint-rtx-corrections",
+                "comments": "CRS described in the STR string"
+            },
+            "last_update": "2025-01-10",
+            "streams": [
+                {
+                    "filter": {
+                        "countries": [
+                            "NZL"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:4959",
+                            "name": "NZGD2000"
+                        }
+                    ],
+                    "comments": "CRS described in the STR string {\"REF\":{\"NAME\":\"NZGD2000\",\"ID\":\"ISO:199\",\"EPOCH\":2000.0}}"
+                }
+            ]
+        },
+        {
             "name": "vrsnow.co.nz",
             "description": "Trimble VRS Now NZ",
             "urls": [
@@ -419,6 +448,45 @@
                         }
                     ],
                     "comments": "CRS described in the STR string {\"REF\":{\"NAME\":\"ITRF2014\",\"ID\":\"ISO:175\",\"EPOCH\":2020.0}}"
+                }
+            ]
+        },
+        {
+            "name": "vrsnow.co.uk",
+            "description": "Trimble VRS Now UK",
+            "urls": [
+                "http://155.63.90.119:2101",
+                "http://www.vrsnow.co.uk:2101"
+            ],
+            "reference": {
+                "url": "https://geospatial.trimble.com/en/resources/blog/coordinate-system-enhancements-for-centerpoint-rtx-corrections",
+                "comments": "CRS described in the STR string. Mountpoints over OSTN02 are not included."
+            },
+            "last_update": "2025-01-10",
+            "streams": [
+                {
+                    "filter": {
+                        "mountpoints": [
+                            "15_Station_KIRW",
+                            "15_Station_LERW",
+                            "15_TVN_CMR_PLUS",
+                            "15_TVN_CMR_X_GPS_GLO",
+                            "15_TVN_DGPS",
+                            "15_TVN_RTCM_23",
+                            "15_TVN_RTCM_31",
+                            "15_TVN_RTCM_31_GPS_Only",
+                            "15_TVN_CMR_X",
+                            "15_TVN_RTCM_32"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:7929",
+                            "name": "ETRF97",
+                            "epoch": 2009.756
+                        }
+                    ],
+                    "comments": "CRS described in the STR string {\"REF\":{\"NAME\":\"ETRF97\",\"ID\":\"ISO:132\",\"EPOCH\":2009.756}}."
                 }
             ]
         },
@@ -516,6 +584,35 @@
                         }
                     ],
                     "comments": "CRS described in the STR string {\"REF\":{\"NAME\":\"ETRS89-DREF91(R16)\",\"ID\":\"TRIMBLE:184\",\"EPOCH\":2016.0}}"
+                }
+            ]
+        },
+        {
+            "name": "vrsnow.fr",
+            "description": "Trimble VRS Now FR",
+            "urls": [
+                "http://155.63.90.137:2101",
+                "http://vrsnow.fr:2101"
+            ],
+            "reference": {
+                "url": "https://geospatial.trimble.com/en/resources/blog/coordinate-system-enhancements-for-centerpoint-rtx-corrections",
+                "comments": "CRS described in the STR string"
+            },
+            "last_update": "2025-01-10",
+            "streams": [
+                {
+                    "filter": {
+                        "countries": [
+                            "FRA"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:9781",
+                            "name": "RGF93 v2b"
+                        }
+                    ],
+                    "comments": "CRS described in the STR string {\"REF\":{\"NAME\":\"RGF93v2b\",\"ID\":\"ISO:178\",\"EPOCH\":2019.0}}"
                 }
             ]
         },
