@@ -421,6 +421,52 @@
             ]
         },
         {
+            "name": "swipos",
+            "description": "Service from swisstopo, CH",
+            "urls": [
+                "http://18.195.136.180:2101",
+                "http://www.swipos.ch:2101"
+            ],
+            "reference": {
+                "url": "https://www.swisstopo.admin.ch/de/swipos-gisgeo-fuer-rtk-und-postprocessing-anwendungen"
+            },
+            "last_update": "2025-01-10",
+            "streams": [
+                {
+                    "filter": {
+                        "mountpoints": [
+                            "MSM_GISGEO_LV95LHN95",
+                            "VRS_GISGEO_LV95LHN95"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:4933",
+                            "name": "CHTRS95",
+                            "description": "Swiss realization of ETRS89"
+                        }
+                    ],
+                    "comments": "Despite the mountpoint name, coordinates are geodesic: Ellipsoidal height and no projection."
+                },
+                {
+                    "filter": {
+                        "mountpoints": [
+                            "MSM_GISGEO_LV95LN02",
+                            "VRS_GISGEO_LV95LN02"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:4933",
+                            "name": "CHTRS95",
+                            "description": "Swiss realization of ETRS89"
+                        }
+                    ],
+                    "comments": "The geoid undulation must be applied by the receiver. ONLY HTRANS correction fixed by the VRS system on the server side."
+                }
+            ]
+        },
+        {
             "name": "vrsnow.co.nz",
             "description": "Trimble VRS Now NZ",
             "urls": [
