@@ -1,10 +1,10 @@
 [
     {
-        "name": "vrsnow.co.nz",
-        "description": "Trimble VRS Now NZ",
+        "name": "vrsnow.us",
+        "description": "Trimble VRS Now US",
         "urls": [
-            "http://13.239.179.74:2101",
-            "http://www.vrsnow.co.nz:2101"
+            "http://3.134.46.149:2101",
+            "http://www.vrsnow.us:2101"
         ],
         "reference": {
             "url": "https://geospatial.trimble.com/en/resources/blog/coordinate-system-enhancements-for-centerpoint-rtx-corrections",
@@ -15,18 +15,16 @@
             {
                 "filter": {
                     "countries": [
-                        "NZL"
+                        "USA"
                     ]
                 },
                 "crss": [
                     {
-                        "id": "EPSG:7912",
-                        "name": "ITRF2014",
-                        "epoch": 2020,
-                        "description": "ITRF2014 epoch 2020"
+                        "id": "EPSG:6319",
+                        "name": "NAD83(2011)"
                     }
                 ],
-                "comments": "CRS described in the STR string {\"REF\":{\"NAME\":\"ITRF2014\",\"ID\":\"ISO:175\",\"EPOCH\":2020.0}}"
+                "comments": "CRS described in the STR string {\"REF\":{\"NAME\":\"NAD 83(2011)\",\"ID\":\"ISO:126\",\"EPOCH\":2010.0}}"
             }
         ]
     }
