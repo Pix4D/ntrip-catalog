@@ -1,0 +1,31 @@
+[
+    {
+        "name": "vrsnow.fr",
+        "description": "Trimble VRS Now FR",
+        "urls": [
+            "http://155.63.90.137:2101",
+            "http://vrsnow.fr:2101"
+        ],
+        "reference": {
+            "url": "https://geospatial.trimble.com/en/resources/blog/coordinate-system-enhancements-for-centerpoint-rtx-corrections",
+            "comments": "CRS described in the STR string"
+        },
+        "last_update": "2025-01-10",
+        "streams": [
+            {
+                "filter": {
+                    "countries": [
+                        "FRA"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:9781",
+                        "name": "RGF93 v2b"
+                    }
+                ],
+                "comments": "CRS described in the STR string {\"REF\":{\"NAME\":\"RGF93v2b\",\"ID\":\"ISO:178\",\"EPOCH\":2019.0}}"
+            }
+        ]
+    }
+]
