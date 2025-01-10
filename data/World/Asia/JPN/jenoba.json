@@ -1,0 +1,30 @@
+[
+    {
+        "name": "jenoba",
+        "description": "Positional information data stream service",
+        "urls": [
+            "http://115.125.189.203:2101",
+            "http://ntrip.jenoba.jp:2101"
+        ],
+        "reference": {
+            "url": "https://www.jenoba.jp/technical/gnss06/",
+            "comments": "In Japanese"
+        },
+        "last_update": "2025-01-10",
+        "streams": [
+            {
+                "filter": {
+                    "countries": [
+                        "JPN"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:6667",
+                        "name": "JGD2011"
+                    }
+                ]
+            }
+        ]
+    }
+]
