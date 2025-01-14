@@ -1,0 +1,4 @@
+[flake8]
+ignore =
+max-complexity = 18
+max-line-length = 88

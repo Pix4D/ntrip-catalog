@@ -1,0 +1,36 @@
+[
+    {
+        "name": "vrsnow.de",
+        "description": "Trimble VRS Now (Germany)",
+        "urls": [
+            "http://vrsnow.de:2101",
+            "http://www.vrsnow.de:2101",
+            "http://vrsnow.de:2102",
+            "http://www.vrsnow.de:2102",
+            "http://vrsnow.de:2103",
+            "http://www.vrsnow.de:2103"
+        ],
+        "reference": {
+            "url": "https://geospatial.trimble.com/en/resources/blog/coordinate-system-enhancements-for-centerpoint-rtx-corrections",
+            "comments": "CRS described in the STR string"
+        },
+        "last_update": "2024-12-09",
+        "streams": [
+            {
+                "filter": {
+                    "countries": [
+                        "DEU"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:10283",
+                        "name": "ETRS89/DREF91/2016",
+                        "description": "German realization of ETRS89"
+                    }
+                ],
+                "comments": "CRS described in the STR string {\"REF\":{\"NAME\":\"ETRS89-DREF91(R16)\",\"ID\":\"TRIMBLE:184\",\"EPOCH\":2016.0}}"
+            }
+        ]
+    }
+]

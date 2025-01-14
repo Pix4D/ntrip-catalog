@@ -1,0 +1,33 @@
+[
+    {
+        "name": "vrsnow.co.nz",
+        "description": "Trimble VRS Now NZ",
+        "urls": [
+            "http://13.239.179.74:2101",
+            "http://www.vrsnow.co.nz:2101"
+        ],
+        "reference": {
+            "url": "https://geospatial.trimble.com/en/resources/blog/coordinate-system-enhancements-for-centerpoint-rtx-corrections",
+            "comments": "CRS described in the STR string"
+        },
+        "last_update": "2025-01-10",
+        "streams": [
+            {
+                "filter": {
+                    "countries": [
+                        "NZL"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:7912",
+                        "name": "ITRF2014",
+                        "epoch": 2020,
+                        "description": "ITRF2014 epoch 2020"
+                    }
+                ],
+                "comments": "CRS described in the STR string {\"REF\":{\"NAME\":\"ITRF2014\",\"ID\":\"ISO:175\",\"EPOCH\":2020.0}}"
+            }
+        ]
+    }
+]

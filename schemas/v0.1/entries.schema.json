@@ -1,0 +1,240 @@
+{
+    "$id": "entries.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1",
+    "title": "NTRIP-catalog entry",
+    "description": "Definition of a list of entries",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "description": "Definition of each entry in the NTRIP-catalog",
+        "properties": {
+            "name": {
+                "type": "string",
+                "description": "Use something sort but descriptive. Try to make it unique."
+            },
+            "description": {
+                "type": "string",
+                "description": "A longer description of the entry. Maybe the expansion of the accronym in the name"
+            },
+            "urls": {
+                "type": "array",
+                "description": "List of all the possible URLs that will match this entry. The URL should appear only once in the whole catalog.",
+                "minItems": 1,
+                "items": {
+                    "type": "string",
+                    "description": "Full identification of the URL, always including scheme, hostname and port. Must be all lowercase."
+                }
+            },
+            "reference": {
+                "type": "object",
+                "description": "Source of the information, and extra comments if needed.",
+                "properties": {
+                    "url": {
+                        "type": "string"
+                    },
+                    "comments": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "url"
+                ]
+            },
+            "last_update": {
+                "type": "string",
+                "description": "Date of the last update of this entry, in ISO 8601 format YYYY-MM-DD"
+            },
+            "streams": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "description": "Item to match a stream from the sourcetable with a CRS.",
+                    "properties": {
+                        "filter": {
+                            "description": "Criterion to filter in the sourcetable",
+                            "oneOf": [
+                                {
+                                    "$ref": "#/$defs/mountpoints_def"
+                                },
+                                {
+                                    "$ref": "#/$defs/lat_lon_bboxes_def"
+                                },
+                                {
+                                    "$ref": "#/$defs/countries_def"
+                                },
+                                {
+                                    "type": "string",
+                                    "enum": [
+                                        "all"
+                                    ],
+                                    "description": "Matches all the streams. Use with caution."
+                                }
+                            ]
+                        },
+                        "crss": {
+                            "type": "array",
+                            "description": "List of CRSs for this stream. Either rover_bbox or rover_countries must be present in the elements to be able to pick one CRS from the list at a particular location.",
+                            "minItems": 1,
+                            "items": {
+                                "type": "object",
+                                "description": "Definition of a CRS and its selection filters, if any.",
+                                "properties": {
+                                    "id": {
+                                        "type": "string",
+                                        "description": "EPSG (or ESRI) identifier like EPSG:7931. Use a Geographic 3D code if defined. If not, a Geographic 2D."
+                                    },
+                                    "name": {
+                                        "type": "string",
+                                        "description": "Name of the CRS. If the field id is used, it must be the name in EPSG (or ESRI)."
+                                    },
+                                    "description": {
+                                        "type": "string"
+                                    },
+                                    "epoch": {
+                                        "type": [
+                                            "number",
+                                            "string"
+                                        ],
+                                        "description": "When epoch is needed, specify as number. String should be only used for \"now\", meaning the acquisition date."
+                                    },
+                                    "rover_bbox": {
+                                        "$ref": "#/$defs/bbox",
+                                        "description": "Bounding box where the rover should be. Use it when that is the only way to differenciate the CRSs"
+                                    },
+                                    "rover_countries": {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "description": "Country where the rover should be. Use it when that is the only way to differenciate the CRSs"
+                                    }
+                                },
+                                "anyOf": [
+                                    {
+                                        "oneOf": [
+                                            {
+                                                "required": [
+                                                    "rover_bbox"
+                                                ]
+                                            },
+                                            {
+                                                "required": [
+                                                    "rover_countries"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "not": {
+                                            "required": [
+                                                "rover_bbox",
+                                                "rover_countries"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "required": [
+                                    "name"
+                                ],
+                                "additionalProperties": false
+                            }
+                        },
+                        "description": {
+                            "type": "string",
+                            "description": "Describe the stream with a filter and crss."
+                        },
+                        "comments": {
+                            "type": "string",
+                            "description": "Additional notes explaining why some things are done that way."
+                        },
+                        "extra": {
+                            "type": "object",
+                            "description": "Optional container in case special custom information wants to be added."
+                        }
+                    },
+                    "required": [
+                        "filter",
+                        "crss"
+                    ],
+                    "additionalProperties": false
+                }
+            },
+            "extra": {
+                "type": "object",
+                "description": "Optional container in case special custom information wants to be added."
+            }
+        },
+        "required": [
+            "name",
+            "urls",
+            "reference",
+            "last_update",
+            "streams"
+        ],
+        "additionalProperties": false
+    },
+    "$defs": {
+        "bbox": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "items": {
+                "type": "number"
+            },
+            "description": "Bounding box, in degrees, with the order: West, South, East, North."
+        },
+        "mountpoints_def": {
+            "type": "object",
+            "properties": {
+                "mountpoints": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Matches the 'Mountpoint' field in the stream"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "mountpoints"
+            ]
+        },
+        "lat_lon_bboxes_def": {
+            "type": "object",
+            "properties": {
+                "lat_lon_bboxes": {
+                    "type": "array",
+                    "description": "List of bboxes where the lat,lon of the stream should be included.",
+                    "minItems": 1,
+                    "items": {
+                        "$ref": "#/$defs/bbox"
+                    }
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "lat_lon_bboxes"
+            ]
+        },
+        "countries_def": {
+            "type": "object",
+            "properties": {
+                "countries": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Matches the 'Country Code' field in the stream"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "countries"
+            ]
+        }
+    }
+}

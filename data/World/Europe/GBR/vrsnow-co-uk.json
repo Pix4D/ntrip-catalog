@@ -1,0 +1,41 @@
+[
+    {
+        "name": "vrsnow.co.uk",
+        "description": "Trimble VRS Now UK",
+        "urls": [
+            "http://155.63.90.119:2101",
+            "http://www.vrsnow.co.uk:2101"
+        ],
+        "reference": {
+            "url": "https://geospatial.trimble.com/en/resources/blog/coordinate-system-enhancements-for-centerpoint-rtx-corrections",
+            "comments": "CRS described in the STR string. Mountpoints over OSTN02 are not included."
+        },
+        "last_update": "2025-01-10",
+        "streams": [
+            {
+                "filter": {
+                    "mountpoints": [
+                        "15_Station_KIRW",
+                        "15_Station_LERW",
+                        "15_TVN_CMR_PLUS",
+                        "15_TVN_CMR_X_GPS_GLO",
+                        "15_TVN_DGPS",
+                        "15_TVN_RTCM_23",
+                        "15_TVN_RTCM_31",
+                        "15_TVN_RTCM_31_GPS_Only",
+                        "15_TVN_CMR_X",
+                        "15_TVN_RTCM_32"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:7929",
+                        "name": "ETRF97",
+                        "epoch": 2009.756
+                    }
+                ],
+                "comments": "CRS described in the STR string {\"REF\":{\"NAME\":\"ETRF97\",\"ID\":\"ISO:132\",\"EPOCH\":2009.756}}."
+            }
+        ]
+    }
+]

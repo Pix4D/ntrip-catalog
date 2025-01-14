@@ -1,0 +1,31 @@
+[
+    {
+        "name": "AUSCORS",
+        "description": "Geoscience Australia AUSCORS NTRIP Broadcaster",
+        "urls": [
+            "https://ntrip.data.gnss.ga.gov.au:443",
+            "http://ntrip.data.gnss.ga.gov.au:2101"
+        ],
+        "reference": {
+            "url": "https://gnss.ga.gov.au/stream",
+            "comments": "Also provides base stations outside of Australia, but the precise CRS is not known"
+        },
+        "last_update": "2025-01-13",
+        "streams": [
+            {
+                "filter": {
+                    "countries": [
+                        "AUS"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:7843",
+                        "name": "GDA2020"
+                    }
+                ],
+                "comments": "Broadcast Coordinates: Stations within Australia - GDA2020"
+            }
+        ]
+    }
+]

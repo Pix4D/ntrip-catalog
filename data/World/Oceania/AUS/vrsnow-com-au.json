@@ -1,0 +1,65 @@
+[
+    {
+        "name": "vrsnow.com.au",
+        "description": "Trimble VRS Now AU",
+        "urls": [
+            "http://13.239.92.67:2101",
+            "http://vrsnow.com.au:2101"
+        ],
+        "reference": {
+            "url": "https://geospatial.trimble.com/en/resources/blog/coordinate-system-enhancements-for-centerpoint-rtx-corrections",
+            "comments": "CRS described in the STR string"
+        },
+        "last_update": "2025-01-10",
+        "streams": [
+            {
+                "filter": {
+                    "mountpoints": [
+                        "TVN_NEAREST_CMR_PLUS",
+                        "TVN_NEAREST_CMR_X",
+                        "TVN_NEAREST_RTCM_31",
+                        "TVN_CMR_X",
+                        "TVN_RTCM_31",
+                        "TVN_DGPS",
+                        "TVN_NEAREST_DGPS",
+                        "TVN_RTCM_32",
+                        "TVN_CMR_X_GPS_GLO",
+                        "TVN_CMR_PLUS",
+                        "TVN_NEAREST_RTCM_32"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:4939",
+                        "name": "GDA94"
+                    }
+                ],
+                "comments": "CRS described in the STR string {\"REF\":{\"NAME\":\"GDA94\",\"ID\":\"ISO:182\",\"EPOCH\":1994.0}}"
+            },
+            {
+                "filter": {
+                    "mountpoints": [
+                        "20_TVN_CMR_PLUS",
+                        "20_TVN_CMR_X",
+                        "20_TVN_CMR_X_GPS_GLO",
+                        "20_TVN_DGPS",
+                        "20_TVN_NEAREST_CMR_PLUS",
+                        "20_TVN_NEAREST_CMR_X",
+                        "20_TVN_NEAREST_DGPS",
+                        "20_TVN_NEAREST_RTCM_31",
+                        "20_TVN_RTCM_31",
+                        "20_TVN_RTCM_32",
+                        "20_TVN_NEAREST_RTCM_32"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:7843",
+                        "name": "GDA2020"
+                    }
+                ],
+                "comments": "CRS described in the STR string {\"REF\":{\"NAME\":\"GDA2020\",\"ID\":\"ISO:186\",\"EPOCH\":2020.0}}"
+            }
+        ]
+    }
+]

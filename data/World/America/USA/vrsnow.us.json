@@ -1,0 +1,31 @@
+[
+    {
+        "name": "vrsnow.us",
+        "description": "Trimble VRS Now US",
+        "urls": [
+            "http://3.134.46.149:2101",
+            "http://www.vrsnow.us:2101"
+        ],
+        "reference": {
+            "url": "https://geospatial.trimble.com/en/resources/blog/coordinate-system-enhancements-for-centerpoint-rtx-corrections",
+            "comments": "CRS described in the STR string"
+        },
+        "last_update": "2025-01-10",
+        "streams": [
+            {
+                "filter": {
+                    "countries": [
+                        "USA"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:6319",
+                        "name": "NAD83(2011)"
+                    }
+                ],
+                "comments": "CRS described in the STR string {\"REF\":{\"NAME\":\"NAD 83(2011)\",\"ID\":\"ISO:126\",\"EPOCH\":2010.0}}"
+            }
+        ]
+    }
+]

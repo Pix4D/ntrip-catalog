@@ -1,0 +1,31 @@
+[
+    {
+        "name": "nzgd2000.vrsnow.co.nz",
+        "description": "Trimble VRS Now NZGD2000",
+        "urls": [
+            "http://54.66.207.234:2101",
+            "http://nzgd2000.vrsnow.co.nz:2101"
+        ],
+        "reference": {
+            "url": "https://geospatial.trimble.com/en/resources/blog/coordinate-system-enhancements-for-centerpoint-rtx-corrections",
+            "comments": "CRS described in the STR string"
+        },
+        "last_update": "2025-01-10",
+        "streams": [
+            {
+                "filter": {
+                    "countries": [
+                        "NZL"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:4959",
+                        "name": "NZGD2000"
+                    }
+                ],
+                "comments": "CRS described in the STR string {\"REF\":{\"NAME\":\"NZGD2000\",\"ID\":\"ISO:199\",\"EPOCH\":2000.0}}"
+            }
+        ]
+    }
+]
