@@ -52,7 +52,6 @@
                     "description": "Item to match a stream from the sourcetable with a CRS.",
                     "properties": {
                         "filter": {
-                            "type": "object",
                             "description": "Criterion to filter in the sourcetable",
                             "oneOf": [
                                 {
@@ -63,6 +62,13 @@
                                 },
                                 {
                                     "$ref": "#/$defs/countries_def"
+                                },
+                                {
+                                    "type": "string",
+                                    "enum": [
+                                        "all"
+                                    ],
+                                    "description": "Matches all the streams. Use with caution."
                                 }
                             ]
                         },
@@ -168,6 +174,9 @@
             },
             "description": "Bounding box, in degrees, with the order: West, South, East, North."
         },
+        "all_def": {
+            "type": "string"
+        },
         "mountpoints_def": {
             "type": "object",
             "properties": {
@@ -177,7 +186,7 @@
                     "items": {
                         "type": "string"
                     },
-                    "description": "Matches the 'Mountpoint' field in the Stream",
+                    "description": "Matches the 'Mountpoint' field in the stream",
                     "additionalProperties": false
                 }
             },
@@ -211,7 +220,7 @@
                     "items": {
                         "type": "string"
                     },
-                    "description": "Matches the 'Country Code' field in the Stream"
+                    "description": "Matches the 'Country Code' field in the stream"
                 }
             },
             "required": [
