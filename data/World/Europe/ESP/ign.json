@@ -1,0 +1,113 @@
+[
+    {
+        "name": "IGN ES",
+        "description": "Servicio de Posicionamiento en Tiempo Real",
+        "urls": [
+            "http://192.148.213.42:2101",
+            "http://ergnss-tr.ign.es:2101"
+        ],
+        "reference": {
+            "url": "https://www.ign.es/web/gds-gnss-tiempo-real",
+            "comments": "Data provided directly by IGN"
+        },
+        "last_update": "2024-12-09",
+        "streams": [
+            {
+                "filter": {
+                    "mountpoints": [
+                        "CERCANA3",
+                        "CERCANA3M",
+                        "FKP3",
+                        "FKP3M",
+                        "MAC3",
+                        "MAC3M",
+                        "VRS3",
+                        "VRS3M"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:7931",
+                        "name": "ETRF2000",
+                        "rover_bbox": [
+                            -16.1,
+                            33.26,
+                            38.01,
+                            84.73
+                        ],
+                        "description": "Peninsula and Balearic Islands"
+                    },
+                    {
+                        "id": "EPSG:4080",
+                        "name": "REGCAN95",
+                        "rover_bbox": [
+                            -21.93,
+                            24.6,
+                            -11.75,
+                            32.76
+                        ],
+                        "description": "Canary Islands"
+                    }
+                ],
+                "description": "Network mountpoins",
+                "comments": "Canary Islands are not in the European tectonic plate"
+            }
+        ]
+    },
+    {
+        "name": "IGN ES single base stations",
+        "description": "Servicio de Posicionamiento en Tiempo Real - Estaciones",
+        "urls": [
+            "http://192.148.213.42:2102",
+            "http://ergnss-tr.ign.es:2102"
+        ],
+        "reference": {
+            "url": "https://www.ign.es/web/gds-gnss-tiempo-real",
+            "comments": "Data provided directly by IGN"
+        },
+        "last_update": "2024-12-09",
+        "streams": [
+            {
+                "filter": {
+                    "lat_lon_bboxes": [
+                        [
+                            -16.1,
+                            33.26,
+                            38.01,
+                            84.73
+                        ]
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:7931",
+                        "name": "ETRF2000",
+                        "description": "Peninsula and Balearic Islands"
+                    }
+                ],
+                "description": "Single base stations"
+            },
+            {
+                "filter": {
+                    "lat_lon_bboxes": [
+                        [
+                            -21.93,
+                            24.6,
+                            -11.75,
+                            32.76
+                        ]
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:4080",
+                        "name": "REGCAN95",
+                        "description": "Canary Islands"
+                    }
+                ],
+                "description": "Single base stations",
+                "comments": "Canary Islands are not in the European tectonic plate"
+            }
+        ]
+    }
+]

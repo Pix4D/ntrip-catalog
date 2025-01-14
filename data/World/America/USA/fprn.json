@@ -1,0 +1,34 @@
+[
+    {
+        "name": "FPRN",
+        "description": "Florida Primary Reference Network",
+        "urls": [
+            "http://40.121.5.206:10000",
+            "http://ntrip.myfloridagps.com:10000"
+        ],
+        "reference": {
+            "url": "https://www.fdot.gov/Geospatial/fprnfaq.shtm"
+        },
+        "last_update": "2024-12-09",
+        "streams": [
+            {
+                "filter": {
+                    "lat_lon_bboxes": [
+                        [
+                            167.65,
+                            14.92,
+                            -63.88,
+                            74.71
+                        ]
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:6319",
+                        "name": "NAD83(2011)"
+                    }
+                ]
+            }
+        ]
+    }
+]

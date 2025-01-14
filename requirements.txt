@@ -1,0 +1,7 @@
+
+# Library to validate the JSON schemas -> https://github.com/python-jsonschema/jsonschema
+jsonschema
+
+# Library to do NTRIP requests.
+# They are not strictly HTTP requests, so we need an alternative. -> https://github.com/pycurl/pycurl
+pycurl
