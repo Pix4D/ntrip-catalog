@@ -86,6 +86,32 @@ def point_in_bbox(point_lat, point_lon, bbox):
         return point_lon >= bbox[0] and point_lon <= bbox[2]
 
 
+def _crss_from_stream(stream, mountpoint, url, server_streams):
+    crss = stream["crss"]
+    stream_filter = stream["filter"]
+    if stream_filter == "all":
+        return crss
+    elif "mountpoints" in stream_filter:
+        if mountpoint in stream_filter["mountpoints"]:
+            return crss
+    else:
+        if not server_streams:
+            server_streams += get_streams_from_server(url)
+        line = get_str_line_from_server(server_streams, mountpoint)
+        if not line or len(line) < 10:
+            return None
+        country = line[8]
+        base_lat = float(line[9])
+        base_lon = normalize_lon(float(line[10]))
+
+        if country in stream_filter.get("countries", []):
+            return crss
+
+        for bbox in stream_filter.get("lat_lon_bboxes", []):
+            if point_in_bbox(base_lat, base_lon, bbox):
+                return crss
+
+
 def filter_crs(
     json_entry,
     url,
@@ -107,33 +133,10 @@ def filter_crs(
                 return crs
         return None
 
-    def crss_from_stream(stream, server_streams):
-        crss = stream["crss"]
-        stream_filter = stream["filter"]
-        if "mountpoints" in stream_filter:
-            if mountpoint in stream_filter["mountpoints"]:
-                return crss
-        else:
-            if not server_streams:
-                server_streams += get_streams_from_server(url)
-            line = get_str_line_from_server(server_streams, mountpoint)
-            if not line or len(line) < 10:
-                return None
-            country = line[8]
-            base_lat = float(line[9])
-            base_lon = normalize_lon(float(line[10]))
-
-            if country in stream_filter.get("countries", []):
-                return crss
-
-            for bbox in stream_filter.get("lat_lon_bboxes", []):
-                if point_in_bbox(base_lat, base_lon, bbox):
-                    return crss
-
     server_streams = [*sourcetable_lines_splitted] if sourcetable_lines_splitted else []
 
     for stream in json_entry["streams"]:
-        crss = crss_from_stream(stream, server_streams)
+        crss = _crss_from_stream(stream, mountpoint, url, server_streams)
         if crss:
             crs = filter_by_rover(crss)
             if crs:

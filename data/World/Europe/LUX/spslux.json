@@ -1,0 +1,25 @@
+[
+    {
+        "name": "SPSLUX",
+        "description": "Satellite Positioning System Luxembourg",
+        "urls": [
+            "http://stream.spslux.lu:5005"
+        ],
+        "reference": {
+            "url": "https://act.public.lu/fr/gps-reseaux/spslux1/spsluxgeodeticdatum.html"
+        },
+        "last_update": "2025-01-13",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:7931",
+                        "name": "ETRF2000",
+                        "epoch": 2020.82
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,7 +1,7 @@
 [
     {
         "name": "vrsnow.de",
-        "description": "unknown",
+        "description": "Trimble VRS Now (Germany)",
         "urls": [
             "http://vrsnow.de:2101",
             "http://www.vrsnow.de:2101",
