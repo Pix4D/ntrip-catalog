@@ -3,13 +3,10 @@
         "name": "vrsnow.de",
         "description": "unknown",
         "urls": [
-            "http://155.63.90.165:2101",
             "http://vrsnow.de:2101",
             "http://www.vrsnow.de:2101",
-            "http://155.63.90.165:2102",
             "http://vrsnow.de:2102",
             "http://www.vrsnow.de:2102",
-            "http://155.63.90.165:2103",
             "http://vrsnow.de:2103",
             "http://www.vrsnow.de:2103"
         ],
