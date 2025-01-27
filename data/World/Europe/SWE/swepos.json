@@ -1,0 +1,25 @@
+[
+    {
+        "name": "SWEPOS",
+        "description": "SWEPOS",
+        "urls": [
+            "http://nrtk-swepos.lm.se:80",
+            "http://nrtk-swepos.lm.se:8500"
+        ],
+        "reference": {
+            "url": "https://www.lantmateriet.se/sv/geodata/gps-geodesi-och-swepos/swepos/om-swepos/"
+        },
+        "last_update": "2025-01-27",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:4977",
+                        "name": "SWEREF99"
+                    }
+                ]
+            }
+        ]
+    }
+]

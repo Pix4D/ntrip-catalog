@@ -177,6 +177,109 @@
             ]
         },
         {
+            "name": "SAPOS",
+            "description": "SAPOS AdV",
+            "urls": [
+                "http://www.sapos-ntrip.de:2101",
+                "http://sapos-ntrip.de:2101"
+            ],
+            "reference": {
+                "url": "https://zentrale-stelle-sapos.de/wp-content/uploads/2022/06/ZSS_zentrale-SAPOS-Ntrip-Caster-Einwahl_Jun2022.pdf",
+                "comments": "https://sapos.de/"
+            },
+            "last_update": "2025-01-27",
+            "streams": [
+                {
+                    "filter": "all",
+                    "crss": [
+                        {
+                            "id": "EPSG:10283",
+                            "name": "ETRS89/DREF91/2016",
+                            "description": "German realization of ETRS89"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "SAPOS BW",
+            "description": "SAPOS Baden-Wuerttemberg",
+            "urls": [
+                "http://www.sapos-bw-ntrip.de:2101",
+                "http://www.sapos-bw.de:2101"
+            ],
+            "reference": {
+                "url": "https://gpps-web.sapos-bw.de/faq.php",
+                "comments": "https://sapos.de/"
+            },
+            "last_update": "2025-01-27",
+            "streams": [
+                {
+                    "filter": "all",
+                    "crss": [
+                        {
+                            "id": "EPSG:10283",
+                            "name": "ETRS89/DREF91/2016",
+                            "description": "German realization of ETRS89"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "SAPOS BY",
+            "description": "SAPOS Bayern",
+            "urls": [
+                "http://195.200.70.199:2101",
+                "http://sapos-by-ntrip.de:2101",
+                "http://sapos-rtk.bayern.de:2101",
+                "http://www.sapos-by-ntrip.de:2101"
+            ],
+            "reference": {
+                "url": "https://ldbv.bayern.de/produkte/dienste/sapos.html",
+                "comments": "https://sapos.de/"
+            },
+            "last_update": "2025-01-27",
+            "streams": [
+                {
+                    "filter": "all",
+                    "crss": [
+                        {
+                            "id": "EPSG:10283",
+                            "name": "ETRS89/DREF91/2016",
+                            "description": "German realization of ETRS89"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "SAPOS NRW",
+            "description": "SAPOS Nordrhein-Westfalen",
+            "urls": [
+                "http://80.158.61.104:2101",
+                "http://www.sapos-nw-ntrip.de:2101",
+                "http://sapos-nw-ntrip.de:2101"
+            ],
+            "reference": {
+                "url": "https://www.bezreg-koeln.nrw.de/geobasis-nrw/produkte-und-dienste/raumbezug/satellitenpositionierungsdienst-sapos",
+                "comments": "https://sapos.de/"
+            },
+            "last_update": "2025-01-27",
+            "streams": [
+                {
+                    "filter": "all",
+                    "crss": [
+                        {
+                            "id": "EPSG:10283",
+                            "name": "ETRS89/DREF91/2016",
+                            "description": "German realization of ETRS89"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "name": "SPSLUX",
             "description": "Satellite Positioning System Luxembourg",
             "urls": [
@@ -194,6 +297,52 @@
                             "id": "EPSG:7931",
                             "name": "ETRF2000",
                             "epoch": 2020.82
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "SWEPOS",
+            "description": "SWEPOS",
+            "urls": [
+                "http://nrtk-swepos.lm.se:80",
+                "http://nrtk-swepos.lm.se:8500"
+            ],
+            "reference": {
+                "url": "https://www.lantmateriet.se/sv/geodata/gps-geodesi-och-swepos/swepos/om-swepos/"
+            },
+            "last_update": "2025-01-27",
+            "streams": [
+                {
+                    "filter": "all",
+                    "crss": [
+                        {
+                            "id": "EPSG:4977",
+                            "name": "SWEREF99"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "TURN Utah",
+            "description": "The Utah Reference Network (TURN)",
+            "urls": [
+                "http://165.239.144.5:2101",
+                "http://turngps.utah.gov:2101"
+            ],
+            "reference": {
+                "url": "https://gis.utah.gov/documentation/turn/connecting/"
+            },
+            "last_update": "2025-01-27",
+            "streams": [
+                {
+                    "filter": "all",
+                    "crss": [
+                        {
+                            "id": "EPSG:6319",
+                            "name": "NAD83(2011)"
                         }
                     ]
                 }
