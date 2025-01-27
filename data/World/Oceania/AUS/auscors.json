@@ -8,7 +8,7 @@
         ],
         "reference": {
             "url": "https://gnss.ga.gov.au/stream",
-            "comments": "Also provides base stations outside of Australia"
+            "comments": "Also provides base stations outside of Australia, but CRS not clear"
         },
         "last_update": "2025-01-13",
         "streams": [
@@ -25,16 +25,6 @@
                     }
                 ],
                 "comments": "Broadcast Coordinates: Stations within Australia - GDA2020"
-            },
-            {
-                "filter": "all",
-                "crss": [
-                    {
-                        "id": "EPSG:9989",
-                        "name": "ITRF2020"
-                    }
-                ],
-                "comments": "Broadcast Coordinates: Station outside of Australia - ITRF2020"
             }
         ]
     }
