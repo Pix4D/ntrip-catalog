@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Skylark Asia Pacific",
+        "description": "Skylark service in Asia Pacific",
+        "urls": [
+            "http://ap.l1l2.skylark.swiftnav.com:2101",
+            "http://ap.l1l5.skylark.swiftnav.com:2101",
+            "https://ap.l1l2.skylark.swiftnav.com:2102",
+            "https://ap.l1l5.skylark.swiftnav.com:2102"
+        ],
+        "reference": {
+            "url": "https://support.swiftnav.com/support/solutions/articles/44002519397-ntrip-client-configuration-for-skylark-corrections"
+        },
+        "last_update": "2025-01-28",
+        "streams": [
+            {
+                "filter": {
+                    "mountpoints": [
+                        "MSM4",
+                        "MSM5",
+                        "OSR",
+                        "SSR",
+                        "SSR-integrity",
+                        "SSR-integrity-AES-CMAC"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:9989",
+                        "name": "ITRF2020"
+                    }
+                ],
+                "comments": "Skylark Cx mountpoints ITRF2020"
+            },
+            {
+                "filter": {
+                    "mountpoints": [
+                        "DX-MSM1"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:9989",
+                        "name": "ITRF2020"
+                    }
+                ],
+                "comments": "Skylark Dx mountpoints ITRF2020"
+            },
+            {
+                "filter": {
+                    "mountpoints": [
+                        "NXRTK-MSM5",
+                        "NXRTK-RTCM31"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:9989",
+                        "name": "ITRF2020"
+                    }
+                ],
+                "comments": "Skylark Nx RTK mountpoints ITRF2020"
+            }
+        ]
+    }
+]

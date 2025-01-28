@@ -316,6 +316,241 @@
             ]
         },
         {
+            "name": "Skylark Asia Pacific",
+            "description": "Skylark service in Asia Pacific",
+            "urls": [
+                "http://ap.l1l2.skylark.swiftnav.com:2101",
+                "http://ap.l1l5.skylark.swiftnav.com:2101",
+                "https://ap.l1l2.skylark.swiftnav.com:2102",
+                "https://ap.l1l5.skylark.swiftnav.com:2102"
+            ],
+            "reference": {
+                "url": "https://support.swiftnav.com/support/solutions/articles/44002519397-ntrip-client-configuration-for-skylark-corrections"
+            },
+            "last_update": "2025-01-28",
+            "streams": [
+                {
+                    "filter": {
+                        "mountpoints": [
+                            "MSM4",
+                            "MSM5",
+                            "OSR",
+                            "SSR",
+                            "SSR-integrity",
+                            "SSR-integrity-AES-CMAC"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:9989",
+                            "name": "ITRF2020"
+                        }
+                    ],
+                    "comments": "Skylark Cx mountpoints ITRF2020"
+                },
+                {
+                    "filter": {
+                        "mountpoints": [
+                            "DX-MSM1"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:9989",
+                            "name": "ITRF2020"
+                        }
+                    ],
+                    "comments": "Skylark Dx mountpoints ITRF2020"
+                },
+                {
+                    "filter": {
+                        "mountpoints": [
+                            "NXRTK-MSM5",
+                            "NXRTK-RTCM31"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:9989",
+                            "name": "ITRF2020"
+                        }
+                    ],
+                    "comments": "Skylark Nx RTK mountpoints ITRF2020"
+                }
+            ]
+        },
+        {
+            "name": "Skylark Europe",
+            "description": "Skylark service in Europe",
+            "urls": [
+                "http://eu.l1l2.skylark.swiftnav.com:2101",
+                "http://eu.l1l5.skylark.swiftnav.com:2101",
+                "https://eu.l1l2.skylark.swiftnav.com:2102",
+                "https://eu.l1l5.skylark.swiftnav.com:2102"
+            ],
+            "reference": {
+                "url": "https://support.swiftnav.com/support/solutions/articles/44002519397-ntrip-client-configuration-for-skylark-corrections"
+            },
+            "last_update": "2025-01-28",
+            "streams": [
+                {
+                    "filter": {
+                        "mountpoints": [
+                            "NXRTK-DREF91-MSM5"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:10283",
+                            "name": "ETRS89/DREF91/2016",
+                            "description": "Germany"
+                        }
+                    ],
+                    "comments": "Skylark Nx RTK mountpoint for Germany"
+                },
+                {
+                    "filter": {
+                        "mountpoints": [
+                            "NXRTK-ETRF2000-MSM5"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:7931",
+                            "name": "ETRF2000"
+                        }
+                    ],
+                    "comments": "Skylark Nx RTK mountpoint for Europe"
+                },
+                {
+                    "filter": {
+                        "mountpoints": [
+                            "MSM4",
+                            "MSM5",
+                            "OSR",
+                            "SSR",
+                            "SSR-integrity",
+                            "SSR-integrity-AES-CMAC"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:9989",
+                            "name": "ITRF2020"
+                        }
+                    ],
+                    "comments": "Skylark Cx mountpoints ITRF2020"
+                },
+                {
+                    "filter": {
+                        "mountpoints": [
+                            "DX-MSM1"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:9989",
+                            "name": "ITRF2020"
+                        }
+                    ],
+                    "comments": "Skylark Dx mountpoints ITRF2020"
+                },
+                {
+                    "filter": {
+                        "mountpoints": [
+                            "NXRTK-MSM5",
+                            "NXRTK-RTCM31"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:9989",
+                            "name": "ITRF2020"
+                        }
+                    ],
+                    "comments": "Skylark Nx RTK mountpoints ITRF2020"
+                }
+            ]
+        },
+        {
+            "name": "Skylark North America",
+            "description": "Skylark service in North America",
+            "urls": [
+                "http://na.l1l2.skylark.swiftnav.com:2101",
+                "http://na.l1l5.skylark.swiftnav.com:2101",
+                "https://na.l1l2.skylark.swiftnav.com:2102",
+                "https://na.l1l5.skylark.swiftnav.com:2102"
+            ],
+            "reference": {
+                "url": "https://support.swiftnav.com/support/solutions/articles/44002519397-ntrip-client-configuration-for-skylark-corrections"
+            },
+            "last_update": "2025-01-28",
+            "streams": [
+                {
+                    "filter": {
+                        "mountpoints": [
+                            "NXRTK-NAD83-MSM5"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:6319",
+                            "name": "NAD83(2011)"
+                        }
+                    ],
+                    "comments": "Skylark Nx RTK mountpoint available in contiguous United States only"
+                },
+                {
+                    "filter": {
+                        "mountpoints": [
+                            "MSM4",
+                            "MSM5",
+                            "OSR",
+                            "SSR",
+                            "SSR-integrity",
+                            "SSR-integrity-AES-CMAC"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:9989",
+                            "name": "ITRF2020"
+                        }
+                    ],
+                    "comments": "Skylark Cx mountpoints ITRF2020"
+                },
+                {
+                    "filter": {
+                        "mountpoints": [
+                            "DX-MSM1"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:9989",
+                            "name": "ITRF2020"
+                        }
+                    ],
+                    "comments": "Skylark Dx mountpoints ITRF2020"
+                },
+                {
+                    "filter": {
+                        "mountpoints": [
+                            "NXRTK-MSM5",
+                            "NXRTK-RTCM31"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:9989",
+                            "name": "ITRF2020"
+                        }
+                    ],
+                    "comments": "Skylark Nx RTK mountpoints ITRF2020"
+                }
+            ]
+        },
+        {
             "name": "TURN Utah",
             "description": "The Utah Reference Network (TURN)",
             "urls": [
