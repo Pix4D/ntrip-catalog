@@ -33,6 +33,9 @@ This data is distributed as CC0.
 This is just a collection of the data that NTRIP providers should be already explaining in their web pages.
 We try to make it easy to use and contribute.
 
+This data and software is provided "as is," without warranties or conditions of any kind, express or implied, including but not limited to the warranties of accuracy, completeness, fitness for a particular purpose, or non-infringement.
+In no event shall the authors or contributors be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the use of this data or the information contained within it.
+
 ## EPSG
 Many applications rely on the data provided by the [EPSG](https://epsg.org/) database.
 For that reason EPSG data is preferred in this catalog.
