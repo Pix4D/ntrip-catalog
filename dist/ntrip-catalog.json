@@ -12,7 +12,7 @@
             ],
             "reference": {
                 "url": "https://gnss.ga.gov.au/stream",
-                "comments": "Also provides base stations outside of Australia, but CRS not clear"
+                "comments": "Also provides base stations outside of Australia, but the precise CRS is not known"
             },
             "last_update": "2025-01-13",
             "streams": [
@@ -163,6 +163,152 @@
                     ],
                     "description": "Single base stations",
                     "comments": "Canary Islands are not in the European tectonic plate"
+                }
+            ]
+        },
+        {
+            "name": "Point One Nav",
+            "description": "Point One Navigation world service",
+            "urls": [
+                "http://truertk.pointonenav.com:2101",
+                "http://virtualrtk.pointonenav.com:2101",
+                "http://truertk-us.pointonenav.com:2101",
+                "http://truertk-eu.pointonenav.com:2101",
+                "http://truertk-apac.pointonenav.com:2101",
+                "https://truertk.pointonenav.com:2102",
+                "https://virtualrtk.pointonenav.com:2102",
+                "https://truertk-us.pointonenav.com:2102",
+                "https://truertk-eu.pointonenav.com:2102",
+                "https://truertk-apac.pointonenav.com:2102"
+            ],
+            "reference": {
+                "url": "https://support.pointonenav.com/connect-to-polaris-rtk"
+            },
+            "last_update": "2025-01-29",
+            "streams": [
+                {
+                    "filter": {
+                        "mountpoints": [
+                            "POLARIS"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:7912",
+                            "name": "ITRF2014",
+                            "epoch": "now"
+                        }
+                    ]
+                },
+                {
+                    "filter": {
+                        "mountpoints": [
+                            "POLARIS_LOCAL"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:6667",
+                            "name": "JGD2011",
+                            "rover_countries": [
+                                "JPN"
+                            ],
+                            "description": "Japan"
+                        },
+                        {
+                            "id": "EPSG:4927",
+                            "name": "KGD2002",
+                            "rover_countries": [
+                                "KOR"
+                            ],
+                            "description": "Korea"
+                        },
+                        {
+                            "id": "EPSG:7929",
+                            "name": "ETRF97",
+                            "epoch": 2009.756,
+                            "rover_countries": [
+                                "GBR"
+                            ],
+                            "description": "UK"
+                        },
+                        {
+                            "id": "EPSG:7931",
+                            "name": "ETRF2000",
+                            "epoch": 2010.5,
+                            "rover_countries": [
+                                "NLD"
+                            ],
+                            "description": "Netherlands"
+                        },
+                        {
+                            "id": "EPSG:7843",
+                            "name": "GDA2020",
+                            "rover_countries": [
+                                "AUS"
+                            ],
+                            "description": "Australia"
+                        },
+                        {
+                            "id": "EPSG:4959",
+                            "name": "NZGD2000",
+                            "rover_countries": [
+                                "NZL"
+                            ],
+                            "description": "New Zealand"
+                        },
+                        {
+                            "id": "EPSG:8254",
+                            "name": "NAD83(CSRS)v7",
+                            "rover_countries": [
+                                "CAN"
+                            ],
+                            "description": "Canada"
+                        },
+                        {
+                            "id": "EPSG:6324",
+                            "name": "NAD83(MA11)",
+                            "rover_bbox": [
+                                129.48,
+                                1.64,
+                                149.55,
+                                23.9
+                            ],
+                            "description": "Guam"
+                        },
+                        {
+                            "id": "EPSG:6321",
+                            "name": "NAD83(PA11)",
+                            "rover_bbox": [
+                                157.47,
+                                -17.56,
+                                -151.27,
+                                31.8
+                            ],
+                            "description": "Hawaii"
+                        },
+                        {
+                            "id": "EPSG:6319",
+                            "name": "NAD83(2011)",
+                            "rover_countries": [
+                                "USA"
+                            ],
+                            "description": "Continental USA, after Guam and Hawaii"
+                        },
+                        {
+                            "id": "EPSG:7931",
+                            "name": "ETRF2000",
+                            "epoch": 2010.0,
+                            "rover_bbox": [
+                                -12,
+                                35,
+                                36,
+                                72
+                            ],
+                            "description": "Continental Europe"
+                        }
+                    ],
+                    "comments": "Polaris_local per region"
                 }
             ]
         },
