@@ -54,7 +54,7 @@
                         "rover_countries": [
                             "KOR"
                         ],
-                        "description": "Korea"
+                        "description": "South Korea"
                     },
                     {
                         "id": "EPSG:7929",
@@ -63,7 +63,7 @@
                         "rover_countries": [
                             "GBR"
                         ],
-                        "description": "UK"
+                        "description": "United Kingdom"
                     },
                     {
                         "id": "EPSG:7931",
@@ -123,6 +123,7 @@
                     {
                         "id": "EPSG:6319",
                         "name": "NAD83(2011)",
+                        "epoch": 2010.0,
                         "rover_countries": [
                             "USA"
                         ],

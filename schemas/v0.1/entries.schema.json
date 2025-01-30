@@ -174,9 +174,6 @@
             },
             "description": "Bounding box, in degrees, with the order: West, South, East, North."
         },
-        "all_def": {
-            "type": "string"
-        },
         "mountpoints_def": {
             "type": "object",
             "properties": {
