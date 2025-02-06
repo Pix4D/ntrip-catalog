@@ -1,0 +1,26 @@
+[
+    {
+        "name": "TURN Utah",
+        "description": "The Utah Reference Network (TURN)",
+        "urls": [
+            "http://165.239.144.5:2101",
+            "http://turngps.utah.gov:2101"
+        ],
+        "reference": {
+            "url": "https://gis.utah.gov/documentation/turn/connecting/"
+        },
+        "last_update": "2025-01-27",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:6319",
+                        "name": "NAD83(2011)",
+                        "epoch": 2010.0
+                    }
+                ]
+            }
+        ]
+    }
+]

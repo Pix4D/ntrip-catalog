@@ -12,16 +12,7 @@
         "last_update": "2024-12-09",
         "streams": [
             {
-                "filter": {
-                    "lat_lon_bboxes": [
-                        [
-                            167.65,
-                            14.92,
-                            -63.88,
-                            74.71
-                        ]
-                    ]
-                },
+                "filter": "all",
                 "crss": [
                     {
                         "id": "EPSG:6319",
