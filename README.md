@@ -7,15 +7,15 @@ The data is stored as JSON files, that can be easily parsed by any software.
 
 ## What is the problem with coordinate reference systems in the NTRIP and RTCM protocols?
 Neither RTCM messages (as of version 3.3 of the standard), nor the NTRIP handshake include any clarification about the cordinate reference system (CRS) that applies to the corrected coordinates.
-That can be a significant problem because the geolocation difference between using one CRS or another can be big much bigger than the accuracy claimed by RTK devices, that is around 2 cm.
+That can be a significant problem, because the geolocation difference between using one CRS or another can be big much bigger than the accuracy claimed by RTK devices, that is around 2 cm.
 For example, in Europe the difference between ETRS89 and ITRF2014 is about 80 cm, and growing.
 (In reality, RTCM 3.4 has added a new message to declare the CRS, however we can expect it to take years until this is widely adopted.)
 
 When final applications have to ask the user to provide a CRS to label coordinates it is a constant source of error that we aim to remove.
-Some NTRIP service providers document the CRS used in their mount points in their web pages or user manuals,
+Some NTRIP service providers document the CRS used in their mountpoints in their web pages or user manuals,
 while others do not document it at all assuming it is well known data, despite there exist hundreds of CRS definitions and for some of them,
 multiple realizations.
-In the end, many users do not know what is the CRS that the have to use because either the information is not clearly disclosed by the provided or they are not competent enough to figure it out.
+In the end, many users do not know what is the CRS that they have to use because either the information is not clearly disclosed by the provided or they lack the knowledge to select the correct one.
 To increase the confusion, in some countries the official CRS (usually an old one from the 19th or 20th century) is not the CRS used by the NTRIP base stations, which increases the likelihood of users making a mistake.
 
 Knowing the proper CRS for the measurements ensures the best transformation to the needed reference system,
@@ -24,7 +24,7 @@ like a projected one, without adding an error that would ruin the RTK accuracy.
 ## How is NTRIP-catalog improving CRS selections
 NTRIP-catalog is a database that allows application developers to make automatic and correct CRS selections for the user based on NTRIP connection data (server, mountpoint, ...),
 some user details (rover position, country, ...) and the best known data available for the service provider being used.
-It is intended to be a curated community effort that compile as much global information as possible to reduce the amount of times a user has to make a manual CRS selection,
+It is intended to be a curated community effort that compiles as much global information as possible to reduce the amount of times a user has to make a manual CRS selection,
 therefore reducing the chances of introducing errors that can have very costly consequences.
 At the core of the catalog there's a JSON schema that has been designed to cover as many cases as possible, reducing the amount of information that needs to be included in the database while still ensuring complete coverage of the different scenarios that can arise when using a particular NTRIP service provider.
 
@@ -53,17 +53,17 @@ Download the file `ntrip-catalog.json`, and process it in your application with 
 Search among the entries for the URL of your service. The URL is composed by the scheme, hostname or IP, and the port.
 Several URLs could be used for the same entry.
 
-Once you have the entry, iterate among the streams applying the described filters.
+Once you have the entry, iterate over the streams applying the described filters.
 The filter can be based on the mountpoint name, the country, or the base station latitude-longitude.
 The last two cases try to aggregate several mountpoints that share those properties, making the json file smaller and less error prone.
 
-Then iterate among the CRSs for the filtered stream.
+Then iterate over the CRSs for the filtered stream.
 CRSs can be different based on the rover latitude-longitude or rover country.
 This is done to cover the networks that may aggregate several stations in one mountpoint, but using different CRSs.
 An example is the Canary Islands, that are in the REGCAN95 reference system,
 different from ETRS89 (ETRF2000) used in the European tectonic plate.
 
-The precedence of the different streams and CRSs are strictly by order.
+The precedence of the different streams and CRSs are strictly processed by appearance order.
 Once a valid CRS is found, that is the solution.
 Otherwise keep iterating.
 
@@ -85,7 +85,7 @@ Notice that any contribution should be properly documented, filling the `referen
 
 ## How to contribute
 Just create a PR in this GitHub project.
-In case you do not know how to do it, or you do not feel confortable with JSON, you can open an Issue providing all the data.
+In case you do not know how to do it, or you do not feel comfortable with JSON, you can open an Issue providing all the data.
 All contributions must be properly documented, filling the `reference` section in the JSON file.
 This database is intended to become a trusted source of information,
 so submissions that cannot be backed by an authoritative reference will not be considered.
