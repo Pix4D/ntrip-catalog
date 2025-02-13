@@ -78,7 +78,7 @@
                             "minItems": 1,
                             "items": {
                                 "type": "object",
-                                "description": "Definition of the CRS, and rover bbox if that is a condition.",
+                                "description": "Definition of the CRS, and rover bbox or countries if that is a condition.",
                                 "properties": {
                                     "id": {
                                         "type": "string",
@@ -137,7 +137,8 @@
                                 ],
                                 "required": [
                                     "name"
-                                ]
+                                ],
+                                "additionalProperties": false
                             }
                         },
                         "description": {
@@ -147,13 +148,22 @@
                         "comments": {
                             "type": "string",
                             "description": "Additional notes explaining why some things are done that way."
+                        },
+                        "extra": {
+                            "type": "object",
+                            "description": "Optional container in case special custom information wants to be added."
                         }
                     },
                     "required": [
                         "filter",
                         "crss"
-                    ]
+                    ],
+                    "additionalProperties": false
                 }
+            },
+            "extra": {
+                "type": "object",
+                "description": "Optional container in case special custom information wants to be added."
             }
         },
         "required": [
@@ -162,7 +172,8 @@
             "reference",
             "last_update",
             "streams"
-        ]
+        ],
+        "additionalProperties": false
     },
     "$defs": {
         "bbox": {
@@ -183,8 +194,7 @@
                     "items": {
                         "type": "string"
                     },
-                    "description": "Matches the 'Mountpoint' field in the stream",
-                    "additionalProperties": false
+                    "description": "Matches the 'Mountpoint' field in the stream"
                 }
             },
             "additionalProperties": false,
@@ -204,6 +214,7 @@
                     }
                 }
             },
+            "additionalProperties": false,
             "required": [
                 "lat_lon_bboxes"
             ]
@@ -220,6 +231,7 @@
                     "description": "Matches the 'Country Code' field in the stream"
                 }
             },
+            "additionalProperties": false,
             "required": [
                 "countries"
             ]
