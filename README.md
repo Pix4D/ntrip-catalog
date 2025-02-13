@@ -6,7 +6,7 @@ NTRIP-catalog is an open source and open data repository with the CRS informatio
 The data is stored as JSON files, that can be easily parsed by any software.
 
 ## What is the problem with coordinate reference systems in the NTRIP and RTCM protocols?
-Neither RTCM[^3] messages (as of version 3.3 of the standard), nor the NTRIP handshake include any clarification about the cordinate reference system (CRS) that applies to the corrected coordinates.
+Neither RTCM[^3] messages (as of version 3.3 of the standard), nor the NTRIP handshake include any clarification about the coordinate reference system (CRS) that applies to the corrected coordinates.
 That can be a significant problem because the geolocation difference between using one CRS or another can be big much bigger than the accuracy claimed by RTK[^4] devices, which is around 2 cm.
 For example, in Europe the difference between ETRS89 and ITRF2014 is about 80 cm, and growing.
 (In reality, RTCM 3.4 has added a new message to declare the CRS, however we can expect it to take years until this is widely adopted.)
