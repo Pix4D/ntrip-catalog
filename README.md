@@ -3,19 +3,19 @@ Catalog of NTRIP[^1] providers with CRS[^2] information.
 
 ## What is NTRIP-catalog
 NTRIP-catalog is an open source and open data repository with the CRS information from multiple NTRIP service providers.
-The data is stored as JSON files, that can be easily parsed by any software.
+The data is stored as JSON files, so it can be easily parsed by any software.
 
 ## What is the problem with coordinate reference systems in the NTRIP and RTCM protocols?
 Neither RTCM[^3] messages (as of version 3.3 of the standard), nor the NTRIP handshake include any clarification about the coordinate reference system (CRS) that applies to the corrected coordinates.
-That can be a significant problem because the geolocation difference between using one CRS or another can be big much bigger than the accuracy claimed by RTK[^4] devices, which is around 2 cm.
+That can be a significant problem, because the geolocation difference between using one CRS or another can be big, much bigger than the accuracy claimed by RTK[^4] devices, which is around 2 cm.
 For example, in Europe the difference between ETRS89 and ITRF2014 is about 80 cm, and growing.
 (In reality, RTCM 3.4 has added a new message to declare the CRS, however we can expect it to take years until this is widely adopted.)
 
-When final applications have to ask the user to provide a CRS to label coordinates it is a constant source of error that we aim to remove.
+Selection of a CRS by the user to label coordinates in end applications is a constant source of error, which we aim to remove.
 Some NTRIP service providers document the CRS used in their mountpoints in their web pages or user manuals,
-while others do not document it at all, assuming it is well known data despite there existing hundreds of CRS definitions and for some of them,
+while others do not document it at all, assuming it is well-known data, despite there existing hundreds of CRS definitions and for some of them,
 multiple realizations.
-In the end, many users do not know what the CRS is that they have to use because either the information is not clearly disclosed by the provided, or they are not competent enough to figure it out.
+In the end, many users do not know what the CRS is that they have to use, because either the information is not clearly disclosed by the provider, or the user lacks the skills to select the correct one.
 To increase the confusion, in some countries the official CRS (usually an old one from the 19th or 20th century) is not the CRS used by the NTRIP base stations, which increases the likelihood of users making a mistake.
 
 Knowing the proper CRS for the measurements ensures the best transformation to the needed reference system,
@@ -26,7 +26,7 @@ NTRIP-catalog is a database that allows application developers to make automatic
 some user details (rover position, country, ...) and the best known data available for the service provider being used.
 It is intended to be a curated community effort that compiles as much global information as possible to reduce the number of times a user has to make a manual CRS selection,
 therefore reducing the chances of introducing errors that can have very costly consequences.
-At the core of the catalog there's a JSON schema that has been designed to cover as many cases as possible, reducing the amount of information that needs to be included in the database while still ensuring complete coverage of the different scenarios that can arise when using a particular NTRIP service provider.
+At the core of the catalog there's a JSON schema that has been designed to cover as many cases as possible, reducing the amount of information that needs to be included in the database, while still ensuring complete coverage of the different scenarios that can arise when using a particular NTRIP service provider.
 
 ## License
 This data is distributed as [CC0](https://creativecommons.org/public-domain/cc0/).
@@ -39,13 +39,13 @@ In no event shall the authors or contributors be liable for any claim, damages, 
 ## EPSG
 Many applications rely on the data provided by the [EPSG](https://epsg.org/) database.
 For that reason EPSG data is preferred in this catalog.
-If you do not find the CRS you need in EPSG, ask your geodetic regional authority to register it via https://epsg.org/dataset-change-requests.html.
+If you do not find the CRS you need in EPSG, ask your regional geodetic authority to register it via https://epsg.org/dataset-change-requests.html.
 It is easy and free of charge. (You can still register your NTRIP data without it)
 
 As a helper you can use https://spatialreference.org/, maintained by the [PROJ](https://proj.org/) open source library.
 
 
-## How can I use it?
+## How can I use the catalog?
 There is an example (used also in the tests) in python in `scripts/query.py`.
 You don't have to use it, but it can give you an idea of the workflow.
 
@@ -103,9 +103,12 @@ Finally some cases have a rover_bbox or rover_countries field (when there are se
 ### Country codes
 The RTCM protocol uses three-letter country codes [ISO_3166-1_alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3).
 
-Therefore when a country is identified in the NTRIP catalog, it is done using these codes.
+Therefore, when a country is identified in the NTRIP catalog, it is done using these codes.
 See that some NTRIP providers do use invalid codes in the stream information, like `GER` for Germany or `SUI` for Switzerland.
 If the code in the json is intended to match information from the stream, it should be identical, even if it is a invalid ISO_3166-1_alpha-3 code.
+
+## Contact information
+For questions and support please send an email to "ntrip-catalog (at) ntrip-catalog (dot) org".
 
 [^1]: Networked Transport of RTCM via Internet Protocol
 [^2]: Coordinate Reference System
