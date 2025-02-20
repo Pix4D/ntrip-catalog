@@ -74,11 +74,11 @@
                         },
                         "crss": {
                             "type": "array",
-                            "description": "List of possible CRSs. It can be multiple when filter by rover is used.",
+                            "description": "List of CRSs for this stream. Either rover_bbox or rover_countries must be present in the elements to be able to pick one CRS from the list at a particular location.",
                             "minItems": 1,
                             "items": {
                                 "type": "object",
-                                "description": "Definition of the CRS, and rover bbox or countries if that is a condition.",
+                                "description": "Definition of a CRS and its selection filters, if any.",
                                 "properties": {
                                     "id": {
                                         "type": "string",
