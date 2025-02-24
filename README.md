@@ -100,6 +100,41 @@ First the entry, that is filtered by URL.
 Second the stream, that is filtered by the `filter` field.
 Finally some cases have a rover_bbox or rover_countries field (when there are several CRSs for the same mountpoint).
 
+#### entries
+The json file is composed mainly by a list of entries.
+Each entry is identified by a `name` and `urls`.
+The name is for informative reasons.
+The urls is a list of fully defined URLs, including protocol (`http` or `https`), domain and port.
+Each URL (including port) must appear only once in the full catalog.
+In case a service is available under several URLs (for instance, IP and hostname), all should be added in the same entry.
+The `reference` section must contain the source where this information is published.
+
+#### streams
+For each entry, the different streams could be aggregated using several filters
+
+##### mountpoints
+This is just a list of mountpoints that use the same CRS.
+
+##### lat_lon_bboxes
+This filter will select streams which latitude and longitude fields in the source table are inside de defined bounding box.
+The purpose of this filter is easily clasify some entries with many mountpoints, but located clearly in different locations.
+
+##### countries
+This filter will select streams by the country code in the source table.
+The purpose of this filter is easily clasify some entries with many mountpoints, where the significant different is the country.
+See that it must match the country code in the sourcetable, even when it is a wrong ISO 3-letter code.
+
+##### all
+The special keyword `all` means that all the streams (mountpoints) on this entry are matched.
+It is useful in entries covering a limited area or country, where all the streams use the same CRS.
+See that you still have to apply the CRS internal rover-location filters. If none applies, you should contine with the next stream-filters.
+
+#### crss
+Once a stream is filtered by the `filter` field, it may include one or more CRSs.
+To find the proper one, use the `rover_bbox` or `rover_countries` (also using the 3-letter country code).
+These fields allow to filter based on the location of the rover.
+It could be a "default" CRS without `rover_bbox` or `rover_countries` at the end of the list.
+
 ### Country codes
 The RTCM protocol uses three-letter country codes [ISO_3166-1_alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3).
 
