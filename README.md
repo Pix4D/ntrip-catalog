@@ -5,6 +5,10 @@ Catalog of NTRIP[^1] providers with CRS[^2] information.
 NTRIP-catalog is an open source and open data repository with the CRS information from multiple NTRIP service providers.
 The data is stored as JSON files, so it can be easily parsed by any software.
 
+## TL;DR
+The purpose of the NTRIP-catalog is to make it easy for an application to find the correct CRS for a given provider URL, mountpoint and rover location.
+The user needs to traverse the JSON file, filtering the content based on the given inputs to arrive at the correct CRS (assuming that it exists in this database).
+
 ## What is the problem with coordinate reference systems in the NTRIP and RTCM protocols?
 Neither RTCM[^3] messages (as of version 3.3 of the standard), nor the NTRIP handshake include any clarification about the coordinate reference system (CRS) that applies to the corrected coordinates.
 That can be a significant problem, because the geolocation difference between using one CRS or another can be big, much bigger than the accuracy claimed by RTK[^4] devices, which is around 2 cm.
@@ -33,8 +37,7 @@ This data is distributed as [CC0](https://creativecommons.org/public-domain/cc0/
 This is just a collection of the data that NTRIP providers should be already explaining in their web pages.
 We are trying to make it easy to use and to contribute.
 
-This data and software is provided "as is," without warranties or conditions of any kind, expressed or implied, including but not limited to the warranties of accuracy, completeness, fitness for a particular purpose, or non-infringement.
-In no event shall the authors or contributors be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the use of this data or the information contained within it.
+See files [DISCLAIMER.md](DISCLAIMER.md) and [LICENSE](LICENSE).
 
 ## EPSG
 Many applications rely on the data provided by the [EPSG](https://epsg.org/) database.
@@ -49,7 +52,7 @@ As a helper you can use https://spatialreference.org/, maintained by the [PROJ](
 There is an example (used also in the tests) in python in `scripts/query.py`.
 You don't have to use it, but it can give you an idea of the workflow.
 
-Download the file `ntrip-catalog.json`, and process it in your application with your favourite programming language.
+Download the file `ntrip-catalog.json` from the [dist folder](dist/ntrip-catalog.json), and process it in your application with your favourite programming language.
 Search among the entries for the URL of your service. The URL is composed by the scheme, hostname or IP, and the port.
 Several URLs could be used for the same entry.
 
@@ -78,18 +81,8 @@ It would be nice if you ask your service provider, inviting them to complete thi
 
 In case there is an entry for your service, but no proper data is found, please ask the NTRIP provider to complete it with a pull-request.
 
-## Who can contribute?
-Anybody is open to contribute to this catalog, but ideally we expect NTRIP providers to submit their data themselves.
-If you find the proper documentation published by the NTRIP provider confirming the CRS used, and do not expect the provider to do it, you can contribute it as well.
-Notice that any contribution should be properly documented, filling the `reference` section in the json file.
-
-## How to contribute
-Just create a PR in this GitHub project.
-In case you do not know how to do it, or you do not feel comfortable with JSON, you can open an Issue providing all the data.
-All contributions must be properly documented, filling the `reference` section in the JSON file.
-This database is intended to become a trusted source of information,
-so submissions that cannot be backed by an authoritative reference will not be considered.
-See the file in the `data` directory to see what can be done.
+## Contributing
+If you would like to contribute to this project, please read the file [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## JSON syntax details
 The JSON schemas are in the folder schemas.
