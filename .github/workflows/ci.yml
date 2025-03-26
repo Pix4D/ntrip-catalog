@@ -1,0 +1,52 @@
+name: Make dist and run tests
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: [3.11]
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcurl4-openssl-dev
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements.test.txt
+
+      - name: Run make_dist.py
+        run: python scripts/make_dist.py
+
+      - name: Run validator.py
+        run: python scripts/validator.py
+
+      - name: Run tests
+        run: tests/run_tests.sh
+
+      - name: Commit and push new ntrip-catalog.json
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add dist/ntrip-catalog.json
+          git commit -m "Auto-update ntrip-catalog.json" || echo "No changes to commit"
+          git push origin HEAD
