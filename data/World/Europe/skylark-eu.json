@@ -5,13 +5,15 @@
         "urls": [
             "http://eu.l1l2.skylark.swiftnav.com:2101",
             "http://eu.l1l5.skylark.swiftnav.com:2101",
+            "http://eu.all-freq.skylark.swiftnav.com:2101",
             "https://eu.l1l2.skylark.swiftnav.com:2102",
-            "https://eu.l1l5.skylark.swiftnav.com:2102"
+            "https://eu.l1l5.skylark.swiftnav.com:2102",
+            "https://eu.all-freq.skylark.swiftnav.com:2102"
         ],
         "reference": {
             "url": "https://support.swiftnav.com/support/solutions/articles/44002519397-ntrip-client-configuration-for-skylark-corrections"
         },
-        "last_update": "2025-01-28",
+        "last_update": "2025-04-15",
         "streams": [
             {
                 "filter": {
