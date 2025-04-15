@@ -13,6 +13,9 @@ This database is intended to become a trusted source of information,
 therefore submissions that cannot be backed by an authoritative reference will not be considered.
 Any new entry should be added to the appropriate country/region-specific file below the `data` folder. Existing entries in this folder can be used as an example and starting point.
 
+Do not forget to update the file `data/release.txt` increasing the release number.
+Pay special attention in case you have to [rebase](https://git-scm.com/docs/git-rebase) from master.
+
 All contributions to NTRIP-catalog are subject to the Developer Certificate of Origin (DCO, https://developercertificate.org/).
 
 All contributions must be signed off in the form of a `Signed-off-by: Random J Developer <random@developer.example.org>` line at the end of each commit message, using the contributor's real name and email address.
