@@ -50,7 +50,20 @@ def read_json(input, log_input_files):
         " Update the 'data' folder if any change is needed."
     )
 
-    final = {"$schema": schema, "release": 0, "comment": comment, "entries": entries}
+    with open(os.path.join(walk_dir, "release.txt")) as reltxt:
+        lines = reltxt.readlines()
+    for line in lines:
+        line = line.strip()
+        if line and line[0] != "#":
+            release = int(line)
+            break
+
+    final = {
+        "$schema": schema,
+        "release": release,
+        "comment": comment,
+        "entries": entries,
+    }
     return final
 
 
