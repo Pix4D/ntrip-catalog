@@ -1,0 +1,35 @@
+[
+    {
+        "name": "NCDOT",
+        "description": "North Carolina CORS",
+        "urls": [
+            "http://207.4.96.200:2101",
+            "http://rtn.nc.gov:2101"
+        ],
+        "reference": {
+            "url": "https://ncgs.state.nc.us/pages/CORS-and-GNSS.htm#:~:text=The%20NC%20CORS%20Base%20Station%20Network%20is%20referenced%20to%20the%20NAD%2083(2011)%20datum.",
+            "comments": "See the email PDF attached to PR #9 for more specific details about mountpoints"
+        },
+        "last_update": "2025-04-16",
+        "streams": [
+            {
+                "filter": {
+                  "mountpoints": [
+                    "VRS_CMRp",
+                    "VRS_CMRx",
+                    "VRS_RTCM23",
+                    "VRS_RTCM3",
+                    "VRS_RTCM34_MSM4",
+                    "VRS_RTCM34_MSM5"
+                  ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:6319",
+                        "name": "NAD83(2011)"
+                    }
+                ]
+            }
+        ]
+    }
+]

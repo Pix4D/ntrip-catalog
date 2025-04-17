@@ -96,7 +96,7 @@
                                             "number",
                                             "string"
                                         ],
-                                        "description": "When epoch is needed, specify as number. String should be only used for \"now\", meaning the acquisition date."
+                                        "description": "When epoch is needed, specify as number. String should be only used for \"now\", meaning the acquisition date, or \"mid-year\", meaning the middle of the current year (20xx.5)"
                                     },
                                     "rover_bbox": {
                                         "$ref": "#/$defs/bbox",

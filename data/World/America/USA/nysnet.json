@@ -1,0 +1,90 @@
+{
+    "name": "rtn.dot.ny.gov",
+    "description": "NYSNet Real Time Network",
+    "urls": [
+        "http://rtn.dot.ny.gov:8080",
+        "http://rtn.dot.ny.gov:8082"
+    ],
+    "reference": {
+        "url": "https://cors.dot.ny.gov/FAQ.htm#Mountpoint:~:text=18.%20Where%20do%20I%20find%20a%20list%20of%20mount%20points%3F",
+        "comments": "Instructions to access PDF with mount points. Requires (free) account login."
+    },
+    "last_update": "2025-04-16",
+    "streams": [
+        {
+            "filter": {
+              "mountpoints": [
+                "near_msm",
+                "net_msm_imax",
+                "net_msm_vrs",
+                "NearSite_GIS_RTCM12",
+                "NearSite_RTCMv3",
+                "NearSite_CMR",
+                "NearSite_CMR+",
+                "NetCell_iMAX_RTCMv3",
+                "NetCell_MAX_RTCMv3",
+                "NetCell_iMAX_CMR",
+                "NetCell_iMAX_CMRP",
+                "GG_CMRP_IMAX",
+                "GG_RTCM3_MAX",
+                "GG_RTCM3_IMAX",
+                "NYAB_GIS_RTCM12",
+                "NYAB",
+                "NYBH",
+                "NYBT",
+                "NYCI",
+                "NYCL",
+                "NYCP",
+                "NYCS",
+                "NYDV",
+                "NYET",
+                "NYFD",
+                "NYFS",
+                "NYFV",
+                "NYGC",
+                "NYHB",
+                "NYHC",
+                "NYHF",
+                "NYHL",
+                "NYHM",
+                "NYHS",
+                "NYIL",
+                "NYKT",
+                "NYLC",
+                "NYLP",
+                "NYLV",
+                "NYMD",
+                "NYML",
+                "NYMO",
+                "NYMX",
+                "NYNB",
+                "NYNS",
+                "NYON",
+                "NYPB",
+                "NYPD",
+                "NYPF",
+                "NYRB",
+                "NYRH",
+                "NYRM",
+                "NYSB",
+                "NYSM",
+                "NYST",
+                "NYVH",
+                "NYWG",
+                "NYWL",
+                "NYWS",
+                "NYWT",
+                "NYWV"
+              ]
+            },
+            "crss": [
+                {
+                    "id": "EPSG:6319",
+                    "name": "NAD83(2011)",
+                    "epoch": 2010.0
+                }
+            ],
+            "comments": "CRS described in the PDF. All mountpoints use NAD83(2011) since 2019."
+        }
+    ]
+}

@@ -3,11 +3,13 @@
         "name": "Point One Nav",
         "description": "Point One Navigation world service",
         "urls": [
+            "https://polaris.pointonenav.com:2101",
             "http://truertk.pointonenav.com:2101",
             "http://virtualrtk.pointonenav.com:2101",
             "http://truertk-us.pointonenav.com:2101",
             "http://truertk-eu.pointonenav.com:2101",
             "http://truertk-apac.pointonenav.com:2101",
+            "https://polaris.pointonenav.com:2102",
             "https://truertk.pointonenav.com:2102",
             "https://virtualrtk.pointonenav.com:2102",
             "https://truertk-us.pointonenav.com:2102",
@@ -17,7 +19,7 @@
         "reference": {
             "url": "https://support.pointonenav.com/connect-to-polaris-rtk"
         },
-        "last_update": "2025-01-29",
+        "last_update": "2025-03-26",
         "streams": [
             {
                 "filter": {

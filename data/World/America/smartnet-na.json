@@ -1,0 +1,38 @@
+[
+    {
+        "name": "SmartNet NA",
+        "description": "Hexagon SmartNet North America",
+        "urls": [
+            "http://ma.smartnetna.com:2101"
+        ],
+        "reference": {
+            "url": "https://support.smartnetna.com/s/article/SmartNet-Frequently-Asked-Questions#:~:text=What%20is%20the%20established%20datum%20for%20SmartNet%3F"
+        },
+        "last_update": "2025-04-15",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:6319",
+                        "name": "NAD83(2011)",
+                        "epoch": 2010.0,
+                        "rover_countries": [
+                            "USA"
+                        ],
+                        "description": "Continental USA. CA uses a different epoch, but it is not documented. If support is added for polygon bounds, this should be updated."
+                    },
+                    {
+                        "id": "EPSG:8250",
+                        "name": "NAD83(CSRS)v6",
+                        "epoch": 2010.0,
+                        "rover_countries": [
+                            "CAN"
+                        ],
+                        "description": "Canada"
+                    }
+                ]
+            }
+        ]
+    }
+]
