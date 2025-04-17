@@ -39,7 +39,7 @@ def read_json(input, log_input_files):
                         raise Exception(
                             f"Unexpected content type in json file ${file_path}"
                         )
-            elif log_input_files:
+            elif log_input_files and filename != "release.txt":
                 logger.warning(f"file {file_path} is not JSON")
 
     entries.sort(key=lambda x: x["name"] + "  " + "".join(x["urls"]))
@@ -50,8 +50,7 @@ def read_json(input, log_input_files):
         " Update the 'data' folder if any change is needed."
     )
 
-    with open(os.path.join(walk_dir, "release.txt")) as reltxt:
-        lines = reltxt.readlines()
+    lines = (pathlib.Path(walk_dir) / "release.txt").read_text().split("\n")
     for line in lines:
         line = line.strip()
         if line and line[0] != "#":

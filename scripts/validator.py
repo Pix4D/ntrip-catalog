@@ -83,7 +83,7 @@ def validate_jsons(input, log_input_files, schema, validate_dist, schemas_uri):
                         failing_files.append(file_path)
                         logger.error("*** >>>>>\n", e, "\n*** <<<<<")
 
-            elif log_input_files:
+            elif log_input_files and filename != "release.txt":
                 logger.warning(f"file {file_path} is not JSON")
 
     for k, v in checkers["names"].items():
