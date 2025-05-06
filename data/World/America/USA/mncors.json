@@ -1,0 +1,55 @@
+{
+    "name": "MNDOT CORS",
+    "description": "Minnesota DOT CORS",
+    "urls": [
+        "http://mncors.dot.state.mn.us:9000",
+        "http://mncors.dot.state.mn.us:9002"
+    ],
+    "reference": {
+        "url": "https://www.dot.state.mn.us/surveying/cors/mncors_faq.html",
+        "comments": "Search for 'datum' on the page to find the table of mountpoints."
+    },
+    "last_update": "2025-03-26",
+    "streams": [
+        {
+            "filter": {
+                "mountpoints": [
+                    "CMRx_NAD83(1996)",
+                    "CMR_Plus_NAD83(1996)",
+                    "RTCM_34_NAD83(1996)",
+                    "RTCM_31_NAD83(1996)"
+                ]
+            },
+            "crss": [
+                {
+                    "id": "EPSG:6782",
+                    "name": "NAD83(CORS96)"
+                }
+            ],
+            "comments": "Mountpoints for Minnesota which use NAD83(CORS96)"
+        },
+        {
+            "filter": {
+                "mountpoints": [
+                    "CMRx_NAD83(2011)",
+                    "CMR_Plus_NAD83(2011)",
+                    "RTCM_34_NAD83(2011)",
+                    "RTCM_31_NAD83(2011)",
+                    "RTCM_23_NAD83(2011)",
+                    "AGCMRX",
+                    "AGCMRP",
+                    "AGRTCM34",
+                    "AGRTCM31"
+                ]
+            },
+            "crss": [
+                {
+                    "id": "EPSG:6319",
+                    "name": "NAD83(2011)",
+                    "epoch": 2010.0
+                }
+            ],
+            "comments": "Mountpoints for Minnesota which use NAD83(2011)"
+        }
+    ]
+}

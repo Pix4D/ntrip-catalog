@@ -1,0 +1,35 @@
+{
+    "name": "Ohio DOT RTN",
+    "description": "Ohio DOT Real Time Network",
+    "urls": [
+        "http://156.63.133.115:2101"
+    ],
+    "reference": {
+        "url": "https://www.transportation.ohio.gov/working/engineering/cadd-mapping/survey/cors-rtn",
+        "comments": "See the 'Data Formats' section"
+    },
+    "last_update": "2025-03-26",
+    "streams": [
+        {
+            "filter": {
+                "mountpoints": [
+                    "ODOT_G_R_E_C_RTX_CMRx",
+                    "ODOT_G_R_E_C_RTX_RTCM3",
+                    "ODOT_VRS_CMR_PLUS",
+                    "ODOT_VRS_CMR_X",
+                    "ODOT_VRS_ODOT_Ag",
+                    "ODOT_VRS_RTCM23",
+                    "ODOT_VRS_RTCM3"
+                ]
+            },
+            "crss": [
+                {
+                    "id": "EPSG:6319",
+                    "name": "NAD83(2011)",
+                    "epoch": 2010.0
+                }
+            ],
+            "comments": "All mountpoints use NAD83(2011)"
+        }
+    ]
+}

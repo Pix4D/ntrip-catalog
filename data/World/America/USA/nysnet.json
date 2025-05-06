@@ -1,0 +1,26 @@
+{
+    "name": "NYSNet RTN",
+    "description": "NYSNet Real Time Network",
+    "urls": [
+        "http://rtn.dot.ny.gov:8080",
+        "http://rtn.dot.ny.gov:8082"
+    ],
+    "reference": {
+        "url": "https://cors.dot.ny.gov/FAQ.htm#Mountpoint:~:text=18.%20Where%20do%20I%20find%20a%20list%20of%20mount%20points%3F",
+        "comments": "Instructions to access PDF with mount points. Requires (free) account login."
+    },
+    "last_update": "2025-04-16",
+    "streams": [
+        {
+            "filter": "all",
+            "crss": [
+                {
+                    "id": "EPSG:6319",
+                    "name": "NAD83(2011)",
+                    "epoch": 2010.0
+                }
+            ],
+            "comments": "CRS described in the PDF. All mountpoints use NAD83(2011) since 2019."
+        }
+    ]
+}

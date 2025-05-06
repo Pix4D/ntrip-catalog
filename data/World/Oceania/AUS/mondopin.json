@@ -1,0 +1,50 @@
+{
+    "name": "Mondo Pin",
+    "description": "Mondo Pin GNSS Correction Service",
+    "urls": [
+        "http://x.mondopin.com:2101"
+    ],
+    "reference": {
+        "url": "https://www.mondopin.com/resources",
+        "description": "Mondo Pin documentation. See Q&A -> The Mondo Pin guide to mountpoints"
+    },
+    "last_update": "2025-03-26",
+    "streams": [
+        {
+            "filter": {
+                "mountpoints": [
+                    "94_VRS_MSM",
+                    "94_VRS_RTCM30",
+                    "94_NEAR_MSM",
+                    "94_NEAR_RTCM30"
+                ]
+            },
+            "crss": [
+                {
+                    "id": "EPSG:4939",
+                    "name": "GDA94",
+                    "epoch": 1994.0
+                }
+            ],
+            "comments": "Mountpoints for Australia which use GDA94"
+        },
+        {
+            "filter": {
+                "mountpoints": [
+                    "20_VRS_MSM",
+                    "20_VRS_RTCM30",
+                    "20_NEAR_MSM",
+                    "20_NEAR_RTCM30"
+                ]
+            },
+            "crss": [
+                {
+                    "id": "EPSG:7843",
+                    "name": "GDA2020",
+                    "epoch": 2020.0
+                }
+            ],
+            "comments": "Mountpoints for Australia which use GDA2020"
+        }
+    ]
+}

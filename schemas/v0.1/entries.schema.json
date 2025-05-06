@@ -1,7 +1,7 @@
 {
     "$id": "entries.schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "version": "0.1",
+    "version": "0.2",
     "title": "NTRIP-catalog entry",
     "description": "Definition of a list of entries",
     "type": "array",
@@ -92,11 +92,20 @@
                                         "type": "string"
                                     },
                                     "epoch": {
-                                        "type": [
-                                            "number",
-                                            "string"
-                                        ],
-                                        "description": "When epoch is needed, specify as number. String should be only used for \"now\", meaning the acquisition date."
+                                        "oneOf": [
+                                            {
+                                                "type": "number",
+                                                "description": "Epoch of the CRS."
+                                            },
+                                            {
+                                                "type": "string",
+                                                "enum": [
+                                                    "now",
+                                                    "mid-year"
+                                                ],
+                                                "description": "Epoch of the CRS. \"now\" means the acquisition date, or \"mid-year\", meaning the middle of the current year (20xx.5)"
+                                            }
+                                        ]
                                     },
                                     "rover_bbox": {
                                         "$ref": "#/$defs/bbox",

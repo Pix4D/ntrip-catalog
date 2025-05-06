@@ -1,0 +1,26 @@
+[
+    {
+        "name": "NCDOT",
+        "description": "North Carolina CORS",
+        "urls": [
+            "http://rtn.nc.gov:2101"
+        ],
+        "reference": {
+            "url": "https://ncgs.state.nc.us/pages/CORS-and-GNSS.htm#:~:text=The%20NC%20CORS%20Base%20Station%20Network%20is%20referenced%20to%20the%20NAD%2083(2011)%20datum.",
+            "comments": ""
+        },
+        "last_update": "2025-04-16",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:6319",
+                        "name": "NAD83(2011)",
+                        "epoch": 2010.0
+                    }
+                ]
+            }
+        ]
+    }
+]
