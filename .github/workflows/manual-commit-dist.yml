@@ -1,0 +1,10 @@
+name: Manual CI Tests and Commit dist
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-ci-common:
+    uses: ./.github/workflows/ci-common.yml
+    with:
+      commit_dist: true

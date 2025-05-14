@@ -67,7 +67,7 @@ jobs:
           git add dist/ntrip-catalog.json
           if ! git diff --cached --quiet; then
             git commit -m "Auto-update ntrip-catalog.json"
-            git push origin master
+            git push
           else
             echo "No changes to commit"
           fi
