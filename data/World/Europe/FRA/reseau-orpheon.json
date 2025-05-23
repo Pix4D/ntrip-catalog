@@ -1,0 +1,73 @@
+[
+    {
+        "name": "reseau-orpheon",
+        "description": "reseau-orpheon FR",
+        "urls": [
+            "http://ntrip.reseau-orpheon.fr:8500"
+        ],
+        "reference": {
+            "url": "https://reseau-orpheon.fr/en/frequently-asked-questions/accuracy-and-local-reference-questions/"
+        },
+        "last_update": "2025-05-23",
+        "streams": [
+            {
+                "filter": {
+                    "mountpoints": [
+                        "RRAF91_i-MAX_3.0_GG",
+                        "RRAF91_i-MAX_MSM_FULL",
+                        "RRAF91_VRS_3.0_GG",
+                        "RRAF91_VRS_MSM_FULL",
+                        "RRAF91_MAX_3.0_GG",
+                        "RRAF91_FKP_3.0_GG",
+                        "RRAF91_Plus-Pres_3.0_GG",
+                        "RRAF91_Plus-Pres_MSM_FULL"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:4557",
+                        "name": "RRAF 1991"
+                    }
+                ]
+            },
+            {
+                "filter": {
+                    "lat_lon_bboxes": [
+                        [
+                            -63.66,
+                            14.08,
+                            -57.52,
+                            18.53
+                        ]
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:5488",
+                        "name": "RGAF09",
+                        "description": "French Antilles"
+                    }
+                ]
+            },
+            {
+                "filter": {
+                    "lat_lon_bboxes": [
+                        [
+                            -9.86,
+                            41.15,
+                            10.38,
+                            51.56
+                        ]
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:9781",
+                        "name": "RGF93 v2b",
+                        "description": "France - onshore and offshore, mainland and Corsica"
+                    }
+                ]
+            }
+        ]
+    }
+]
