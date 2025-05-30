@@ -1,0 +1,26 @@
+[
+    {
+        "name": "InCORS",
+        "description": "Indiana CORS",
+        "urls": [
+            "http://108.59.49.226:9000"
+        ],
+        "reference": {
+            "url": "https://github.com/Pix4D/ntrip-catalog/issues/24",
+            "comments": "Contributed by InCORS, PDFs attached to the issue."
+        },
+        "last_update": "2025-05-30",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:6319",
+                        "name": "NAD83(2011)",
+                        "epoch": 2010.0
+                    }
+                ]
+            }
+        ]
+    }
+]
