@@ -88,7 +88,7 @@ body:
       label: Submission Confirmation
       description: Please confirm the following
       options:
-        - label: I confirm this information is accurate and officially documented
+        - label: I confirm this information is accurate and officially documented.
           required: true
         - label: I am authorized to submit this information on behalf of the network provider.
           required: true
