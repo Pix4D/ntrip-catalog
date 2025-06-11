@@ -73,7 +73,7 @@ For networks spanning multiple regions where CRS varies by location.
 **Example:** [Point One Nav](https://github.com/Pix4D/ntrip-catalog/blob/master/data/World/pointonenav.json)
 
 Two ways to specify regions:
-1. **By Country** (`rover_countries`):
+1. **By country** (`rover_countries`):
    - Use [3-letter ISO country codes](https://countrycode.org/)
    - Best for country-specific CRS definitions
 
