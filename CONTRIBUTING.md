@@ -56,7 +56,7 @@ Many regional networks use the same CRS for all mountpoints. This is the simples
 
 **Example:** [NYSNet Network](https://github.com/Pix4D/ntrip-catalog/blob/master/data/World/Americas/USA/nysnet.json)
 - All mountpoints use NAD83(2011)
-- Single JSON entry covers all URLs and mountpoints
+- A single JSON entry covers all the URLs and mountpoints
 - Perfect starting point for many providers
 
 ### 2. Multiple CRS: Different Mountpoints, Different CRS
