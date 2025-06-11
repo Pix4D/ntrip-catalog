@@ -32,7 +32,7 @@ To add your NTRIP service to the catalog, we need:
 
 3. **Documentation Reference**:
    - Link to official documentation or webpage where this CRS information is published
-   - This helps maintain the catalog's reliability
+   - NTRIP catalog is intended to be a trustworthy source of information. It's therefore a requirement to provide an official reference in order to merge a submission.
 
 ## Making a Pull Request
 
