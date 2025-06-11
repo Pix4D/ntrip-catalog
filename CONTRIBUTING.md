@@ -77,7 +77,7 @@ Two ways to specify regions:
    - Use [3-letter ISO country codes](https://countrycode.org/)
    - Best for country-specific CRS definitions
 
-2. **By Region** (`rover_bbox`):
+2. **By region area** (`rover_bbox`):
    - Uses bounding boxes for specific regions
    - Perfect for regions that differ from their country's standard
    - Example: Hawaii using NAD83(PA11) vs mainland USA using NAD83(2011)
