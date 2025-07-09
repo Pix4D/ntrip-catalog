@@ -1,0 +1,94 @@
+name: NTRIP Provider Submission
+description: Submit your NTRIP network information to the catalog
+title: "Add [NETWORK] to the NTRIP catalog"
+labels: ["provider-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to the NTRIP catalog! This form will help you submit your network information.
+
+        Need help? Email us at `ntrip-catalog (at) ntrip-catalog.org`
+
+  - type: input
+    id: network-name
+    attributes:
+      label: Network Name
+      description: What is the name of your NTRIP network?
+      placeholder: e.g., NYSNet
+    validations:
+      required: true
+
+  - type: textarea
+    id: service-urls
+    attributes:
+      label: Service URLs
+      description: List all URLs/IPs where your service can be accessed (one per line)
+      placeholder: |
+        http://example-ntrip.com:2101
+        https://example-ntrip.com:2102
+    validations:
+      required: true
+
+  - type: dropdown
+    id: crs-type
+    attributes:
+      label: CRS Configuration
+      description: How is the Coordinate Reference System configured in your network?
+      options:
+        - Single CRS for all mountpoints
+        - Different CRS for different mountpoints
+        - CRS varies by region
+    validations:
+      required: true
+
+  - type: input
+    id: epsg-code
+    attributes:
+      label: EPSG Code
+      description: If using a single CRS, what EPSG code does your network use?
+      placeholder: e.g., EPSG:6319 for NAD83(2011)
+
+  - type: input
+    id: epoch
+    attributes:
+      label: Epoch
+      description: What epoch does your network use?
+      placeholder: e.g., 2010.00
+
+  - type: textarea
+    id: multiple-crs
+    attributes:
+      label: Multiple CRS Details
+      description: If using multiple CRS, please describe which mountpoints/regions use which CRS
+      placeholder: |
+        Region/Mountpoints | EPSG Code | Epoch
+        USA Mainland | EPSG:6318 | 2010.00
+        Hawaii | EPSG:6321 | 2010.00
+
+  - type: input
+    id: documentation
+    attributes:
+      label: Documentation URL
+      description: Please provide a link to where this CRS information is officially documented
+      placeholder: https://example.com/documentation
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Any additional details that might be helpful?
+      placeholder: e.g., Special considerations, network coverage details, etc.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Submission Confirmation
+      description: Please confirm the following
+      options:
+        - label: I confirm this information is accurate and officially documented.
+          required: true
+        - label: I am authorized to submit this information on behalf of the network provider.
+          required: true
