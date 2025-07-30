@@ -2,8 +2,10 @@
 Catalog of NTRIP[^1] providers with CRS[^2] information.
 
 ## What is NTRIP-catalog
-NTRIP-catalog is an open source and open data repository with the CRS information from multiple NTRIP service providers.
+NTRIP-catalog is an [open source and open data repository](https://github.com/pix4d/ntrip-catalog) with the CRS information from multiple NTRIP service providers.
 The data is stored as JSON files, so it can be easily parsed by any software.
+
+Access it via its URL [ntrip-catalog.org](https://ntrip-catalog.org). The final json file is [here](https://ntrip-catalog.org/dist/ntrip-catalog.json).
 
 ## TL;DR
 The purpose of the NTRIP-catalog is to make it easy for an application to find the correct CRS for a given provider URL, mountpoint and rover location.
@@ -82,7 +84,7 @@ It would be nice if you ask your service provider, inviting them to complete thi
 In case there is an entry for your service, but no proper data is found, please ask the NTRIP provider to complete it with a pull-request.
 
 ## Contributing
-If you would like to contribute to this project, please read the file [CONTRIBUTING.md](CONTRIBUTING.md).
+If you would like to contribute to this project, please read the file [CONTRIBUTING_GUIDE.md](CONTRIBUTING_GUIDE.md).
 
 ## JSON syntax details
 The JSON schemas are in the folder schemas.
