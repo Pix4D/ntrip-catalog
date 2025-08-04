@@ -112,3 +112,36 @@ def test_rover_countries():
         assert crs["name"] == "ETRS89"
 
     mokked.assert_not_called()
+
+
+def test_rover_antimeridian():
+    url = "http://polaris.pointonenav.com:2101"
+    json_data = ntrip_query.load_json()
+    entry = ntrip_query.search_url_in_data(url, json_data)
+    assert entry
+
+    # "id": "EPSG:6321",
+    # "name": "NAD83(PA11)",
+    # "rover_bbox": [
+    #     157.47,
+    #     -17.56,
+    #     -151.27,
+    #     31.8
+    # ],
+    # "description": "Hawaii"
+
+    crs = ntrip_query.filter_crs(entry, url, "POLARIS_LOCAL", 10, 170)
+    assert crs
+    assert crs["id"] == "EPSG:6321"
+    assert crs["name"] == "NAD83(PA11)"
+
+    crs = ntrip_query.filter_crs(entry, url, "POLARIS_LOCAL", 10, -170)
+    assert crs
+    assert crs["id"] == "EPSG:6321"
+    assert crs["name"] == "NAD83(PA11)"
+
+    crs = ntrip_query.filter_crs(entry, url, "POLARIS_LOCAL", 10, 150)
+    assert crs is None
+
+    crs = ntrip_query.filter_crs(entry, url, "POLARIS_LOCAL", 10, -140)
+    assert crs is None

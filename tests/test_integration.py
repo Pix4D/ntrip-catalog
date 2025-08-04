@@ -76,12 +76,20 @@ def test_https():
 
     try:
         mountpoint = "POLARIS_LOCAL"
-        crs = ntrip_query.filter_crs(
-            entry, url, mountpoint, 40, -1.5, rover_country="ESP"
-        )
+        crs = ntrip_query.filter_crs(entry, url, mountpoint, 40, -1.5)
         assert crs
         assert crs["id"] == "EPSG:7931"
         assert crs["name"] == "ETRF2000"
+
+        crs = ntrip_query.filter_crs(
+            entry, url, mountpoint, 35, 137, rover_country="JPN"
+        )
+        assert crs
+        assert crs["id"] == "EPSG:6667"
+        assert crs["name"] == "JGD2011"
+
+        crs = ntrip_query.filter_crs(entry, url, mountpoint, 5, 1)
+        assert crs is None
 
         mountpoint = "POLARIS"
         crs = ntrip_query.filter_crs(entry, url, mountpoint, 28, -16)

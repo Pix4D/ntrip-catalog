@@ -83,7 +83,7 @@ def point_in_bbox(point_lat, point_lon, bbox):
     bbox = normalize_bbox(bbox)
     if bbox[0] > bbox[2]:
         # crossing antimeridian
-        return point_lon <= bbox[0] or point_lon >= bbox[2]
+        return point_lon >= bbox[0] or point_lon <= bbox[2]
     else:
         return point_lon >= bbox[0] and point_lon <= bbox[2]
 
