@@ -1,8 +1,7 @@
 import json
 import urllib.error
 import urllib.request
-
-import pytest
+import warnings
 
 from scripts import query as ntrip_query
 
@@ -15,9 +14,12 @@ def download_crslist():
     return crslist
 
 
-@pytest.mark.xfail(raises=urllib.error.HTTPError)
 def test_codes():
-    crslist = download_crslist()  # this may fail because it is an http request.
+    try:
+        crslist = download_crslist()  # this may fail because it is an http request.
+    except urllib.error.HTTPError as e:
+        warnings.warn(UserWarning("exception " + str(e)))
+        return
 
     def testit(id, name):
         id_exists = False

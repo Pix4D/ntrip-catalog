@@ -24,6 +24,8 @@ def get_streams_from_server(url):
     curl.setopt(pycurl.URL, url)
     curl.setopt(pycurl.TIMEOUT, 10)
     curl.setopt(pycurl.CONNECTTIMEOUT, 3)
+    curl.setopt(pycurl.HTTP09_ALLOWED, True)
+    curl.setopt(pycurl.HTTP_VERSION, pycurl.CURL_HTTP_VERSION_1_1)
     curl.setopt(pycurl.WRITEFUNCTION, sio.write)
     curl.setopt(
         pycurl.HTTPHEADER, ["Ntrip-Version: Ntrip/2.0", "User-Agent: NTRIPClient/1.0"]
@@ -38,10 +40,10 @@ def get_streams_from_server(url):
             return sio.getvalue().decode("iso-8859-1").splitlines()
 
     except pycurl.error as e:
-        logger.error("pycurl exception", e)
+        logger.error("pycurl exception " + str(e))
         raise pycurl.error(e)
     except Exception as e:
-        logger.error("exception", e)
+        logger.error("exception " + str(e))
         raise Exception(e)
 
 
