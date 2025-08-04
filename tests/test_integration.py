@@ -66,3 +66,27 @@ def test_vrsnow_de_2101_countries():
         assert crs["name"] == "ETRS89/DREF91/2016"
     except pycurl.error as e:
         warnings.warn(UserWarning("pycurl exception " + str(e)))
+
+
+def test_https():
+    url = "https://polaris.pointonenav.com:2102"
+    json_data = ntrip_query.load_json()
+    entry = ntrip_query.search_url_in_data(url, json_data)
+    assert entry
+
+    try:
+        mountpoint = "POLARIS_LOCAL"
+        crs = ntrip_query.filter_crs(
+            entry, url, mountpoint, 40, -1.5, rover_country="ESP"
+        )
+        assert crs
+        assert crs["id"] == "EPSG:7931"
+        assert crs["name"] == "ETRF2000"
+
+        mountpoint = "POLARIS"
+        crs = ntrip_query.filter_crs(entry, url, mountpoint, 28, -16)
+        assert crs
+        assert crs["id"] == "EPSG:7912"
+        assert crs["name"] == "ITRF2014"
+    except pycurl.error as e:
+        warnings.warn(UserWarning("pycurl exception " + str(e)))
