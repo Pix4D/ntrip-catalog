@@ -98,3 +98,15 @@ def test_https():
         assert crs["name"] == "ITRF2014"
     except pycurl.error as e:
         warnings.warn(UserWarning("pycurl exception " + str(e)))
+
+
+def test_sapos():
+    # there were problems with the User-Agent.
+    url = "http://www.sapos-ntrip.de:2101"
+    try:
+        sourcetable = ntrip_query.get_streams_from_server(url)
+        assert len(sourcetable) > 2
+        for line in sourcetable:
+            assert line.startswith(("CAS;", "NET;", "STR;", "ENDSOURCETABLE"))
+    except pycurl.error as e:
+        warnings.warn(UserWarning("pycurl exception " + str(e)))
