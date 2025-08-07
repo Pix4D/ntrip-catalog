@@ -28,7 +28,7 @@ def get_streams_from_server(url):
     curl.setopt(pycurl.HTTP_VERSION, pycurl.CURL_HTTP_VERSION_1_1)
     curl.setopt(pycurl.WRITEFUNCTION, sio.write)
     curl.setopt(
-        pycurl.HTTPHEADER, ["Ntrip-Version: Ntrip/2.0", "User-Agent: NTRIPClient/1.0"]
+        pycurl.HTTPHEADER, ["Ntrip-Version: Ntrip/2.0", "User-Agent: NTRIP Client/1.0"]
     )
 
     try:
