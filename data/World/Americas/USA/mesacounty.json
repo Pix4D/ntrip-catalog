@@ -1,0 +1,22 @@
+{
+    "name": "Mesa County RTVRN",
+    "description": "Mesa County Real-Time Virtual Reference Network (RTVRN)",
+    "urls": [
+        "http://rtvrn.mesacounty.us:2101"
+    ],
+    "reference": {
+        "url": "https://www.mesacounty.us/departments-and-services/public-works/gps-survey/real-time-virtual-reference-network-rtvrn"
+    },
+    "last_update": "2025-08-12",
+    "streams": [
+        {
+            "filter": "all",
+            "crss": [
+                {
+                    "id": "EPSG:6319",
+                    "name": "NAD83(2011)"
+                }
+            ]
+        }
+    ]
+}
