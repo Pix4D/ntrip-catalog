@@ -1,0 +1,24 @@
+{
+    "name": "ACORN",
+    "description": "ACORN Connecticut",
+    "urls": [
+        "http://acorn.uconn.edu:2101",
+        "http://137.99.150.56:2101",
+        "http://137.99.150.112:2101"
+    ],
+    "reference": {
+        "url": "https://portal.ct.gov/dot/-/media/dot/aec/const_inspection/acorn_faq.pdf"
+    },
+    "last_update": "2025-08-12",
+    "streams": [
+        {
+            "filter": "all",
+            "crss": [
+                {
+                    "id": "EPSG:6319",
+                    "name": "NAD83(2011)"
+                }
+            ]
+        }
+    ]
+}
