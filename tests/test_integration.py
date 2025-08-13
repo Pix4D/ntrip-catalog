@@ -108,5 +108,10 @@ def test_sapos():
         assert len(sourcetable) > 2
         for line in sourcetable:
             assert line.startswith(("CAS;", "NET;", "STR;", "ENDSOURCETABLE"))
+        json_data = ntrip_query.load_json()
+        entry = ntrip_query.search_url_in_data(url, json_data)
+        crs = ntrip_query.filter_crs(entry, url, "blah", 40, -1.5)
+        assert crs
+
     except pycurl.error as e:
         warnings.warn(UserWarning("pycurl exception " + str(e)))

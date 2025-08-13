@@ -1,0 +1,119 @@
+[
+    {
+        "url": "ntrip.myfloridagps.com",
+        "port": 10000,
+        "checks": [
+            {
+                "description": "All Florida",
+                "mountpoint": "RTCM3_VRS",
+                "result": {
+                    "name": "NAD83(2011)",
+                    "id": "EPSG:6319"
+                }
+            }
+        ]
+    },
+    {
+        "url": "ergnss-tr.ign.es",
+        "port": 2101,
+        "checks": [
+            {
+                "description": "Rover lat-lon ES-Peninsula",
+                "mountpoint": "CERCANA3",
+                "latitude": 40.4,
+                "longitude": -1.1,
+                "result": {
+                    "name": "ETRF2000",
+                    "id": "EPSG:7931"
+                }
+            },
+            {
+                "description": "Rover lat-lon Canary Islands",
+                "mountpoint": "CERCANA3",
+                "latitude": 28.4,
+                "longitude": -16.2,
+                "result": {
+                    "name": "REGCAN95",
+                    "id": "EPSG:4080"
+                }
+            }
+        ]
+    },
+    {
+        "url": "ergnss-tr.ign.es",
+        "port": 2102,
+        "checks": [
+            {
+                "description": "Station lat-lon ES-Peninsula",
+                "mountpoint": "TALR3M",
+                "result": {
+                    "name": "ETRF2000",
+                    "id": "EPSG:7931"
+                }
+            },
+            {
+                "description": "Station lat-lon Canary Islands",
+                "mountpoint": "TN023M",
+                "result": {
+                    "name": "REGCAN95",
+                    "id": "EPSG:4080"
+                }
+            }
+        ]
+    },
+    {
+        "url": "polaris.pointonenav.com",
+        "port": 2102,
+        "https": true,
+        "checks": [
+            {
+                "description": "pointonenav USA CONUS https",
+                "mountpoint": "POLARIS_LOCAL",
+                "country": "USA",
+                "latitude": "40",
+                "longitude": "-100",
+                "result": {
+                    "name": "NAD83(2011)",
+                    "id": "EPSG:6319"
+                }
+            },
+            {
+                "description": "pointonenav USA Hawaii https",
+                "mountpoint": "POLARIS_LOCAL",
+                "country": "USA",
+                "latitude": "-10",
+                "longitude": "-175",
+                "result": {
+                    "name": "NAD83(PA11)",
+                    "id": "EPSG:6321"
+                }
+            }
+        ]
+    },
+    {
+        "url": "polaris.pointonenav.com",
+        "port": 2101,
+        "https": false,
+        "checks": [
+            {
+                "description": "pointonenav Europe http",
+                "mountpoint": "POLARIS_LOCAL",
+                "country": "DEU",
+                "latitude": "50",
+                "longitude": "10",
+                "result": {
+                    "name": "ETRF2000",
+                    "id": "EPSG:7931"
+                }
+            },
+            {
+                "description": "pointonenav Nowhere http",
+                "mountpoint": "POLARIS_LOCAL",
+                "country": "NAN",
+                "latitude": "-10",
+                "longitude": "-17",
+                "result": false
+            }
+        ]
+    }
+]

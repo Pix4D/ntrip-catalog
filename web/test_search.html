@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NTRIP-catalog -- Test - Search</title>
+    <meta name="keywords" content="ntrip, catalog, rtk, coordinate system, srs, crs" >
+    <meta name="description" content="NTRIP-catalog -- web search utility" >
+    <base target="_blank">
+    <style>
+        .hidden {display: none;}
+        iframe {resize: auto;}
+    </style>
+</head>
+
+<body>
+    <h1>Testing</h1>
+    <button onclick="load_pages()" id="button_load" disabled>Load</button> <span id="loaded">0</span> / <span id="total">0</span>
+    <br><br>
+    <button onclick="run_checks()" id="button_check" disabled>Check</button> <span id="checked">0</span>
+    <br><br>
+
+    <div id="iframes_list"></div>
+
+    <script src="./test_search.js"></script>
+    <script>
+        init_test_search()
+    </script>
+
+</body>
+</html>
