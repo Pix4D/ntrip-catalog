@@ -104,8 +104,10 @@ function filter_crs(
                 if (point_in_bbox(rover_lat, rover_lon, crs["rover_bbox"]))
                     return crs;
             } else if ("rover_countries" in crs) {
-                console.warn("Rover 3 letter country code could be needed for this configuration");
-                window.alert("Rover 3 letter country code could be needed for this configuration");
+                if (!rover_country || !rover_country.length) {
+                    console.warn("Rover 3 letter country code could be needed for this configuration");
+                    window.alert("Rover 3 letter country code could be needed for this configuration");
+                }
                 if (rover_country && crs["rover_countries"].includes(rover_country))
                     return crs;
             } else {
@@ -126,6 +128,28 @@ function filter_crs(
     }
 
     return null
+}
+
+function fill_mp_select(fetched_sourcetable) {
+    let sel = document.querySelector('#mp_select');
+    if (!fetched_sourcetable || !fetched_sourcetable.content) {
+        sel.classList.add('hidden');
+    }
+    const lines = split_by_lines(fetched_sourcetable.content);
+    for (const line of lines) {
+        const splitted = line.split(";")
+        if (splitted.length > 2 && splitted[0] == "STR") {
+            const mp = splitted[1];
+            let opt = document.createElement("option");
+            opt.value = mp;
+            opt.innerText = mp;
+            sel.append(opt);
+        }
+    }
+    sel.addEventListener('change', function() {
+        document.querySelector('#mountpoint').value = this.value;
+    });
+    sel.removeAttribute("disabled");
 }
 
 function update_browser_url_with_params(form) {
@@ -195,7 +219,8 @@ function init_search() {
         document.querySelector(`#${key}`).value = params[key] || "";
     }
     if (Object.keys(params).length) {
-        ['url', 'port'].forEach(e => fill_value(e))
+        ['url', 'port'].forEach(e => fill_value(e));
+        if (params['https']) document.querySelector(`#https`).checked = true;
 
         fetch('../dist/ntrip-catalog.json', {
             method: "GET",
@@ -204,10 +229,11 @@ function init_search() {
         .then(data => {
             g_data = data;
             let entry = null
+            const requested_url = (params.https ? "https" : "http") + "://" + params.url + ":" + params.port
             for (let i = 0; i < data.entries.length && entry==null; i++) {
                 for (let j = 0; j < data.entries[i].urls.length; j++) {
                     let url = data.entries[i].urls[j];
-                    if (url == "http://" + params.url + ":" + params.port) {
+                    if (url == requested_url) {
                         entry = data.entries[i];
                         g_entry = entry;
                         g_url = url;
@@ -216,14 +242,9 @@ function init_search() {
                         document.querySelector('#entry_description').textContent = entry.description;
                         document.querySelector('#entry_ref').innerHTML = `<a href="${entry.reference.url}" target="_blank">${entry.reference.url}</a>`;
 
-                        if (entry) {
-                            ['mountpoint', 'country', 'latitude', 'longitude'].forEach(e => fill_value(e));
-                            document.querySelector('#url_ok').classList.remove("hidden");
-                            if (document.querySelector('#mountpoint').textContent)
-                                document.querySelector('#crs_content').textContent = "... loading";
-                        } else {
-                            document.querySelector('#url_not_ok').classList.remove("hidden");
-                        }
+                        ['mountpoint', 'country', 'latitude', 'longitude'].forEach(e => fill_value(e));
+                        if (document.querySelector('#mountpoint').textContent)
+                            document.querySelector('#crs_content').textContent = "... loading";
 
                         // We do this request via this service to avoid CORS problems.
                         // See that bumblebee is currently located in AWS, and some countries/services
@@ -247,6 +268,7 @@ function init_search() {
                             console.log("release:", json.release);
                             document.querySelector('#sourcetable_content').textContent = json.content;
                             g_fetched_sourcetable = json;
+                            fill_mp_select(json);
                             if (document.querySelector('#mountpoint').value.length)
                                 submit_details();
                         })
@@ -257,6 +279,11 @@ function init_search() {
                         break;
                     }
                 }
+            }
+            if (entry) {
+                document.querySelector('#url_ok').classList.remove("hidden");
+            } else {
+                document.querySelector('#url_not_ok').classList.remove("hidden");
             }
         });
     }

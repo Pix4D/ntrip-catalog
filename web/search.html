@@ -14,8 +14,9 @@
     <h1>Some title</h1>
     <div>
         <form action="./search.html" id="main_form">
-            <label for="url">URL or IP</label>: <input type="text" name="url" id="url" value="" required>
+            <label for="url">hostname or IP</label>: <input type="text" name="url" id="url" value="" required>
             <label for="port">port</label>: <input type="number" min="1" max="65565" name="port" id="port" placeholder="2101" value="" required>
+            <label for="https">https</label>: <input type="checkbox" name="https" id="https">
             <input type="submit" value="Search">
         </form>
     </div>
@@ -37,6 +38,9 @@
     <div>
         <form  action="javascript:;" onsubmit="submit_details(this);" id="details_form">
             <label for="mountpoint">Mountpoint</label>: <input type="text" name="mountpoint" id="mountpoint" value="" required>
+            <select name="mp_select" id="mp_select" disabled>
+                <option value="-invalid-" selected>.or select here.</option>
+            </select>
             <br>
             <label for="country">Country</label>:
                 <input type="text" name="country" id="country" pattern="^$|^[a-zA-Z]{3}$" maxlength="3" size="4" value=""
