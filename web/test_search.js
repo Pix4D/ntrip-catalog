@@ -44,6 +44,8 @@ function init_test_search() {
             for (let check of test.checks) {
                 let iframe = document.createElement('iframe');
                 let src = `./search.html?url=${test.url}&port=${test.port}&mountpoint=${check.mountpoint}`;
+                if (test.https)
+                    src += '&https=on'
                 for (const item of ['latitude', 'longitude', 'country']) {
                     if (check[item] !== undefined)
                         src += `&${item}=${check[item]}`
