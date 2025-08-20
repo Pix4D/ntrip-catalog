@@ -4,6 +4,10 @@
     <title>NTRIP-catalog -- Search</title>
     <meta name="keywords" content="ntrip, catalog, rtk, coordinate system, srs, crs" >
     <meta name="description" content="NTRIP-catalog -- web search utility" >
+    <style>
+        .hidden {display: none;}
+        textarea {background-color: lightgrey;}
+    </style>
 </head>
 
 <body>
@@ -17,6 +21,10 @@
     </div>
 
     <br>
+    <div id="url_ok" class="hidden">&#x2705; There is an entry in the catalog for that url and port.</div>
+    <div id="url_not_ok" class="hidden">&#x274C; There is no entry in the catalog for that url and port.
+        If you know the data you can open an
+        <a href="https://github.com/Pix4D/ntrip-catalog/issues" target="_blank">issue</a></div>
     <label for="entry_content">Entry JSON</label>:
     <br>
     <textarea id="entry_content" name="entry_content" rows="2" cols="50" readonly></textarea>
@@ -33,12 +41,26 @@
             <label for="country">Country</label>:
                 <input type="text" name="country" id="country" pattern="^$|^[a-zA-Z]{3}$" maxlength="3" size="4" value=""
                 title="3 letter country code" style="text-transform:uppercase">
+                <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3" target="_blank">(3 letter code)</a>
             <br>
             Location
             <label for="latitude">lat</label>: <input type="number" step="0.0000000001" name="latitude" id="latitude" value="">
             <label for="longitude">lon</label>: <input type="number" step="0.0000000001" name="longitude" id="longitude" value="">
             <input type="submit" value="Filter">
         </form>
+        <br>
+        <div>
+        <span id="crs_name" class="hidden"></span>
+        <span id="crs_id" class="hidden"></span>
+        </div>
+        <textarea id="crs_content" name="crs_content" rows="5" cols="50" readonly></textarea>
+
+    <br>
+    Sourcetable:
+    </div>
+        <textarea id="sourcetable_content" name="sourcetable_content" rows="2" cols="50" readonly></textarea>
+    <div>
+
     </div>
 
     <script src="./search.js"></script>
