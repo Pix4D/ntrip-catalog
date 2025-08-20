@@ -1,0 +1,64 @@
+[
+    {
+        "url": "ntrip.myfloridagps.com",
+        "port": 10000,
+        "checks": [
+            {
+                "description": "All Florida",
+                "mountpoint": "RTCM3_VRS",
+                "result": {
+                    "name": "NAD83(2011)",
+                    "id": "EPSG:6319"
+                }
+            }
+        ]
+    },
+    {
+        "url": "ergnss-tr.ign.es",
+        "port": 2101,
+        "checks": [
+            {
+                "description": "Rover lat-lon ES-Peninsula",
+                "mountpoint": "CERCANA3",
+                "latitude": 40.4,
+                "longitude": -1.1,
+                "result": {
+                    "name": "ETRF2000",
+                    "id": "EPSG:7931"
+                }
+            },
+            {
+                "description": "Rover lat-lon Canary Islands",
+                "mountpoint": "CERCANA3",
+                "latitude": 28.4,
+                "longitude": -16.2,
+                "result": {
+                    "name": "REGCAN95",
+                    "id": "EPSG:4080"
+                }
+            }
+        ]
+    },
+    {
+        "url": "ergnss-tr.ign.es",
+        "port": 2102,
+        "checks": [
+            {
+                "description": "Station lat-lon ES-Peninsula",
+                "mountpoint": "TALR3M",
+                "result": {
+                    "name": "ETRF2000",
+                    "id": "EPSG:7931"
+                }
+            },
+            {
+                "description": "Station lat-lon Canary Islands",
+                "mountpoint": "TN023M",
+                "result": {
+                    "name": "REGCAN95",
+                    "id": "EPSG:4080"
+                }
+            }
+        ]
+    }
+]
