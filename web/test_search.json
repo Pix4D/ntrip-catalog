@@ -89,5 +89,31 @@
                 }
             }
         ]
+    },
+    {
+        "url": "polaris.pointonenav.com",
+        "port": 2101,
+        "https": false,
+        "checks": [
+            {
+                "description": "pointonenav Europe http",
+                "mountpoint": "POLARIS_LOCAL",
+                "country": "DEU",
+                "latitude": "50",
+                "longitude": "10",
+                "result": {
+                    "name": "ETRF2000",
+                    "id": "EPSG:7931"
+                }
+            },
+            {
+                "description": "pointonenav Nowhere http",
+                "mountpoint": "POLARIS_LOCAL",
+                "country": "NAN",
+                "latitude": "-10",
+                "longitude": "-17",
+                "result": false
+            }
+        ]
     }
 ]
