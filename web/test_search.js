@@ -10,15 +10,29 @@ function run_checks() {
             let a = iframe.querySelector('#crs_content');
             if (iframe.querySelector('#crs_content').textContent.length > 0){
                 let res = true;
-                if (check.result.name) {
-                    let name = iframe.querySelector('#crs_name');
-                    if (name.innerText != check.result.name)
+                if (check.result === false) {
+                    // didn't find a CRS
+                    if (iframe.querySelector('#crs_content').textContent != 'null')
                         res = false;
-                }
-                if (check.result.id) {
-                    let id = iframe.querySelector('#crs_id');
-                    if (!id.innerHTML.includes(check.result.id))
-                        res = false;
+                    if (!iframe.querySelector('#crs_name').classList.contains('hidden'))
+                        res = false
+                    if (!iframe.querySelector('#crs_id').classList.contains('hidden'))
+                        res = false
+                } else {
+                    if (check.result.name) {
+                        let name = iframe.querySelector('#crs_name');
+                        if (name.innerText != check.result.name)
+                            res = false;
+                        if (iframe.querySelector('#crs_name').classList.contains('hidden'))
+                            res = false
+                    }
+                    if (check.result.id) {
+                        let id = iframe.querySelector('#crs_id');
+                        if (!id.innerHTML.includes(check.result.id))
+                            res = false;
+                        if (iframe.querySelector('#crs_id').classList.contains('hidden'))
+                            res = false
+                    }
                 }
                 list_checked[counter] = res;
                 document.querySelector(`#res_${counter}`).innerHTML = res ? '&#x2705;' : '&#x274C;';

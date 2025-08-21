@@ -249,7 +249,7 @@ function init_search() {
                         // We do this request via this service to avoid CORS problems.
                         // See that bumblebee is currently located in AWS, and some countries/services
                         // may lock (or allow) those URLs
-                        fetch("https://api.dev.webgis.pix4d.com/bumblebee/v0/ntrip/sourcetable", {
+                        fetch("https://api.webgis.pix4d.com/bumblebee/v0/ntrip/sourcetable", {
                             method: "POST",
                             headers: {
                                 "accept": "application/json",
