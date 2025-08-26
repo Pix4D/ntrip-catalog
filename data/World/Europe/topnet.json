@@ -19,7 +19,8 @@
                         "RTK_RTCM3",
                         "RTK_MSM5",
                         "NET_RTCM3",
-                        "NET_MSM5"
+                        "NET_MSM5",
+                        "XTRS-NETRTK-MSM"
                     ]
                 },
                 "crss": [
