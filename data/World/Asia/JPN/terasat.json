@@ -1,0 +1,24 @@
+{
+    "name": "Terasat Japan Co., Ltd.",
+    "description": "NTRIP Service using VRS in Japan",
+    "urls": [
+        "http://61.194.239.9:5001",
+        "http://ntrip.terasat.co.jp:5001"
+    ],
+    "reference": {
+        "url": "https://www.terasat.co.jp/archives/129.html",
+        "comments": "In Japanese"
+    },
+    "last_update": "2025-09-03",
+    "streams": [
+        {
+            "filter": "all",
+            "crss": [
+                {
+                    "id": "EPSG:6667",
+                    "name": "JGD2011"
+                }
+            ]
+        }
+    ]
+}
