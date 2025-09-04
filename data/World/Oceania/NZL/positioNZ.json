@@ -1,0 +1,24 @@
+[
+    {
+        "name": "PositioNZ-RT",
+        "description": "PositioNZ - Real Time Service",
+        "urls": [
+            "http://positionz-rt.linz.govt.nz:2101"
+        ],
+        "reference": {
+            "url": "https://www.linz.govt.nz/products-services/geodetic/positionz/positionz-real-time-service/connect-positionz-real-time-service"
+        },
+        "last_update": "2025-09-04",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:4959",
+                        "name": "NZGD2000"
+                    }
+                ]
+            }
+        ]
+    }
+]
