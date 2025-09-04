@@ -98,7 +98,6 @@ function filter_crs(
             if ("rover_bbox" in crs) {
                 if (isNaN(rover_lat) || isNaN(rover_lon)) {
                     console.error("Rover latitude and longitude needed for this configuration");
-                    window.alert("Rover latitude and longitude are needed for this configuration");
                     return null;
                 }
                 if (point_in_bbox(rover_lat, rover_lon, crs["rover_bbox"]))
@@ -106,7 +105,6 @@ function filter_crs(
             } else if ("rover_countries" in crs) {
                 if (!rover_country || !rover_country.length) {
                     console.warn("Rover 3 letter country code could be needed for this configuration");
-                    window.alert("Rover 3 letter country code could be needed for this configuration");
                 }
                 if (rover_country && crs["rover_countries"].includes(rover_country))
                     return crs;
@@ -128,6 +126,24 @@ function filter_crs(
     }
 
     return null
+}
+
+function entry_needs_country_latlon(entry) {
+    // check if any crs in the entry needs country or latlon
+    // to require it in the input.
+    let country = false;
+    let latlon = false;
+    for (const stream of entry["streams"]) {
+        for (const crs of stream["crss"]) {
+            if ("rover_bbox" in crs) {
+                latlon = true;
+            }
+            if ("rover_countries" in crs) {
+                country = true;
+            }
+        }
+    }
+    return [country, latlon];
 }
 
 function fill_mp_select(fetched_sourcetable) {
@@ -246,6 +262,11 @@ function init_search() {
                         if (document.querySelector('#mountpoint').textContent)
                             document.querySelector('#crs_content').textContent = "... loading";
 
+                        const [country, latlon] = entry_needs_country_latlon(entry);
+                        document.querySelector(`#country`).required = country;
+                        document.querySelector(`#latitude`).required = latlon;
+                        document.querySelector(`#longitude`).required = latlon;
+
                         // We do this request via this service to avoid CORS problems.
                         // See that bumblebee is currently located in AWS, and some countries/services
                         // may lock (or allow) those URLs
@@ -269,7 +290,8 @@ function init_search() {
                             document.querySelector('#sourcetable_content').textContent = json.content;
                             g_fetched_sourcetable = json;
                             fill_mp_select(json);
-                            if (document.querySelector('#mountpoint').value.length)
+                            //const invalid = ['#mountpo'].find(v => !document.querySelector(m).checkValidity())
+                            if (document.querySelector('#mountpoint').checkValidity() && document.querySelector('#country').checkValidity())
                                 submit_details();
                         })
                         .catch((error) => {

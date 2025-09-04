@@ -31,23 +31,34 @@
     <div>Ref:  <span id="entry_ref"></span></div>
 
     <br>
+    Sourcetable:
+    <br>
+    </div>
+        <textarea id="sourcetable_content" name="sourcetable_content" rows="2" cols="50" readonly></textarea>
+    <div>
+
+    <br>
 
     <div>
         <form  action="javascript:;" onsubmit="submit_details(this);" id="details_form">
-            <label for="mountpoint">Mountpoint</label>: <input type="text" name="mountpoint" id="mountpoint" value="" required>
-            <select name="mp_select" id="mp_select" disabled>
-                <option value="-invalid-" selected>.or select here.</option>
-            </select>
-            <br>
-            <label for="country">Country</label>:
-                <input type="text" name="country" id="country" pattern="^$|^[a-zA-Z]{3}$" maxlength="3" size="4" value=""
-                title="3 letter country code" style="text-transform:uppercase">
-                <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3" target="_blank">(3 letter code)</a>
-            <br>
-            Location
-            <label for="latitude">lat</label>: <input type="number" step="0.0000000001" name="latitude" id="latitude" value="">
-            <label for="longitude">lon</label>: <input type="number" step="0.0000000001" name="longitude" id="longitude" value="">
-            <input type="submit" value="Filter">
+            <div>
+                <label for="mountpoint">Mountpoint</label>: <input type="text" name="mountpoint" id="mountpoint" value="" required>
+                <select name="mp_select" id="mp_select" disabled>
+                    <option value="-invalid-" selected>.or select here.</option>
+                </select>
+            </div>
+            <div>
+                <label for="country">Country</label>:
+                    <input type="text" name="country" id="country" pattern="^$|^[a-zA-Z]{3}$" maxlength="3" size="4" value=""
+                    title="3 letter country code" style="text-transform:uppercase">
+                    <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3" target="_blank">(3 letter code)</a>
+            </div>
+            <div>
+                Location
+                <label for="latitude">lat</label>: <input type="number" step="0.0000000001" name="latitude" id="latitude" value="">
+                <label for="longitude">lon</label>: <input type="number" step="0.0000000001" name="longitude" id="longitude" value="">
+                <input type="submit" value="Filter">
+            </div>
         </form>
         <br>
         <div>
@@ -56,11 +67,7 @@
         </div>
         <textarea id="crs_content" name="crs_content" rows="5" cols="50" readonly></textarea>
 
-    <br>
-    Sourcetable:
-    </div>
-        <textarea id="sourcetable_content" name="sourcetable_content" rows="2" cols="50" readonly></textarea>
-    <div>
+
 
     </div>
 
