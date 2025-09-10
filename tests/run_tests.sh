@@ -13,4 +13,4 @@ pre-commit run --file $LOCALPATH/**/*
 python3 -W ignore::DeprecationWarning $LOCALPATH/scripts/validator.py --log-input-files --no-validate-dist
 python3 -W ignore::DeprecationWarning $LOCALPATH/scripts/validator.py --log-input-files --validate-dist
 
-pytest
+pytest $LOCALPATH/tests/
