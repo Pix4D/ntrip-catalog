@@ -1,0 +1,32 @@
+[
+    {
+        "name": "refnet",
+        "description": "Service from refnet, CH",
+        "urls": [
+            "http://v2.refnet.ch:2101"
+        ],
+        "reference": {
+            "url": "https://www.refnet.ch"
+        },
+        "last_update": "2025-09-09",
+        "streams": [
+            {
+                "filter": {
+                    "mountpoints": [
+                        "vrschmsm4",
+                        "imaxchmsm4",
+                        "vrsch",
+                        "maxch"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:4933",
+                        "name": "CHTRS95",
+                        "description": "Swiss realization of ETRS89"
+                    }
+                ]
+            }
+        ]
+    }
+]
