@@ -14,7 +14,7 @@
             "url": "https://github.com/geodnet/geodnet_rtk_service_coordinate_system?tab=readme-ov-file#geodnet-rtk-service-coordinate-system",
             "description": "Documentation of regions and datums. Also see the geodnet/GEODNET_RTK_SERVICE repo for URLs."
         },
-        "last_update": "2025-04-16",
+        "last_update": "2025-09-12",
         "streams": [
             {
                 "filter": {
@@ -125,10 +125,10 @@
                         "id": "EPSG:6321",
                         "name": "NAD83(PA11)",
                         "rover_bbox": [
-                            157.47,
-                            -17.56,
-                            -151.27,
-                            31.8
+                            -179.999,
+                            15.284,
+                            -153.193,
+                            30.069
                         ],
                         "description": "Hawaii"
                     },
