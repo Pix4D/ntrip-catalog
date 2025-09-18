@@ -1,0 +1,23 @@
+{
+    "name": "AZCORS",
+    "description": "Arizona Continuously Operating Reference Station Network",
+    "urls": [
+        "http://159.87.113.135:8080",
+        "http://azcors.azwater.gov:8080"
+    ],
+    "reference": {
+        "url": "https://www.azwater.gov/hydrology/azcors"
+    },
+    "last_update": "2025-09-18",
+    "streams": [
+        {
+            "filter": "all",
+            "crss": [
+                {
+                    "id": "EPSG:6319",
+                    "name": "NAD83(2011)"
+                }
+            ]
+        }
+    ]
+}
