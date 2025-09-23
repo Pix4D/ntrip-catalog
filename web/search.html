@@ -2,80 +2,105 @@
 <html lang="en">
 <head>
     <title>NTRIP-catalog -- Search</title>
-    <meta name="keywords" content="ntrip, catalog, rtk, coordinate system, srs, crs" >
-    <meta name="description" content="NTRIP-catalog -- web search utility" >
+    <meta name="keywords" content="ntrip, catalog, rtk, coordinate system, srs, crs">
+    <meta name="description" content="NTRIP-catalog -- web search utility">
     <link rel="stylesheet" href="./search.css">
 </head>
 
 <body>
-    <h1>Some title</h1>
-    <div>
+   <div class="header-container">
+        <h1>NTRIP Catalog Search</h1>
+        <hr class="separator">
+        <p class="description">A web utility to query and view NTRIP catalog entries and sourcetable details. Ideal for engineers and developers working with GNSS and RTK data.</p>
+
+    </div>
+    
+   <div class="section-container">
+        <h2>Search</h2>
         <form action="./search.html" id="main_form">
-            <label for="url">hostname or IP</label>: <input type="text" name="url" id="url" value="" required>
-            <label for="port">port</label>: <input type="number" min="1" max="65565" name="port" id="port" placeholder="2101" value="" required>
-            <input type="checkbox" class="hidden" name="proxy" id="proxy">
-            <label for="https">https</label>: <input type="checkbox" name="https" id="https">
-            <input type="submit" value="Search">
+            <div class="form-group">
+                <label for="url">Hostname or IP</label>:
+                <input type="text" name="url" id="url" value="" required>
+            </div>
+            <div class="form-group">
+                <label for="port">Port</label> :
+                <input type="number" min="1" max="65565" name="port" id="port" placeholder="2101" value="" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" class="hidden" name="proxy" id="proxy">
+                <label for="https">https</label> :
+                <input type="checkbox" name="https" id="https">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search">
+            </div>
         </form>
+    
+        <div id="url_ok" class="hidden">&#x2705; There is an entry in the catalog for that url and port.</div>
+            <div id="url_not_ok" class="hidden">&#x274C; There is no entry in the catalog for that url and port.
+                If you know the data you can open an
+                <a href="https://github.com/Pix4D/ntrip-catalog/issues" target="_blank">issue</a>
+            </div>
+        </div>
     </div>
 
-    <br>
-    <div id="url_ok" class="hidden">&#x2705; There is an entry in the catalog for that url and port.</div>
-    <div id="url_not_ok" class="hidden">&#x274C; There is no entry in the catalog for that url and port.
-        If you know the data you can open an
-        <a href="https://github.com/Pix4D/ntrip-catalog/issues" target="_blank">issue</a></div>
-    <label for="entry_content">Entry JSON</label>:
-    <br>
-    <textarea id="entry_content" name="entry_content" title="Entry json content" rows="2" cols="50" readonly></textarea>
-    <div>Name: <span id="entry_name"></span></div>
-    <div>Description: <span id="entry_description"></span></div>
-    <div>Ref:  <span id="entry_ref"></span></div>
-
-    <br>
-    Sourcetable:
-    <br>
+    <div class="section-container">
+        <h2>Entry JSON</h2>
+        <label for="entry_content">Raw data</label>:
+        <textarea class="code-container" id="entry_content" name="entry_content" title="Entry json content" rows="2" cols="50" readonly></textarea>
+        <div class="catalog-details">
+            <span class="info-label">Name:</span> <span id="entry_name" class="info-value"></span>
+        </div>
+        <div class="catalog-details">
+            <span class="info-label">Description:</span> <span id="entry_description" class="info-value"></span>
+        </div>
+        <div class="catalog-details">
+            <span class="info-label">Ref:</span> <span id="entry_ref" class="info-value"></span>
+        </div>
     </div>
-        <textarea id="sourcetable_content" name="sourcetable_content" title="Sourcetable content" rows="2" cols="50" readonly></textarea>
-    <div>
 
-    <br>
+    <div class="section-container">
+        <h2>Sourcetable</h2>
+        <textarea class="code-container" id="sourcetable_content" name="sourcetable_content" title="Sourcetable content" rows="2" cols="50" readonly></textarea>
+    </div>
 
-    <div>
-        <form  action="javascript:;" onsubmit="submit_details(this);" id="details_form">
-            <div>
-                <label for="mountpoint">Mountpoint</label>: <input type="text" name="mountpoint" id="mountpoint" value="" required>
+    <div class="section-container">
+        <h2>Filters</h2>
+        <form action="javascript:;" onsubmit="submit_details(this);" id="details_form">
+            <div class="form-group">
+                <label for="mountpoint">Mountpoint</label>
+                <input type="text" name="mountpoint" id="mountpoint" value="" required>
                 <select name="mp_select" id="mp_select" disabled>
                     <option value="-invalid-" selected>.or select here.</option>
                 </select>
             </div>
-            <div>
-                <label for="country">Country</label>:
-                    <input type="text" name="country" id="country" pattern="^$|^[a-zA-Z]{3}$" maxlength="3" size="4" value=""
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" name="country" id="country" pattern="^$|^[a-zA-Z]{3}$" maxlength="3" size="4" value=""
                     title="3 letter country code" style="text-transform:uppercase">
-                    <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3" target="_blank">(3 letter code)</a>
+                <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3" target="_blank">(3 letter code)</a>
             </div>
-            <div>
+            <div class="form-group">
                 Location
-                <label for="latitude">lat</label>: <input type="number" step="0.0000000001" name="latitude" id="latitude" value="">
-                <label for="longitude">lon</label>: <input type="number" step="0.0000000001" name="longitude" id="longitude" value="">
+                <label for="latitude">lat</label>
+                <input type="number" step="0.0000000001" name="latitude" id="latitude" value="">
+                <label for="longitude">lon</label>
+                <input type="number" step="0.0000000001" name="longitude" id="longitude" value="">
                 <input type="submit" value="Filter">
             </div>
         </form>
-        <br>
-        <div>
+    </div>
+
+    <div class="section-container">
+        <h2>CRS Content</h2>
         <span id="crs_name" class="hidden"></span>
         <span id="crs_id" class="hidden"></span>
-        </div>
-        <textarea id="crs_content" name="crs_content" title="CRS json content" rows="5" cols="50" readonly></textarea>
-
-
-
+        <textarea class="code-container" id="crs_content" name="crs_content" title="CRS json content" rows="5" cols="50" readonly></textarea>
     </div>
 
     <script src="./search.js"></script>
     <script>
         init_search()
     </script>
-
 </body>
 </html>
