@@ -205,17 +205,26 @@ function submit_details(form) {
         if (crs.name)
         {
             document.querySelector('#crs_name').textContent = crs.name;
-            document.querySelector('#crs_name').classList.remove("hidden");
         }
         if (crs.id) {
             let auth_code = crs.id.split(':');
             let link = `https://spatialreference.org/ref/${auth_code[0].toLowerCase()}/${auth_code[1]}/`;
             document.querySelector('#crs_id').innerHTML = `<a href="${link}" target=_blank>${crs.id}</a>`;
-            document.querySelector('#crs_id').classList.remove("hidden");
         }
+        if (crs.description)
+        {
+            document.querySelector('#crs_description').textContent = crs.description;
+        }
+        document.querySelector('#crs-ok').classList.remove("hidden");
+        document.querySelector('#crs-not-ok').classList.add("hidden");
+
     } else {
-        document.querySelector('#crs_name').classList.add("hidden");
-        document.querySelector('#crs_id').classList.add("hidden");
+        document.querySelector('#crs_name').textContent = '';
+        document.querySelector('#crs_id').innerHTML = ''
+        document.querySelector('#crs_description').textContent = '';
+
+        document.querySelector('#crs-ok').classList.add("hidden");
+        document.querySelector('#crs-not-ok').classList.remove("hidden");
     }
     document.querySelector('#crs_content').textContent = JSON.stringify(crs, null, 4);
 }
@@ -303,15 +312,16 @@ function init_search() {
                         .catch((error) => {
                             console.log(error)
                             document.querySelector('#crs_content').textContent = "--- error ---"
+                            document.querySelector('#crs-not-ok').classList.remove("hidden");
                         });
                         break;
                     }
                 }
             }
             if (entry) {
-                document.querySelector('#url_ok').classList.remove("hidden");
+                document.querySelector('#url-ok').classList.remove("hidden");
             } else {
-                document.querySelector('#url_not_ok').classList.remove("hidden");
+                document.querySelector('#url-not-ok').classList.remove("hidden");
             }
         });
     }
