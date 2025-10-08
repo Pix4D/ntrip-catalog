@@ -4,12 +4,13 @@
         "description": "Service from swisstopo, CH",
         "urls": [
             "http://18.195.136.180:2101",
-            "http://www.swipos.ch:2101"
+            "http://www.swipos.ch:2101",
+            "https://ntrip.swipos.ch:4101"
         ],
         "reference": {
             "url": "https://www.swisstopo.admin.ch/de/swipos-gisgeo-fuer-rtk-und-postprocessing-anwendungen"
         },
-        "last_update": "2025-01-10",
+        "last_update": "2025-10-08",
         "streams": [
             {
                 "filter": {
