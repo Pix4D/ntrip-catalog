@@ -96,6 +96,11 @@ def test_rover_countries():
     with mock.patch(
         server_path, side_effect=mock_server("./tests/data/vrsnow.de.json")
     ) as mokked:
+        crs = ntrip_query.filter_crs(entry, url, "StarPoint2+RTK", 0, 0)
+        assert crs
+        assert crs["id"] == "EPSG:9989"
+        assert crs["name"] == "ITRF2020"
+
         crs = ntrip_query.filter_crs(entry, url, "NET_MSM5", 0, 0, "CHE")
         assert crs
         assert crs["id"] == "EPSG:7923"
