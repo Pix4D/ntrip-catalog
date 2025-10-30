@@ -52,7 +52,7 @@
                         "rover_countries": [
                             "USA"
                         ],
-                        "description": "Continental USA, after Hawaii"
+                        "description": "Continental USA"
                     },
                     {
                         "id": "EPSG:8254",
