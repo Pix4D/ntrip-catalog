@@ -15,7 +15,8 @@
                 "crss": [
                     {
                         "id": "EPSG:7931",
-                        "name": "ETRF2000"
+                        "name": "ETRF2000",
+                        "epoch": 2011.763
                     }
                 ],
                 "comments": "Equivalent to BEREF."
