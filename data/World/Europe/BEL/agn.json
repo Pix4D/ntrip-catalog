@@ -1,0 +1,27 @@
+[
+    {
+        "name": "AGN",
+        "description": "Active Geodetic Network - NGI",
+        "urls": [
+            "http://ntrip.ngi.be:8080"
+        ],
+        "reference": {
+            "url": "https://agn.ngi.be/",
+            "comments": "NTRIP probably blocking non Belgian IP addresses"
+        },
+        "last_update": "2025-10-31",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:7931",
+                        "name": "ETRF2000",
+                        "epoch": 2011.763
+                    }
+                ],
+                "comments": "Equivalent to BEREF."
+            }
+        ]
+    }
+]
