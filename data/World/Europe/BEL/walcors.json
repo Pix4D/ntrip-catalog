@@ -1,0 +1,25 @@
+[
+    {
+        "name": "WALCORS",
+        "description": "Wallonia Continuously Operating Reference System",
+        "urls": [
+            "http://157.164.253.36:8081"
+        ],
+        "reference": {
+            "url": "https://gnss.wallonie.be/walcors.html"
+        },
+        "last_update": "2025-10-31",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:7931",
+                        "name": "ETRF2000"
+                    }
+                ],
+                "comments": "Equivalent to BEREF."
+            }
+        ]
+    }
+]

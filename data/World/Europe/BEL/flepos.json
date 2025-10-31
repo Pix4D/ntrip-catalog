@@ -1,0 +1,27 @@
+[
+    {
+        "name": "FLEPOS",
+        "description": "Flemish Positioning Service",
+        "urls": [
+            "http://flepos.vlaanderen.be:2101",
+            "http://gnss.vlaanderen.be:2101",
+            "http://3.64.78.173:2101"
+        ],
+        "reference": {
+            "url": "https://www.vlaanderen.be/digitaal-vlaanderen/onze-diensten-en-platformen/flepos-centimeternauwkeurige-positiebepaling/ondersteuning"
+        },
+        "last_update": "2025-10-31",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:7931",
+                        "name": "ETRF2000"
+                    }
+                ],
+                "comments": "Equivalent to BEREF."
+            }
+        ]
+    }
+]
