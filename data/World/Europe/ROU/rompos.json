@@ -1,0 +1,32 @@
+[
+    {
+        "name": "ROMPOS",
+        "description": "ROMPOS Services",
+        "urls": [
+            "http://rtk.rompos.ro:2101",
+            "http://rtk.rompos.ro:2102",
+            "http://rtk.rompos.ro:2105",
+            "http://93.113.10.123:2101",
+            "http://93.113.10.123:2102",
+            "http://93.113.10.123:2105"
+        ],
+        "reference": {
+            "url": "https://rompos.ro/index.php/en/f-a-q"
+        },
+        "last_update": "2025-10-28",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:7931",
+                        "name": "ETRF2000",
+                        "epoch": 2000.0,
+                        "description": "Romania"
+                    }
+                ],
+                "comments": "Mountpoints on 2101, 2102 and single stations on 2105"
+            }
+        ]
+    }
+]
