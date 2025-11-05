@@ -1,0 +1,25 @@
+{
+    "name": "SKPOS",
+    "description": "Slovak Real-time Positioning Service",
+    "urls": [
+        "http://skpos.gku.sk:2101",
+        "http://195.28.70.16:2101"
+    ],
+    "reference": {
+        "url": "https://skpos.gku.sk/en/o-skpos.php"
+    },
+    "last_update": "2025-11-05",
+    "streams": [
+        {
+            "filter": "all",
+            "crss": [
+                {
+                    "id": "EPSG:7931",
+                    "name": "ETRF2000",
+                    "epoch": 2008.5,
+                    "description": "Slovak realization of ETRS89"
+                }
+            ]
+        }
+    ]
+}
