@@ -2,8 +2,7 @@
     "name": "SKPOS",
     "description": "Slovak Real-time Positioning Service",
     "urls": [
-        "http://skpos.gku.sk:2101",
-        "http://195.28.70.16:2101"
+        "http://skpos.gku.sk:2101"
     ],
     "reference": {
         "url": "https://skpos.gku.sk/en/o-skpos.php"
