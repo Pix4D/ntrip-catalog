@@ -150,3 +150,24 @@ def test_rover_antimeridian():
 
     crs = ntrip_query.filter_crs(entry, url, "POLARIS_LOCAL", 10, -140)
     assert crs is None
+
+
+def test_skpos_ETRS89():
+    url = "http://skpos.gku.sk:2101"
+    json_data = ntrip_query.load_json()
+    entry = ntrip_query.search_url_in_data(url, json_data)
+    assert entry
+
+    mountpoint = "SKPOS_CM_32"
+    with mock.patch(
+        server_path, side_effect=mock_server("./tests/data/notused.json")
+    ) as mokked:
+        crs = ntrip_query.filter_crs(entry, url, mountpoint, 48.5, 19)
+        assert crs
+        assert crs["id"] == "EPSG:4937"
+        assert crs["name"] == "ETRS89"
+        assert "(ETRF2000)" in crs["description"]  # See issue #49
+
+    # if stream is filtered by mountpoint,
+    #  the method get_streams_from_server is not called.
+    mokked.assert_not_called()
