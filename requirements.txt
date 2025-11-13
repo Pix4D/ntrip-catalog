@@ -5,3 +5,9 @@ jsonschema
 # Library to do NTRIP requests.
 # They are not strictly HTTP requests, so we need an alternative. -> https://github.com/pycurl/pycurl
 pycurl
+
+# Libraries for scrape_smartnet.py
+pandas
+bs4
+tqdm
+requests
