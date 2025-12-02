@@ -1,0 +1,23 @@
+{
+    "name": "MACORS",
+    "description": "Massachusetts Continuously Operating Reference Station Network",
+    "urls": [
+        "http://macorsrtk.massdot.state.ma.us:10000"
+    ],
+    "reference": {
+        "url": "https://www.mass.gov/how-to/the-massachusetts-continuously-operating-reference-station-network-macors"
+    },
+    "last_update": "2025-12-02",
+    "streams": [
+        {
+            "filter": "all",
+            "crss": [
+                {
+                    "id": "EPSG:6319",
+                    "name": "NAD83(2011)",
+                    "epoch": 2010.0
+                }
+            ]
+        }
+    ]
+}
