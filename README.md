@@ -83,6 +83,9 @@ It would be nice if you ask your service provider, inviting them to complete thi
 
 In case there is an entry for your service, but no proper data is found, please ask the NTRIP provider to complete it with a pull-request.
 
+## Examples
+[Here](example-natrf2022.md) you can see an example to show the difference between `NAD83(2011)` and `NATRF2022` depending on your configuration.
+
 ## Contributing
 If you would like to contribute to this project, please read the file [CONTRIBUTING_GUIDE.md](CONTRIBUTING_GUIDE.md).
 
