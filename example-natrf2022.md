@@ -83,7 +83,7 @@ Filtering by mountpoint name easily allows to choose the correct CRS.
 
 ## Example using different ports
 
-Some providers will create a new access point, using a different port or even a differenct hostname.
+Some providers will create a new access point, using a different port or even a different hostname.
 This is probably useful to not extend mountpoint lists which are already very long.
 In that case the configuration is straightforward, just adding a new URL with its data.
 
