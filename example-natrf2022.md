@@ -16,6 +16,9 @@ The NTRIP-catalog schema provides several methods to specify NTRIP services offe
  - Use different mountpoints in the same URL
  - Use different ports (or even hostnames) for the each CRS
 
+Do not wait for `NATRF2022` (and its siblings `PATRF2022`, `CATRF2022` and `MATRF2022`) to be officially released.
+You can include the configuration for `NAD83(2011)` now, and update it once you know the new data.
+
 ## Example using different mountpoints
 
 Some providers will add more mountpoints to the existing ones.
