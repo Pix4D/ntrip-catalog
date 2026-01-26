@@ -1,25 +1,26 @@
 # Example for NATRF2022
 
-During the adoption of the Modernized NSRS in the USA, Canada and Mexico, there can be confusion about the CRS used for the corrections.
-NTRIP providers will provide the service for the "old" and the "new" CRS during the transition period.
+During the transition period until the Modernized NSRS in the USA, Canada and Mexico is fully adopted, NTRIP providers will have to provide corrections for the "old" and the "new" CRS during the transition period. This will inevitably cause confusion about which is the correct CRS to use with a given NTRIP mount point.
+
 [NTRIP-catalog](https://ntrip-catalog.org) can help to automatically identify it, making the transition soft and easy.
 
 The misalignment of the earth's center [by 2.2 meters](https://geodesy.noaa.gov/datums/newdatums/) in NAD83(2011)
 make differences between 1 and 2 meters (3 to 6 feet) between NAD83(2011) and NATRF2022.
-That is not small, but not huge that would allow the user to notice it immediately.
-It is in the order of magnitude of many other errors, making it difficult to identify.
+While the difference is not small, it is in the order of magnitude of many other errors, make it difficult for users to notice configuration errors immediately.
 
-These examples for the transition from `NAD83(2011)` to `NATRF2022` in the USA [https://beta.ngs.noaa.gov/](https://beta.ngs.noaa.gov/) show how easy it is to identify them properly.
+[NTRIP-catalog](https://ntrip-catalog.org) can help avoid configuration errors in the first place, as it can be used to select the correct CRS automatically based on the client device configuration (URL, port, mountpoint, position, ...)
 
-There are several options to make the difference. Here we show the two main ones:
- - Use different mountpoints in the same URL:port
- - Use different port (or even URL) for the new CRS
+These examples for the transition from `NAD83(2011)` to `NATRF2022` in the USA [https://beta.ngs.noaa.gov/](https://beta.ngs.noaa.gov/) show how easy it is to specify a service providing both systems allowing automatic client selection.
+
+The NTRIP-catalog schema provides several methods to specify NTRIP services offered in multiple CRSs by the same provider. Here we show the two main ones:
+ - Use different mountpoints in the same URL
+ - Use different ports (or even hostnames) for the each CRS
 
 ## Example using different mountpoints
 
 Some providers will add more mountpoints to the existing ones.
 The names make the difference between the CRSs.
-Filtering by mountpoint name easily allow to differenciate the CRSs
+Filtering by mountpoint name easily allows to choose the correct CRS.
 
 ```json
 {
@@ -80,8 +81,8 @@ Filtering by mountpoint name easily allow to differenciate the CRSs
 ## Example using different ports
 
 Some providers will create a new access point, using a different port or even a differenct hostname.
-This is probably useful if the list of mountpoints is already large, not making it even larger.
-In that case the configuration is straigt forward, just adding a new URL with its data.
+This is probably useful to not extend mountpoint lists which are already very long.
+In that case the configuration is straightforward, just adding a new URL with its data.
 
 ```json
 [
