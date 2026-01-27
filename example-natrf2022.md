@@ -1,11 +1,11 @@
 # Example for NATRF2022
 
-During the transition period until the Modernized NSRS in the USA, Canada and Mexico is fully adopted, NTRIP providers will have to provide corrections for the "old" and the "new" CRS during the transition period. This will inevitably cause confusion about which is the correct CRS to use with a given NTRIP mount point.
+During the transition period until the Modernized NSRS in the USA, Canada and Mexico is fully adopted, NTRIP providers will have to provide corrections for the "old" and the "new" CRSs. This will inevitably cause confusion as to which CRS is the correct one to use with given NTRIP mount point.
 
-[NTRIP-catalog](https://ntrip-catalog.org) can help to automatically identify it, making the transition soft and easy.
+[NTRIP-catalog](https://ntrip-catalog.org) can help to automatically identify it, making the transition smooth and painless.
 
 The misalignment of the earth's center [by 2.2 meters](https://geodesy.noaa.gov/datums/newdatums/) in NAD83(2011)
-make differences between 1 and 2 meters (3 to 6 feet) between NAD83(2011) and NATRF2022.
+makes differences between 1 and 2 meters (3 to 6 feet) between NAD83(2011) and NATRF2022.
 While the difference is not small, it is in the order of magnitude of many other errors, making it difficult for users to notice configuration errors immediately.
 
 [NTRIP-catalog](https://ntrip-catalog.org) can help avoid configuration errors in the first place, as it can be used to select the correct CRS automatically based on the client device configuration (URL, port, mountpoint, position, ...)
@@ -17,13 +17,13 @@ The NTRIP-catalog schema provides several methods to specify NTRIP services offe
  - Use different ports (or even hostnames) for each CRS
 
 There is no need to wait for `NATRF2022` (and its siblings `PATRF2022`, `CATRF2022` and `MATRF2022`) to be officially released.
-You can include the configuration for `NAD83(2011)` now, and update it to include the new mount points once they are released and you know the new data.
+You can include the configuration for `NAD83(2011)` now, and update it to include the new mountpoints once they are released and you know the new data.
 
-## Example using different mountpoints
+## Using different mountpoints
 
 Some providers will add more mountpoints to the existing ones.
-The names make the difference between the CRSs.
-Filtering by mountpoint name easily allows clients to choose the correct CRS.
+The names distinguish between the CRSs.
+Filtering by mountpoint name allows clients to choose the correct CRS easily.
 
 ```json
 {
@@ -83,9 +83,9 @@ Filtering by mountpoint name easily allows clients to choose the correct CRS.
 
 ## Example using different ports
 
-Some providers will create a new access point, using a different port or even a different hostname.
-This is probably useful to not extend mountpoint lists which are already very long.
-In that case the configuration is straightforward, just adding a new URL with its data.
+Some providers will create a new access point using a different port or even a different hostname.
+It is probably better to not extend mountpoint lists which are already very long.
+In that case, the configuration is straightforward: just add a new URL with its data.
 
 ```json
 [
