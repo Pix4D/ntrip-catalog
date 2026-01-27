@@ -84,7 +84,7 @@ It would be nice if you ask your service provider, inviting them to complete thi
 In case there is an entry for your service, but no proper data is found, please ask the NTRIP provider to complete it with a pull-request.
 
 ## Examples
-[Here](example-natrf2022.md) shows how a provider can specify an NTRIP service offering both `NAD83(2011)` and `NATRF2022`.
+[This page](example-natrf2022.md) shows how a provider can specify an NTRIP service offering both `NAD83(2011)` and `NATRF2022`.
 
 ## Contributing
 If you would like to contribute to this project, please read the file [CONTRIBUTING_GUIDE.md](CONTRIBUTING_GUIDE.md).

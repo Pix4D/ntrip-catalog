@@ -1,6 +1,7 @@
 # Example for NATRF2022
 
-During the transition period until the Modernized NSRS in the USA, Canada and Mexico is fully adopted, NTRIP providers will have to provide corrections for the "old" and the "new" CRSs. This will inevitably cause confusion as to which CRS is the correct one to use with given NTRIP mount point.
+During the transition period until the Modernized NSRS in the USA, Canada and Mexico is fully adopted, NTRIP providers will have to provide corrections for the "old" and the "new" CRSs.
+This will inevitably cause confusion as to which CRS is the correct one to use with given NTRIP mountpoint.
 
 [NTRIP-catalog](https://ntrip-catalog.org) can help to automatically identify it, making the transition smooth and painless.
 
