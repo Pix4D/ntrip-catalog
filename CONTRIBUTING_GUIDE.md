@@ -47,7 +47,7 @@ If you're comfortable with GitHub and JSON, here's how to submit a PR:
 
 The DCO signature certifies that you have the right to submit this contribution. It will be automatically added when using the `-s` flag.
 
-All contributions to NTRIP-catalog are subject to the Developer Certificate of Origin (DCO, https://developercertificate.org/).
+All contributions to NTRIP-catalog are subject to the [Developer Certificate of Origin](https://developercertificate.org/) (DCO).
 By signing off, the contributor agrees to the DCO.
 
 ## Examples
