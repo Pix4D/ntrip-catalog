@@ -44,10 +44,10 @@ See files [DISCLAIMER.md](DISCLAIMER.md) and [LICENSE](LICENSE).
 ## EPSG
 Many applications rely on the data provided by the [EPSG](https://epsg.org/) database.
 For that reason EPSG data is preferred in this catalog.
-If you do not find the CRS you need in EPSG, ask your regional geodetic authority to register it via https://epsg.org/dataset-change-requests.html.
+If you do not find the CRS you need in EPSG, ask your regional geodetic authority to register it via [https://epsg.org/dataset-change-requests.html](https://epsg.org/dataset-change-requests.html).
 It is easy and free of charge. (You can still register your NTRIP data without it)
 
-As a helper you can use https://spatialreference.org/, maintained by the [PROJ](https://proj.org/) open source library.
+As a helper you can use [https://spatialreference.org](https://spatialreference.org/), maintained by the [PROJ](https://proj.org/) open source library.
 
 
 ## How can I use the catalog?
