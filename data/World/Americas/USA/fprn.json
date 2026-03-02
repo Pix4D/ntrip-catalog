@@ -3,8 +3,6 @@
         "name": "FPRN - NAD83(2011)",
         "description": "Florida Primary Reference Network - NAD83(2011)",
         "urls": [
-            "http://ntrip.myfloridagps.com:10000",
-            "http://48.223.232.215:10000",
             "http://ntrip.myfloridagps.com:20000",
             "http://ntrip.myfloridagps.com:21000",
             "http://ntrip.myfloridagps.com:22000",
@@ -131,7 +129,7 @@
                     {
                         "id": "EPSG:9989",
                         "name": "ITRF2020",
-                        "epoch": 2025.75
+                        "epoch": 2026.0
                     }
                 ]
             }
