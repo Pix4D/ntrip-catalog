@@ -1,0 +1,25 @@
+[
+    {
+        "name": "CPOS NOR",
+        "description": "CPOS Kartverket Norway",
+        "urls": [
+            "http://159.162.103.14:2101",
+            "http://cpos.kartverket.no:2101"
+        ],
+        "reference": {
+            "url": "https://www.kartverket.no/en/on-land/posisjon/user-guide-positioning-services"
+        },
+        "last_update": "2026-03-03",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:10874",
+                        "name": "ETRS89-NOR [EUREF89]"
+                    }
+                ]
+            }
+        ]
+    }
+]
