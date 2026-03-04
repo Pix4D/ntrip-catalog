@@ -20,6 +20,9 @@ The NTRIP-catalog schema provides several methods to specify NTRIP services offe
 There is no need to wait for `NATRF2022` (and its siblings `PATRF2022`, `CATRF2022` and `MATRF2022`) to be officially released.
 You can include the configuration for `NAD83(2011)` now, and update it to include the new mountpoints once they are released and you know the new data.
 
+The Florida Permanent Reference Network ([FPRN](https://www.fdot.gov/Geospatial/fprn.shtm)) is already using `NAD83(2011)`, `NATRF2022`, `WGS 84 (G2296)` and `ITRF2020` using different ports.
+You can already see its [NTRIP-catalog JSON configuration file](https://github.com/Pix4D/ntrip-catalog/blob/master/data/World/Americas/USA/fprn.json).
+
 ## Using different mountpoints
 
 Some providers will add more mountpoints to the existing ones.
