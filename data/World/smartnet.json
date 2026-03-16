@@ -1,0 +1,1560 @@
+[
+    {
+        "name": "SmartNet - NAD83(CSRS)v7@2010.000",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://ab.smartnetna.com:10000",
+            "http://ab.smartnetna.com:8999",
+            "http://ab.smartnetna.com:9101",
+            "http://ab.smartnetna.com:9201",
+            "http://ab.smartnetna.com:9301",
+            "http://ab.smartnetna.com:9501",
+            "http://bc.smartnetna.com:10000",
+            "http://bc.smartnetna.com:8999",
+            "http://bc.smartnetna.com:9101",
+            "http://bc.smartnetna.com:9201",
+            "http://bc.smartnetna.com:9301",
+            "http://bc.smartnetna.com:9501",
+            "http://mb.smartnetna.com:10000",
+            "http://mb.smartnetna.com:9101",
+            "http://mb.smartnetna.com:9201",
+            "http://mb.smartnetna.com:9301",
+            "http://nb.smartnetna.com:10000",
+            "http://nb.smartnetna.com:8999",
+            "http://nb.smartnetna.com:9101",
+            "http://nb.smartnetna.com:9201",
+            "http://nb.smartnetna.com:9301",
+            "http://nb.smartnetna.com:9501",
+            "http://nl.smartnetna.com:10000",
+            "http://nl.smartnetna.com:8999",
+            "http://nl.smartnetna.com:9501",
+            "http://ns.smartnetna.com:10000",
+            "http://ns.smartnetna.com:8999",
+            "http://ns.smartnetna.com:9101",
+            "http://ns.smartnetna.com:9201",
+            "http://ns.smartnetna.com:9301",
+            "http://ns.smartnetna.com:9501",
+            "http://on.smartnetna.com:10000",
+            "http://on.smartnetna.com:8999",
+            "http://on.smartnetna.com:9101",
+            "http://on.smartnetna.com:9201",
+            "http://on.smartnetna.com:9301",
+            "http://on.smartnetna.com:9501",
+            "http://pe.smartnetna.com:10000",
+            "http://pe.smartnetna.com:8999",
+            "http://pe.smartnetna.com:9101",
+            "http://pe.smartnetna.com:9201",
+            "http://pe.smartnetna.com:9301",
+            "http://pe.smartnetna.com:9501",
+            "http://qc.smartnetna.com:10000",
+            "http://qc.smartnetna.com:8999",
+            "http://qc.smartnetna.com:9101",
+            "http://qc.smartnetna.com:9201",
+            "http://qc.smartnetna.com:9301",
+            "http://qc.smartnetna.com:9501",
+            "http://sk.smartnetna.com:10000",
+            "http://sk.smartnetna.com:9101",
+            "http://sk.smartnetna.com:9201",
+            "http://sk.smartnetna.com:9301"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:8254",
+                        "name": "NAD83(CSRS)v7",
+                        "epoch": 2010.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - ITRF2014@2024.750",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://ab.smartnetna.com:9950",
+            "http://al.smartnetna.com:9950",
+            "http://ar.smartnetna.com:9950",
+            "http://az.smartnetna.com:9950",
+            "http://bc.smartnetna.com:9950",
+            "http://be.smartnetna.com:9950",
+            "http://ca.smartnetna.com:9950",
+            "http://co.smartnetna.com:9950",
+            "http://ct.smartnetna.com:9950",
+            "http://dc.smartnetna.com:9950",
+            "http://de.smartnetna.com:9950",
+            "http://ga.smartnetna.com:9950",
+            "http://hi.smartnetna.com:9950",
+            "http://ia.smartnetna.com:9950",
+            "http://id.smartnetna.com:9950",
+            "http://il.smartnetna.com:9950",
+            "http://in.smartnetna.com:9950",
+            "http://ks.smartnetna.com:9950",
+            "http://ky.smartnetna.com:9950",
+            "http://la.smartnetna.com:9950",
+            "http://ma.smartnetna.com:9950",
+            "http://md.smartnetna.com:9950",
+            "http://me.smartnetna.com:9950",
+            "http://mi.smartnetna.com:9950",
+            "http://mn.smartnetna.com:9950",
+            "http://mo.smartnetna.com:9950",
+            "http://ms.smartnetna.com:9950",
+            "http://mt.smartnetna.com:9950",
+            "http://nb.smartnetna.com:9950",
+            "http://nc.smartnetna.com:9950",
+            "http://ne.smartnetna.com:9950",
+            "http://nh.smartnetna.com:9950",
+            "http://nj.smartnetna.com:9950",
+            "http://nl.smartnetna.com:9950",
+            "http://nm.smartnetna.com:9950",
+            "http://ns.smartnetna.com:9950",
+            "http://nv.smartnetna.com:9950",
+            "http://ny.smartnetna.com:9950",
+            "http://oh.smartnetna.com:9950",
+            "http://ok.smartnetna.com:9950",
+            "http://on.smartnetna.com:9950",
+            "http://or.smartnetna.com:9950",
+            "http://pa.smartnetna.com:9950",
+            "http://pe.smartnetna.com:9950",
+            "http://qc.smartnetna.com:9950",
+            "http://ri.smartnetna.com:9950",
+            "http://sc.smartnetna.com:9950",
+            "http://tn.smartnetna.com:9950",
+            "http://tx.smartnetna.com:9950",
+            "http://ut.smartnetna.com:9950",
+            "http://va.smartnetna.com:9950",
+            "http://vt.smartnetna.com:9950",
+            "http://wa.smartnetna.com:9950",
+            "http://wi.smartnetna.com:9950",
+            "http://wv.smartnetna.com:9950",
+            "http://wy.smartnetna.com:9950"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:7912",
+                        "name": "ITRF2014",
+                        "epoch": 2024.75
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - NAD83(2011)@2010.000",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://ak.smartnetna.com:10000",
+            "http://ak.smartnetna.com:9101",
+            "http://ak.smartnetna.com:9201",
+            "http://ak.smartnetna.com:9301",
+            "http://ak.smartnetna.com:9501",
+            "http://al.smartnetna.com:10000",
+            "http://al.smartnetna.com:8999",
+            "http://al.smartnetna.com:9101",
+            "http://al.smartnetna.com:9201",
+            "http://al.smartnetna.com:9301",
+            "http://al.smartnetna.com:9501",
+            "http://ar.smartnetna.com:10000",
+            "http://ar.smartnetna.com:8999",
+            "http://ar.smartnetna.com:9101",
+            "http://ar.smartnetna.com:9201",
+            "http://ar.smartnetna.com:9301",
+            "http://ar.smartnetna.com:9501",
+            "http://az.smartnetna.com:10000",
+            "http://az.smartnetna.com:8999",
+            "http://az.smartnetna.com:9101",
+            "http://az.smartnetna.com:9201",
+            "http://az.smartnetna.com:9301",
+            "http://az.smartnetna.com:9501",
+            "http://co.smartnetna.com:10000",
+            "http://co.smartnetna.com:8999",
+            "http://co.smartnetna.com:9101",
+            "http://co.smartnetna.com:9201",
+            "http://co.smartnetna.com:9301",
+            "http://co.smartnetna.com:9501",
+            "http://ct.smartnetna.com:10000",
+            "http://ct.smartnetna.com:8999",
+            "http://ct.smartnetna.com:9101",
+            "http://ct.smartnetna.com:9201",
+            "http://ct.smartnetna.com:9301",
+            "http://ct.smartnetna.com:9501",
+            "http://dc.smartnetna.com:10000",
+            "http://dc.smartnetna.com:8999",
+            "http://dc.smartnetna.com:9101",
+            "http://dc.smartnetna.com:9201",
+            "http://dc.smartnetna.com:9301",
+            "http://dc.smartnetna.com:9501",
+            "http://de.smartnetna.com:10000",
+            "http://de.smartnetna.com:8999",
+            "http://fl.smartnetna.com:10000",
+            "http://fl.smartnetna.com:9101",
+            "http://fl.smartnetna.com:9201",
+            "http://fl.smartnetna.com:9301",
+            "http://ga.smartnetna.com:10000",
+            "http://ga.smartnetna.com:8999",
+            "http://ga.smartnetna.com:9101",
+            "http://ga.smartnetna.com:9201",
+            "http://ga.smartnetna.com:9301",
+            "http://ga.smartnetna.com:9501",
+            "http://hi.smartnetna.com:10000",
+            "http://hi.smartnetna.com:9101",
+            "http://hi.smartnetna.com:9201",
+            "http://hi.smartnetna.com:9301",
+            "http://hi.smartnetna.com:9501",
+            "http://ia.smartnetna.com:10000",
+            "http://ia.smartnetna.com:8999",
+            "http://ia.smartnetna.com:9101",
+            "http://ia.smartnetna.com:9201",
+            "http://ia.smartnetna.com:9301",
+            "http://ia.smartnetna.com:9501",
+            "http://id.smartnetna.com:10000",
+            "http://id.smartnetna.com:8999",
+            "http://id.smartnetna.com:9101",
+            "http://id.smartnetna.com:9201",
+            "http://id.smartnetna.com:9301",
+            "http://id.smartnetna.com:9501",
+            "http://il.smartnetna.com:10000",
+            "http://il.smartnetna.com:8999",
+            "http://il.smartnetna.com:9101",
+            "http://il.smartnetna.com:9201",
+            "http://il.smartnetna.com:9301",
+            "http://il.smartnetna.com:9501",
+            "http://in.smartnetna.com:10000",
+            "http://in.smartnetna.com:8999",
+            "http://in.smartnetna.com:9201",
+            "http://in.smartnetna.com:9301",
+            "http://in.smartnetna.com:9501",
+            "http://ks.smartnetna.com:10000",
+            "http://ks.smartnetna.com:8999",
+            "http://ks.smartnetna.com:9101",
+            "http://ks.smartnetna.com:9201",
+            "http://ks.smartnetna.com:9301",
+            "http://ks.smartnetna.com:9501",
+            "http://ky.smartnetna.com:10000",
+            "http://ky.smartnetna.com:9101",
+            "http://ky.smartnetna.com:9201",
+            "http://ky.smartnetna.com:9301",
+            "http://ky.smartnetna.com:9501",
+            "http://la.smartnetna.com:10000",
+            "http://la.smartnetna.com:8999",
+            "http://la.smartnetna.com:9101",
+            "http://la.smartnetna.com:9201",
+            "http://la.smartnetna.com:9301",
+            "http://la.smartnetna.com:9501",
+            "http://ma.smartnetna.com:10000",
+            "http://ma.smartnetna.com:8999",
+            "http://ma.smartnetna.com:9101",
+            "http://ma.smartnetna.com:9201",
+            "http://ma.smartnetna.com:9301",
+            "http://ma.smartnetna.com:9501",
+            "http://md.smartnetna.com:10000",
+            "http://md.smartnetna.com:8999",
+            "http://md.smartnetna.com:9101",
+            "http://md.smartnetna.com:9201",
+            "http://md.smartnetna.com:9301",
+            "http://md.smartnetna.com:9501",
+            "http://me.smartnetna.com:10000",
+            "http://me.smartnetna.com:8999",
+            "http://me.smartnetna.com:9101",
+            "http://me.smartnetna.com:9201",
+            "http://me.smartnetna.com:9301",
+            "http://me.smartnetna.com:9501",
+            "http://mi.smartnetna.com:10000",
+            "http://mi.smartnetna.com:9201",
+            "http://mi.smartnetna.com:9301",
+            "http://mi.smartnetna.com:9501",
+            "http://mn.smartnetna.com:10000",
+            "http://mn.smartnetna.com:8999",
+            "http://mn.smartnetna.com:9101",
+            "http://mn.smartnetna.com:9201",
+            "http://mn.smartnetna.com:9301",
+            "http://mn.smartnetna.com:9501",
+            "http://mo.smartnetna.com:10000",
+            "http://mo.smartnetna.com:8999",
+            "http://mo.smartnetna.com:9101",
+            "http://mo.smartnetna.com:9201",
+            "http://mo.smartnetna.com:9301",
+            "http://mo.smartnetna.com:9501",
+            "http://ms.smartnetna.com:10000",
+            "http://ms.smartnetna.com:8999",
+            "http://ms.smartnetna.com:9101",
+            "http://ms.smartnetna.com:9201",
+            "http://ms.smartnetna.com:9301",
+            "http://ms.smartnetna.com:9501",
+            "http://mt.smartnetna.com:10000",
+            "http://mt.smartnetna.com:9101",
+            "http://mt.smartnetna.com:9201",
+            "http://mt.smartnetna.com:9301",
+            "http://mt.smartnetna.com:9501",
+            "http://nc.smartnetna.com:10000",
+            "http://nc.smartnetna.com:8999",
+            "http://nc.smartnetna.com:9101",
+            "http://nc.smartnetna.com:9201",
+            "http://nc.smartnetna.com:9301",
+            "http://nc.smartnetna.com:9501",
+            "http://ne.smartnetna.com:10000",
+            "http://ne.smartnetna.com:8999",
+            "http://ne.smartnetna.com:9101",
+            "http://ne.smartnetna.com:9201",
+            "http://ne.smartnetna.com:9301",
+            "http://ne.smartnetna.com:9501",
+            "http://nh.smartnetna.com:10000",
+            "http://nh.smartnetna.com:8999",
+            "http://nh.smartnetna.com:9101",
+            "http://nh.smartnetna.com:9201",
+            "http://nh.smartnetna.com:9301",
+            "http://nh.smartnetna.com:9501",
+            "http://nj.smartnetna.com:10000",
+            "http://nj.smartnetna.com:8999",
+            "http://nj.smartnetna.com:9101",
+            "http://nj.smartnetna.com:9201",
+            "http://nj.smartnetna.com:9301",
+            "http://nj.smartnetna.com:9501",
+            "http://nm.smartnetna.com:10000",
+            "http://nm.smartnetna.com:8999",
+            "http://nm.smartnetna.com:9101",
+            "http://nm.smartnetna.com:9201",
+            "http://nm.smartnetna.com:9301",
+            "http://nm.smartnetna.com:9501",
+            "http://nv.smartnetna.com:10000",
+            "http://nv.smartnetna.com:8999",
+            "http://nv.smartnetna.com:9201",
+            "http://nv.smartnetna.com:9301",
+            "http://nv.smartnetna.com:9501",
+            "http://ny.smartnetna.com:10000",
+            "http://ny.smartnetna.com:8999",
+            "http://ny.smartnetna.com:9101",
+            "http://ny.smartnetna.com:9201",
+            "http://ny.smartnetna.com:9301",
+            "http://ny.smartnetna.com:9501",
+            "http://oh.smartnetna.com:10000",
+            "http://oh.smartnetna.com:9201",
+            "http://oh.smartnetna.com:9301",
+            "http://oh.smartnetna.com:9501",
+            "http://ok.smartnetna.com:10000",
+            "http://ok.smartnetna.com:8999",
+            "http://ok.smartnetna.com:9101",
+            "http://ok.smartnetna.com:9201",
+            "http://ok.smartnetna.com:9301",
+            "http://ok.smartnetna.com:9501",
+            "http://pa.smartnetna.com:10000",
+            "http://pa.smartnetna.com:8999",
+            "http://pa.smartnetna.com:9101",
+            "http://pa.smartnetna.com:9201",
+            "http://pa.smartnetna.com:9301",
+            "http://pa.smartnetna.com:9501",
+            "http://ri.smartnetna.com:10000",
+            "http://ri.smartnetna.com:8999",
+            "http://ri.smartnetna.com:9101",
+            "http://ri.smartnetna.com:9201",
+            "http://ri.smartnetna.com:9301",
+            "http://ri.smartnetna.com:9501",
+            "http://sc.smartnetna.com:10000",
+            "http://sc.smartnetna.com:8999",
+            "http://sc.smartnetna.com:9201",
+            "http://sc.smartnetna.com:9301",
+            "http://sc.smartnetna.com:9501",
+            "http://tn.smartnetna.com:10000",
+            "http://tn.smartnetna.com:8999",
+            "http://tn.smartnetna.com:9201",
+            "http://tn.smartnetna.com:9301",
+            "http://tn.smartnetna.com:9501",
+            "http://tx.smartnetna.com:10000",
+            "http://tx.smartnetna.com:8999",
+            "http://tx.smartnetna.com:9101",
+            "http://tx.smartnetna.com:9201",
+            "http://tx.smartnetna.com:9301",
+            "http://tx.smartnetna.com:9501",
+            "http://ut.smartnetna.com:10000",
+            "http://ut.smartnetna.com:8999",
+            "http://ut.smartnetna.com:9101",
+            "http://ut.smartnetna.com:9201",
+            "http://ut.smartnetna.com:9301",
+            "http://ut.smartnetna.com:9501",
+            "http://va.smartnetna.com:10000",
+            "http://va.smartnetna.com:8999",
+            "http://va.smartnetna.com:9101",
+            "http://va.smartnetna.com:9201",
+            "http://va.smartnetna.com:9301",
+            "http://va.smartnetna.com:9501",
+            "http://vt.smartnetna.com:10000",
+            "http://vt.smartnetna.com:8999",
+            "http://vt.smartnetna.com:9101",
+            "http://vt.smartnetna.com:9201",
+            "http://vt.smartnetna.com:9301",
+            "http://vt.smartnetna.com:9501",
+            "http://wi.smartnetna.com:10000",
+            "http://wi.smartnetna.com:8999",
+            "http://wi.smartnetna.com:9101",
+            "http://wi.smartnetna.com:9201",
+            "http://wi.smartnetna.com:9301",
+            "http://wi.smartnetna.com:9501",
+            "http://wv.smartnetna.com:10000",
+            "http://wv.smartnetna.com:8999",
+            "http://wv.smartnetna.com:9101",
+            "http://wv.smartnetna.com:9201",
+            "http://wv.smartnetna.com:9301",
+            "http://wv.smartnetna.com:9501",
+            "http://wy.smartnetna.com:10000",
+            "http://wy.smartnetna.com:8999",
+            "http://wy.smartnetna.com:9201",
+            "http://wy.smartnetna.com:9301",
+            "http://wy.smartnetna.com:9501"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:6319",
+                        "name": "NAD83(2011)",
+                        "epoch": 2010.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - ETRS89@2002.000",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://au.smartnetna.com:9101",
+            "http://au.smartnetna.com:9201",
+            "http://au.smartnetna.com:9301"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:4937",
+                        "name": "ETRS89",
+                        "epoch": 2002.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - ITRF2014@2022.250",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://au.smartnetna.com:9401",
+            "http://bb.smartnetna.com:9401",
+            "http://be.smartnetna.com:9401",
+            "http://bg.smartnetna.com:9401",
+            "http://br.smartnetna.com:9401",
+            "http://bw.smartnetna.com:9401",
+            "http://by.smartnetna.com:9401",
+            "http://ch.smartnetna.com:9401",
+            "http://cz.smartnetna.com:9401",
+            "http://de.smartnetna.com:9401",
+            "http://dk.smartnetna.com:9401",
+            "http://es.smartnetna.com:9401",
+            "http://fi.smartnetna.com:9401",
+            "http://fr.smartnetna.com:9401",
+            "http://gr.smartnetna.com:9401",
+            "http://he.smartnetna.com:9401",
+            "http://hh.smartnetna.com:9401",
+            "http://it.smartnetna.com:9401",
+            "http://mpom.smartnetna.com:9401",
+            "http://ni.smartnetna.com:9401",
+            "http://nl.smartnetna.com:9401",
+            "http://no.smartnetna.com:9401",
+            "http://nsw.smartnetna.com:9401",
+            "http://nw.smartnetna.com:9401",
+            "http://pl.smartnetna.com:9401",
+            "http://pt.smartnetna.com:9401",
+            "http://qld.smartnetna.com:9401",
+            "http://roa.smartnetna.com:9401",
+            "http://rp.smartnetna.com:9401",
+            "http://sanh.smartnetna.com:9401",
+            "http://se.smartnetna.com:9401",
+            "http://sh.smartnetna.com:9401",
+            "http://si.smartnetna.com:9401",
+            "http://sl.smartnetna.com:9401",
+            "http://sn.smartnetna.com:9401",
+            "http://th.smartnetna.com:9401",
+            "http://uk.smartnetna.com:9401",
+            "http://vic.smartnetna.com:9401"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:7912",
+                        "name": "ITRF2014",
+                        "epoch": 2022.25
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - ETRS89/DREF91/2016@2016.000",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://bb.smartnetna.com:7801",
+            "http://bb.smartnetna.com:7803",
+            "http://bb.smartnetna.com:9101",
+            "http://bb.smartnetna.com:9201",
+            "http://bb.smartnetna.com:9301",
+            "http://bb.smartnetna.com:9501",
+            "http://be.smartnetna.com:7801",
+            "http://be.smartnetna.com:7803",
+            "http://be.smartnetna.com:9101",
+            "http://be.smartnetna.com:9201",
+            "http://be.smartnetna.com:9301",
+            "http://be.smartnetna.com:9501",
+            "http://br.smartnetna.com:7801",
+            "http://br.smartnetna.com:7803",
+            "http://br.smartnetna.com:9101",
+            "http://br.smartnetna.com:9201",
+            "http://br.smartnetna.com:9301",
+            "http://br.smartnetna.com:9501",
+            "http://bw.smartnetna.com:7801",
+            "http://bw.smartnetna.com:7803",
+            "http://bw.smartnetna.com:9101",
+            "http://bw.smartnetna.com:9201",
+            "http://bw.smartnetna.com:9301",
+            "http://bw.smartnetna.com:9501",
+            "http://by.smartnetna.com:7801",
+            "http://by.smartnetna.com:7803",
+            "http://by.smartnetna.com:9101",
+            "http://by.smartnetna.com:9201",
+            "http://by.smartnetna.com:9301",
+            "http://by.smartnetna.com:9501",
+            "http://de.smartnetna.com:7801",
+            "http://de.smartnetna.com:7803",
+            "http://he.smartnetna.com:7801",
+            "http://he.smartnetna.com:7803",
+            "http://he.smartnetna.com:9101",
+            "http://he.smartnetna.com:9201",
+            "http://he.smartnetna.com:9301",
+            "http://he.smartnetna.com:9501",
+            "http://hh.smartnetna.com:7801",
+            "http://hh.smartnetna.com:7803",
+            "http://hh.smartnetna.com:9101",
+            "http://hh.smartnetna.com:9201",
+            "http://hh.smartnetna.com:9301",
+            "http://hh.smartnetna.com:9501",
+            "http://mpom.smartnetna.com:7801",
+            "http://mpom.smartnetna.com:7803",
+            "http://mpom.smartnetna.com:9101",
+            "http://mpom.smartnetna.com:9201",
+            "http://mpom.smartnetna.com:9301",
+            "http://mpom.smartnetna.com:9501",
+            "http://ni.smartnetna.com:7801",
+            "http://ni.smartnetna.com:7803",
+            "http://ni.smartnetna.com:9101",
+            "http://ni.smartnetna.com:9201",
+            "http://ni.smartnetna.com:9301",
+            "http://ni.smartnetna.com:9501",
+            "http://nw.smartnetna.com:7801",
+            "http://nw.smartnetna.com:7803",
+            "http://nw.smartnetna.com:9101",
+            "http://nw.smartnetna.com:9201",
+            "http://nw.smartnetna.com:9301",
+            "http://nw.smartnetna.com:9501",
+            "http://rp.smartnetna.com:7801",
+            "http://rp.smartnetna.com:7803",
+            "http://rp.smartnetna.com:9101",
+            "http://rp.smartnetna.com:9201",
+            "http://rp.smartnetna.com:9301",
+            "http://rp.smartnetna.com:9501",
+            "http://sanh.smartnetna.com:7801",
+            "http://sanh.smartnetna.com:7803",
+            "http://sanh.smartnetna.com:9101",
+            "http://sanh.smartnetna.com:9201",
+            "http://sanh.smartnetna.com:9301",
+            "http://sanh.smartnetna.com:9501",
+            "http://sh.smartnetna.com:7801",
+            "http://sh.smartnetna.com:7803",
+            "http://sh.smartnetna.com:9101",
+            "http://sh.smartnetna.com:9201",
+            "http://sh.smartnetna.com:9301",
+            "http://sh.smartnetna.com:9501",
+            "http://sl.smartnetna.com:7801",
+            "http://sl.smartnetna.com:7803",
+            "http://sl.smartnetna.com:9501",
+            "http://sn.smartnetna.com:7801",
+            "http://sn.smartnetna.com:7803",
+            "http://sn.smartnetna.com:9101",
+            "http://sn.smartnetna.com:9201",
+            "http://sn.smartnetna.com:9301",
+            "http://sn.smartnetna.com:9501",
+            "http://th.smartnetna.com:7801",
+            "http://th.smartnetna.com:7803",
+            "http://th.smartnetna.com:9101",
+            "http://th.smartnetna.com:9201",
+            "http://th.smartnetna.com:9301",
+            "http://th.smartnetna.com:9501",
+            "http://uk.smartnetna.com:9101",
+            "http://uk.smartnetna.com:9201",
+            "http://uk.smartnetna.com:9301",
+            "http://uk.smartnetna.com:9501"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:10283",
+                        "name": "ETRS89/DREF91/2016",
+                        "epoch": 2016.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - ETRS89/DREF91/2016@2011.836",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://bb.smartnetna.com:7802",
+            "http://bb.smartnetna.com:7804",
+            "http://bb.smartnetna.com:7805",
+            "http://be.smartnetna.com:7802",
+            "http://be.smartnetna.com:7804",
+            "http://br.smartnetna.com:7802",
+            "http://br.smartnetna.com:7804",
+            "http://br.smartnetna.com:7805",
+            "http://bw.smartnetna.com:7802",
+            "http://bw.smartnetna.com:7804",
+            "http://bw.smartnetna.com:7805",
+            "http://by.smartnetna.com:7802",
+            "http://by.smartnetna.com:7804",
+            "http://by.smartnetna.com:7805",
+            "http://he.smartnetna.com:7802",
+            "http://he.smartnetna.com:7804",
+            "http://he.smartnetna.com:7805",
+            "http://hh.smartnetna.com:7802",
+            "http://hh.smartnetna.com:7804",
+            "http://hh.smartnetna.com:7805",
+            "http://mpom.smartnetna.com:7802",
+            "http://mpom.smartnetna.com:7804",
+            "http://mpom.smartnetna.com:7805",
+            "http://ni.smartnetna.com:7802",
+            "http://ni.smartnetna.com:7804",
+            "http://ni.smartnetna.com:7805",
+            "http://nw.smartnetna.com:7802",
+            "http://nw.smartnetna.com:7804",
+            "http://nw.smartnetna.com:7805",
+            "http://rp.smartnetna.com:7802",
+            "http://rp.smartnetna.com:7804",
+            "http://rp.smartnetna.com:7805",
+            "http://sanh.smartnetna.com:7802",
+            "http://sanh.smartnetna.com:7804",
+            "http://sanh.smartnetna.com:7805",
+            "http://sh.smartnetna.com:7802",
+            "http://sh.smartnetna.com:7804",
+            "http://sh.smartnetna.com:7805",
+            "http://sl.smartnetna.com:7802",
+            "http://sl.smartnetna.com:7804",
+            "http://sl.smartnetna.com:7805",
+            "http://sn.smartnetna.com:7802",
+            "http://sn.smartnetna.com:7804",
+            "http://sn.smartnetna.com:7805",
+            "http://th.smartnetna.com:7802",
+            "http://th.smartnetna.com:7804",
+            "http://th.smartnetna.com:7805"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:10283",
+                        "name": "ETRS89/DREF91/2016",
+                        "epoch": 2011.836
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - ETRF2000@2005.000",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://bg.smartnetna.com:9101",
+            "http://bg.smartnetna.com:9201",
+            "http://bg.smartnetna.com:9301"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:7931",
+                        "name": "ETRF2000",
+                        "epoch": 2005.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - NAD83(2011)@2024.750",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://ca.smartnetna.com:10000",
+            "http://ca.smartnetna.com:8999",
+            "http://ca.smartnetna.com:9101",
+            "http://ca.smartnetna.com:9201",
+            "http://ca.smartnetna.com:9301",
+            "http://ca.smartnetna.com:9501"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:6319",
+                        "name": "NAD83(2011)",
+                        "epoch": 2024.75
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - CHTRS95@1993.000",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://ch.smartnetna.com:9101",
+            "http://ch.smartnetna.com:9201",
+            "http://ch.smartnetna.com:9301",
+            "http://ch.smartnetna.com:9501"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:4933",
+                        "name": "CHTRS95",
+                        "epoch": 1993.0,
+                        "description": "EPSG:4343 (CHTRF95 (3D)) is deprecated, replaced by EPSG:4933 (CHTRS95)"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - ETRF2000@2007.000",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://cz.smartnetna.com:9101",
+            "http://cz.smartnetna.com:9201",
+            "http://cz.smartnetna.com:9301"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:7931",
+                        "name": "ETRF2000",
+                        "epoch": 2007.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - ETRS89/DREF91/2016@2011.970",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://de.smartnetna.com:7802",
+            "http://de.smartnetna.com:7804",
+            "http://de.smartnetna.com:7805"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:10283",
+                        "name": "ETRS89/DREF91/2016",
+                        "epoch": 2011.97
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - ETRS89@1989.000",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://dk.smartnetna.com:10300",
+            "http://dk.smartnetna.com:9101",
+            "http://dk.smartnetna.com:9201",
+            "http://dk.smartnetna.com:9301"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:4937",
+                        "name": "ETRS89",
+                        "epoch": 1989.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - ETRS89@2005.000",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://es.smartnetna.com:9101",
+            "http://es.smartnetna.com:9201",
+            "http://es.smartnetna.com:9301"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:4937",
+                        "name": "ETRS89",
+                        "epoch": 2005.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - RGF93v2@2009.000",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://fr.smartnetna.com:9101",
+            "http://fr.smartnetna.com:9201",
+            "http://fr.smartnetna.com:9301",
+            "http://fr.smartnetna.com:9501"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:9776",
+                        "name": "RGF93v2",
+                        "epoch": 2009.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - GGRS87@1987.000",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://gr.smartnetna.com:9101",
+            "http://gr.smartnetna.com:9201",
+            "http://gr.smartnetna.com:9301"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:4121",
+                        "name": "GGRS87",
+                        "epoch": 1987.0,
+                        "description": "The EPSG registry only contains an entry for the Geographic 2D CRS, no 3D"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - RDN@2008.000",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://it.smartnetna.com:9101",
+            "http://it.smartnetna.com:9201",
+            "http://it.smartnetna.com:9301",
+            "http://it.smartnetna.com:9501"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:6705",
+                        "name": "RDN",
+                        "epoch": 2008.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - GDA2020@2020.000",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://nsw.smartnetna.com:9201",
+            "http://nsw.smartnetna.com:9301",
+            "http://nsw.smartnetna.com:9501",
+            "http://qld.smartnetna.com:9201",
+            "http://qld.smartnetna.com:9301",
+            "http://qld.smartnetna.com:9501",
+            "http://roa.smartnetna.com:9201",
+            "http://roa.smartnetna.com:9301",
+            "http://roa.smartnetna.com:9501",
+            "http://vic.smartnetna.com:9201",
+            "http://vic.smartnetna.com:9301",
+            "http://vic.smartnetna.com:9501"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:7843",
+                        "name": "GDA2020",
+                        "epoch": 2020.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - NAD83(2011)@2020.000",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://or.smartnetna.com:10000",
+            "http://or.smartnetna.com:8999",
+            "http://or.smartnetna.com:9101",
+            "http://or.smartnetna.com:9201",
+            "http://or.smartnetna.com:9301",
+            "http://or.smartnetna.com:9501",
+            "http://wa.smartnetna.com:10000",
+            "http://wa.smartnetna.com:8999",
+            "http://wa.smartnetna.com:9101",
+            "http://wa.smartnetna.com:9201",
+            "http://wa.smartnetna.com:9301",
+            "http://wa.smartnetna.com:9501"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:6319",
+                        "name": "NAD83(2011)",
+                        "epoch": 2020.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - PL-ETRF2000@2011.000",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://pl.smartnetna.com:9101",
+            "http://pl.smartnetna.com:9201",
+            "http://pl.smartnetna.com:9301",
+            "http://pl.smartnetna.com:9501"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:9701",
+                        "name": "PL-ETRF2000",
+                        "epoch": 2011.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - SWEREF99@1999.500",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://se.smartnetna.com:9101",
+            "http://se.smartnetna.com:9201",
+            "http://se.smartnetna.com:9301"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:4977",
+                        "name": "SWEREF99",
+                        "epoch": 1999.5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - DE.SMARTNETNA.COM - Port 9101",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://de.smartnetna.com:9101"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": {
+                    "mountpoints": [
+                        "jdmrtk3",
+                        "jdmrtk4"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:6319",
+                        "name": "NAD83(2011)",
+                        "epoch": 2010.0
+                    }
+                ]
+            },
+            {
+                "filter": {
+                    "mountpoints": [
+                        "jdmrtk3",
+                        "jdmrtk4"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:10283",
+                        "name": "ETRS89/DREF91/2016",
+                        "epoch": 2016.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - DE.SMARTNETNA.COM - Port 9201",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://de.smartnetna.com:9201"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": {
+                    "mountpoints": [
+                        "mc-icon-msm",
+                        "mc-powerbox",
+                        "zeno",
+                        "zeno-msm"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:6319",
+                        "name": "NAD83(2011)",
+                        "epoch": 2010.0
+                    }
+                ]
+            },
+            {
+                "filter": {
+                    "mountpoints": [
+                        "mc-icon-msm",
+                        "mc-powerbox",
+                        "zeno",
+                        "zeno-msm"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:10283",
+                        "name": "ETRS89/DREF91/2016",
+                        "epoch": 2016.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - DE.SMARTNETNA.COM - Port 9301",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://de.smartnetna.com:9301"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": {
+                    "mountpoints": [
+                        "MSM_NEAR",
+                        "MSM_VRS",
+                        "MSM_iMAX"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:6319",
+                        "name": "NAD83(2011)",
+                        "epoch": 2010.0
+                    }
+                ]
+            },
+            {
+                "filter": {
+                    "mountpoints": [
+                        "MSM_NEAR",
+                        "MSM_VRS",
+                        "MSM_iMAX"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:10283",
+                        "name": "ETRS89/DREF91/2016",
+                        "epoch": 2016.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - DE.SMARTNETNA.COM - Port 9501",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://de.smartnetna.com:9501"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": {
+                    "mountpoints": [
+                        "ag-imax-msm"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:6319",
+                        "name": "NAD83(2011)",
+                        "epoch": 2010.0
+                    }
+                ]
+            },
+            {
+                "filter": {
+                    "mountpoints": [
+                        "ag-imax-msm"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:10283",
+                        "name": "ETRS89/DREF91/2016",
+                        "epoch": 2016.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - NL.SMARTNETNA.COM - Port 9101",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://nl.smartnetna.com:9101"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": {
+                    "mountpoints": [
+                        "jdmrtk3",
+                        "jdmrtk4"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:4937",
+                        "name": "ETRS89",
+                        "epoch": 2010.0
+                    }
+                ]
+            },
+            {
+                "filter": {
+                    "mountpoints": [
+                        "jdmrtk3",
+                        "jdmrtk4"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:8254",
+                        "name": "NAD83(CSRS)v7",
+                        "epoch": 2010.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - NL.SMARTNETNA.COM - Port 9201",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://nl.smartnetna.com:9201"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": {
+                    "mountpoints": [
+                        "mc-icon-msm",
+                        "mc-powerbox",
+                        "zeno",
+                        "zeno-msm"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:4937",
+                        "name": "ETRS89",
+                        "epoch": 2010.0
+                    }
+                ]
+            },
+            {
+                "filter": {
+                    "mountpoints": [
+                        "mc-icon-msm",
+                        "zeno-msm"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:8254",
+                        "name": "NAD83(CSRS)v7",
+                        "epoch": 2010.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - NL.SMARTNETNA.COM - Port 9301",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://nl.smartnetna.com:9301"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": {
+                    "mountpoints": [
+                        "MSM_NEAR",
+                        "MSM_VRS",
+                        "MSM_iMAX"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:4937",
+                        "name": "ETRS89",
+                        "epoch": 2010.0
+                    }
+                ]
+            },
+            {
+                "filter": {
+                    "mountpoints": [
+                        "MSM_NEAR"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:8254",
+                        "name": "NAD83(CSRS)v7",
+                        "epoch": 2010.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - SL.SMARTNETNA.COM - Port 9101",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://sl.smartnetna.com:9101"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": {
+                    "mountpoints": [
+                        "jdmrtk3",
+                        "jdmrtk4"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:10283",
+                        "name": "ETRS89/DREF91/2016",
+                        "epoch": 2016.0
+                    }
+                ]
+            },
+            {
+                "filter": {
+                    "mountpoints": [
+                        "jdmrtk3",
+                        "jdmrtk4"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:7931",
+                        "name": "SKTRF2009",
+                        "epoch": 2008.5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - SL.SMARTNETNA.COM - Port 9201",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://sl.smartnetna.com:9201"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": {
+                    "mountpoints": [
+                        "mc-icon-msm",
+                        "mc-powerbox",
+                        "zeno",
+                        "zeno-msm"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:10283",
+                        "name": "ETRS89/DREF91/2016",
+                        "epoch": 2016.0
+                    }
+                ]
+            },
+            {
+                "filter": {
+                    "mountpoints": [
+                        "mc-icon-msm",
+                        "mc-powerbox",
+                        "zeno",
+                        "zeno-msm"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:7931",
+                        "name": "SKTRF2009",
+                        "epoch": 2008.5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SmartNet - SL.SMARTNETNA.COM - Port 9301",
+        "description": "Hexagon SmartNet RTK Network",
+        "urls": [
+            "http://sl.smartnetna.com:9301"
+        ],
+        "reference": {
+            "url": "https://www.smartnetna.com/resources_configuration.cfm",
+            "comments": "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+        },
+        "last_update": "2025-05-21",
+        "streams": [
+            {
+                "filter": {
+                    "mountpoints": [
+                        "MSM_NEAR",
+                        "MSM_VRS",
+                        "MSM_iMAX"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:10283",
+                        "name": "ETRS89/DREF91/2016",
+                        "epoch": 2016.0
+                    }
+                ]
+            },
+            {
+                "filter": {
+                    "mountpoints": [
+                        "MSM_NEAR",
+                        "MSM_VRS",
+                        "MSM_iMAX"
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:7931",
+                        "name": "SKTRF2009",
+                        "epoch": 2008.5
+                    }
+                ]
+            }
+        ]
+    }
+]
