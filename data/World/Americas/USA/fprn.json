@@ -1,7 +1,7 @@
 [
     {
         "name": "FPRN - NAD83(2011)",
-        "description": "Florida Primary Reference Network - NAD83(2011)",
+        "description": "Florida Permanent Reference Network - NAD83(2011)",
         "urls": [
             "http://ntrip.myfloridagps.com:20000",
             "http://ntrip.myfloridagps.com:21000",
@@ -35,7 +35,7 @@
     },
     {
         "name": "FPRN - NATRF2022",
-        "description": "Florida Primary Reference Network - NATRF2022",
+        "description": "Florida Permanent Reference Network - NATRF2022",
         "urls": [
             "http://ntrip.myfloridagps.com:30000",
             "http://ntrip.myfloridagps.com:31000",
@@ -69,7 +69,7 @@
     },
     {
         "name": "FPRN - WGS84(G2296)",
-        "description": "Florida Primary Reference Network - WGS84(G2296)",
+        "description": "Florida Permanent Reference Network - WGS84(G2296)",
         "urls": [
             "http://ntrip.myfloridagps.com:40000",
             "http://ntrip.myfloridagps.com:41000",
@@ -103,7 +103,7 @@
     },
     {
         "name": "FPRN - ITRF2020",
-        "description": "Florida Primary Reference Network - ITRF2020",
+        "description": "Florida Permanent Reference Network - ITRF2020",
         "urls": [
             "http://ntrip.myfloridagps.com:50000",
             "http://ntrip.myfloridagps.com:51000",
