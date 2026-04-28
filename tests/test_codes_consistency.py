@@ -21,14 +21,14 @@ def test_codes():
         warnings.warn(UserWarning("exception " + str(e)))
         return
 
-    renamed_systems = {
-        "BH_ETRS89": "ETRS89-BIH [BH_ETRS89]",
-        "LKS-92": "ETRS89-LVA [LKS-92]",
-        "EST97": "ETRS89-EST [EST97]",
-        "ETRS89/DREF91/2016": "ETRS89-DEU [ETRS89/DREF91/2016]",
-        "SWEREF99": "ETRS89-SWE [SWEREF 99]",
-        "RGF93 v2b": "ETRS89-FRA [RGF93 v2b]",
-    }
+    # renamed_systems = {
+    #     "BH_ETRS89": "ETRS89-BIH [BH_ETRS89]",
+    #     "LKS-92": "ETRS89-LVA [LKS-92]",
+    #     "EST97": "ETRS89-EST [EST97]",
+    #     "ETRS89/DREF91/2016": "ETRS89-DEU [ETRS89/DREF91/2016]",
+    #     "SWEREF99": "ETRS89-SWE [SWEREF 99]",
+    #     "RGF93 v2b": "ETRS89-FRA [RGF93 v2b]",
+    # }
 
     def testit(id, name):
         id_exists = False
@@ -40,7 +40,10 @@ def test_codes():
                 # During a transition period we will allow old an new names.
                 # Usually as "ETRS89-xxx [old_name]", being xxx the country code.
                 # As they are just a few, it is easier keeping here a small table.
-                name = renamed_systems.get(name, name)
+
+                # PROJ 9.8.1 (April 2026) reverted it.
+                # Let's see when it comes back, probably 9.9.0
+                # name = renamed_systems.get(name, name)
                 assert crs["name"] == name
 
                 # when systems with only 2D are added, change this test
