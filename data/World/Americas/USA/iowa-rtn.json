@@ -1,0 +1,23 @@
+{
+    "name": "IaRTN",
+    "description": "Iowa Real-Time Network",
+    "urls": [
+        "http://165.206.203.10:10000",
+        "http://iartnrtk.iowadot.gov:10000"
+    ],
+    "reference": {
+        "url": "https://iowadot.gov/consultants-contractors/design/iowa-real-time-network"
+    },
+    "last_update": "2026-05-07",
+    "streams": [
+        {
+            "filter": "all",
+            "crss": [
+                {
+                    "id": "EPSG:6319",
+                    "name": "NAD83(2011)"
+                }
+            ]
+        }
+    ]
+}
