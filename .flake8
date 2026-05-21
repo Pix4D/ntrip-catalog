@@ -1,4 +1,5 @@
 [flake8]
-ignore =
+# Black will handle the formatting for these ignored rules. This way, they don't fight with each other.
+ignore = E501, W503
 max-complexity = 18
 max-line-length = 88
