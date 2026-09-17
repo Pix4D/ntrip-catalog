@@ -21,13 +21,12 @@
         "reference": {
             "url": "https://support.pointonenav.com/connect-to-polaris-rtk"
         },
-        "last_update": "2026-08-28",
+        "last_update": "2026-09-17",
         "streams": [
             {
                 "filter": {
                     "mountpoints": [
-                        "POLARIS",
-                        "AUTO"
+                        "POLARIS"
                     ]
                 },
                 "crss": [
@@ -36,7 +35,8 @@
                         "name": "ITRF2014",
                         "epoch": "now"
                     }
-                ]
+                ],
+                "comments": "According to the documentation, there is a new mountpoint name called AUTO which uses ITRF2014. However it can be programmable by the user, which is not compliant with the ntrip-catalog"
             },
             {
                 "filter": {
@@ -146,6 +146,16 @@
                             72
                         ],
                         "description": "Continental Europe"
+                    },
+                    {
+                        "id": "EPSG:6364",
+                        "name": "Mexico ITRF2008",
+                        "epoch": 2010.0,
+                        "rover_countries": [
+                            "MEX"
+                        ],
+                        "description": "Mexico - onshore and offshore."
+
                     }
                 ],
                 "comments": "Polaris_local per region"
