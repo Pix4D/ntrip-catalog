@@ -21,29 +21,29 @@ def test_codes():
         warnings.warn(UserWarning("exception " + str(e)))
         return
 
-    # renamed_systems = {
-    #     "BH_ETRS89": "ETRS89-BIH [BH_ETRS89]",
-    #     "LKS-92": "ETRS89-LVA [LKS-92]",
-    #     "EST97": "ETRS89-EST [EST97]",
-    #     "ETRS89/DREF91/2016": "ETRS89-DEU [ETRS89/DREF91/2016]",
-    #     "SWEREF99": "ETRS89-SWE [SWEREF 99]",
-    #     "RGF93 v2b": "ETRS89-FRA [RGF93 v2b]",
-    # }
+    renamed_systems = {
+        "BH_ETRS89": "ETRS89-BIH [BH_ETRS89]",
+        "CHTRS95": "ETRS89-CHE [CHTRS95]",
+        "EST97": "ETRS89-EST [EST97]",
+        "ETRS89/DREF91/2016": "ETRS89-DEU [ETRS89/DREF91/2016]",
+        "JGD2011": "JGD2024",  # it was just renamed. Code stays the same
+        "LKS-92": "ETRS89-LVA [LKS-92]",
+        "NATRF2022": "NATRF2022e2020",
+        "RGF93 v2b": "ETRS89-FRA [RGF93 v2b]",
+        "SWEREF99": "ETRS89-SWE [SWEREF 99]",
+    }
 
     def testit(id, name):
         id_exists = False
         for crs in crslist:
             if crs["auth_name"] + ":" + crs["code"] == id:
-                # in  PROJ 9.8.0 (March 2026) the lastest version of EPSG was included.
+                # in  PROJ 9.9.0 (Sept. 2026) the lastest version of EPSG was included.
                 # It has changes in the datum ensemble ETRS89, and renamed many
                 # European CRSs, keeping the code.
                 # During a transition period we will allow old an new names.
                 # Usually as "ETRS89-xxx [old_name]", being xxx the country code.
                 # As they are just a few, it is easier keeping here a small table.
-
-                # PROJ 9.8.1 (April 2026) reverted it.
-                # Let's see when it comes back, probably 9.9.0
-                # name = renamed_systems.get(name, name)
+                name = renamed_systems.get(name, name)
                 assert crs["name"] == name
 
                 # when systems with only 2D are added, change this test
