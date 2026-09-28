@@ -1,0 +1,28 @@
+[
+    {
+        "name": "vrsnow.nl",
+        "description": "Trimble VRS Now (Netherlands)",
+        "urls": [
+            "http://vrsnow.nl:2101",
+            "http://www.vrsnow.nl:2101"
+        ],
+        "reference": {
+            "url": "https://geospatial.trimble.com/en/resources/blog/coordinate-system-enhancements-for-centerpoint-rtx-corrections",
+            "comments": "CRS described in the STR string"
+        },
+        "last_update": "2026-09-28",
+        "streams": [
+            {
+                "filter": "all",
+                "crss": [
+                    {
+                        "id": "EPSG:7931",
+                        "name": "ETRF2000",
+                        "epoch": 2010.5
+                    }
+                ],
+                "comments": "CRS described in the STR string {\"REF\":{\"NAME\":\"ETRS2000\",\"ID\":\"ISO:178\",\"EPOCH\":2010.5}}"
+            }
+        ]
+    }
+]
