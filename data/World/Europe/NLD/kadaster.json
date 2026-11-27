@@ -1,0 +1,94 @@
+[
+    {
+        "name": "Kadaster NL",
+        "description": "NSGI Netherlands",
+        "urls": [
+            "http://ntrip.kadaster.nl:2101",
+            "https://ntrip.kadaster.nl:443"
+        ],
+        "reference": {
+            "url": "https://www.nsgi.nl/referentiepunten-en-gnss-data/gnss-data/real-time-streams",
+            "comments": "Details about CRS in https://gnss-data.kadaster.nl/info/website_metadata.html"
+        },
+        "last_update": "2026-04-01",
+        "streams": [
+            {
+                "filter": {
+                    "lat_lon_bboxes": [
+                        [
+                            2.53,
+                            50.75,
+                            7.22,
+                            55.77
+                        ]
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:11036",
+                        "name": "ETRS89-NLD [AGRS2010]",
+                        "description": "a.k.a. ETRF2000"
+                    }
+                ],
+                "description": "European Netherlands"
+            },
+            {
+                "filter": {
+                    "lat_lon_bboxes": [
+                        [
+                            -68.47,
+                            11.97,
+                            -68.14,
+                            12.36
+                        ]
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:10761",
+                        "name": "Bonaire 2004",
+                        "description": "Bonaire, Caribbean"
+                    }
+                ]
+            },
+            {
+                "filter": {
+                    "lat_lon_bboxes": [
+                        [
+                            -63.31,
+                            17.56,
+                            -63.16,
+                            17.71
+                        ]
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:10638",
+                        "name": "BES2020 Saba",
+                        "description": "Saba, Caribbean"
+                    }
+                ]
+            },
+            {
+                "filter": {
+                    "lat_lon_bboxes": [
+                        [
+                            -63.05,
+                            17.41,
+                            -62.88,
+                            17.58
+                        ]
+                    ]
+                },
+                "crss": [
+                    {
+                        "id": "EPSG:10738",
+                        "name": "BES2020 Sint Eustatius",
+                        "description": "Sint Eustatius, Caribbean"
+                    }
+                ]
+            }
+        ]
+    }
+]
