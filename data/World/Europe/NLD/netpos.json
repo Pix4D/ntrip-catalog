@@ -3,14 +3,13 @@
         "name": "NETPOS NL",
         "description": "Netherlands Positioning Service",
         "urls": [
-            "http://ntrip1.netpos.nl:2101",
-            "http://ntrip2.netpos.nl:2101"
+            "https://ntrip1.netpos.nl:443"
         ],
         "reference": {
             "url": "https://www.nsgi.nl/referentiepunten-en-gnss-data/gnss-data/netpos",
             "comments": "data provided by Kadaster NL"
         },
-        "last_update": "2026-04-01",
+        "last_update": "2026-11-27",
         "streams": [
             {
                 "filter": "all",
